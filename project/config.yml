@@ -41,6 +41,9 @@ layers:
 
   ncaa:
     connection: tcbq
+  
+  sample:
+    connection: tcbq
 
 personas:
     default:
