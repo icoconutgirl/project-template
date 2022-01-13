@@ -1,0 +1,217 @@
+version: 2
+
+exposures:
+
+  - name: job_seeker
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/job_seeker
+    owner: 
+        email: generated@topcoatdata.com
+
+  - name: ncaa_team
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/ncaa_team
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('team_name_filter')
+      - ref('season_filter')
+      - ref('num_three_points')
+      - ref('num_free_throws')
+      - ref('num_total_loses')
+      - ref('num_total_wins')
+      - ref('bar_wins_by_season')
+      - ref('line_attendance')
+      - ref('team_scoring')
+      - ref('player_ids')
+      - ref('player_loop')
+
+  - name: page2
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/page2
+    owner: 
+        email: generated@topcoatdata.com
+
+  - name: page1
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/page1
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('year_filter')
+      - ref('exclude_marketing_toggle')
+      - ref('department_search_filter')
+      - ref('base_finance_table')
+
+  - name: year_filter_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/year_filter
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('year_filter')
+      - ref('seed_financial_data')
+
+  - name: department_search_filter_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/department_search_filter
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('department_search_filter')
+
+  - name: exclude_marketing_toggle_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/exclude_marketing_toggle
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('exclude_marketing_toggle')
+
+  - name: date_range_filter_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/date_range_filter
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('date_range_filter')
+
+  - name: seed_financial_data_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/seed_financial_data
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('seed_financial_data')
+
+  - name: base_finance_table_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/base_finance_table
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('exclude_marketing_toggle')
+      - ref('year_filter')
+      - ref('department_search_filter')
+      - ref('base_finance_table')
+      - ref('seed_financial_data')
+
+  - name: season_filter_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/season_filter
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+
+  - name: team_name_filter_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/team_name_filter
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('team_name_filter')
+
+  - name: player_loop_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/player_loop
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('player_loop')
+
+  - name: line_attendance_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/line_attendance
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('team_name_filter')
+      - ref('line_attendance')
+      - ref('team_games_base')
+
+  - name: player_ids_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/player_ids
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('team_name_filter')
+      - ref('player_ids')
+
+  - name: num_total_loses_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/num_total_loses
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('team_name_filter')
+      - ref('num_total_loses')
+      - ref('team_games_base')
+
+  - name: num_three_points_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/num_three_points
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('team_name_filter')
+      - ref('num_three_points')
+      - ref('team_games_base')
+
+  - name: num_total_wins_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/num_total_wins
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('team_name_filter')
+      - ref('num_total_wins')
+      - ref('team_games_base')
+
+  - name: team_scoring_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/team_scoring
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('team_name_filter')
+      - ref('team_scoring')
+
+  - name: bar_wins_by_season_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/bar_wins_by_season
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('team_name_filter')
+      - ref('bar_wins_by_season')
+
+  - name: num_free_throws_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/num_free_throws
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('team_name_filter')
+      - ref('num_free_throws')
+      - ref('team_games_base')
+
+  - name: team_games_base_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/team_games_base
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
+      - ref('team_name_filter')
+      - ref('team_games_base')
+

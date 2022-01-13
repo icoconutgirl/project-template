@@ -62,6 +62,11 @@ personas:
           title: Page 2
           icon_class: fa-chart-bar
 
+        - url: job_seeker
+          src: job_seeker.html
+          title: Job Seeker
+          icon_class: fa-user-tie
+
 develop:
   defaults:
     filters:
