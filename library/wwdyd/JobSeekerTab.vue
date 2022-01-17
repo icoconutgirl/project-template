@@ -1,375 +1,403 @@
 <template>
-    <div class="rounded-none h-auto bg-gradient-to-r from-primaryColor via-secondaryColor to-primaryColor w-full">
-      <!-- Header Start-->
-      <div class="mx-12">
-        <header class="lg:flex md:flex w-full items-center main-header py-4">
-          <div class="brand-logo flex sm:justify-center sm:mb-4 md:mb-0 lg:mb-0">
-            <h1 class="logo-heading text-white">LOGO</h1>
+  <div class="rounded-none h-auto bg-gradient-to-r from-primaryColor via-secondaryColor to-primaryColor w-full">
+    <!-- Header Start-->
+    <div class="mx-12">
+      <header class="lg:flex md:flex w-full items-center main-header py-4">
+        <div class="brand-logo flex sm:justify-center sm:mb-4 md:mb-0 lg:mb-0">
+          <h1 class="logo-heading text-white">LOGO</h1>
+        </div>
+        <div class="justify-center flex w-full">
+          <div class="custom-tabs">
+            <ul class="flex justify-center items-center border rounded-lg">
+              <li class="py-2 sm:px-8 px-12">
+                <a class="nav-link active sm:text-sm md:text-base lg:text-lg xl:text-xl" href="/job_seeker">Job Seeker</a>
+              </li>
+              <span class="list-divider"></span>
+              <li class="py-2 sm:px-8 px-12">
+                <a class="nav-link sm:text-sm md:text-base lg:text-lg xl:text-xl" href="/company_compare">Company Compare</a>
+              </li>
+            </ul>
           </div>
-          <div class="justify-center flex w-full">
-            <div class="custom-tabs">
-              <ul class="flex justify-center items-center border rounded-lg">
-                <li class="py-2 sm:px-8 px-12">
-                  <a class="nav-link active sm:text-sm md:text-base lg:text-lg xl:text-xl" href="https://mehak.topcoatdata.app/job_seeker">Job Seeker</a>
+        </div>
+      </header>
+    </div>
+    <!-- Header End -->
+    <hr class="custom-hr">
+    <!-- Filters Start -->
+    <div class="filters-section flex items-center justify-between py-4">
+      <div class="mx-12 lg:flex flex-row lg:justify-between w-full">
+        <div class="filter-block flex sm:justify-center md:justify-center gap-4 flex-wrap md:mb-3 sm:mb-3 lg:mb-0">
+          <!---- Search Icon Filter Start ----->
+          <div class="search-icon-filter relative">
+            <button class="btn-dropdown relative border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
+              Location
+            </button>
+            <!----- dropdown menu start----->
+            <div class="absolute filter-dropdown search-filter rounded-2xl pt-4 border mt-3 z-10">
+              <div class="relative mx-4 mb-4">
+                <button class="focus:outline-none search-icon text-grey text-base" type="submit"><i class="fas fa-search"></i></button>
+                <input class="form-control text-grey w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search">
+              </div>
+              <hr class="custom-hr border-t">
+              <ul class="py-2 custom-list relative">
+                <li class="lg:text-base sm:text-sm text-white font-light inline items-center">
+                  <a href="#" class="relative">
+                    <div class="list-content flex items-center px-5 py-2 w-full">
+                      <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
+                      <p>Florida</p>
+                    </div>
+                  </a>
                 </li>
-                <span class="list-divider"></span>
-                <li class="py-2 sm:px-8 px-12">
-                  <a class="nav-link sm:text-sm md:text-base lg:text-lg xl:text-xl" href="https://mehak.topcoatdata.app/company_compare">Company Compare</a>
+                <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
+                  <a href="#" class="relative">
+                    <div class="list-content flex items-center px-5 py-2 w-full">
+                      <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
+                      <p>California</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
+                  <a href="#" class="relative">
+                    <div class="list-content flex items-center px-5 py-2 w-full">
+                      <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
+                      <p>North Carolina</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
+                  <a href="#" class="relative">
+                    <div class="list-content flex items-center px-5 py-2 w-full">
+                      <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
+                      <p>Tennessee</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
+                  <a href="#" class="relative">
+                    <div class="list-content flex items-center px-5 py-2 w-full">
+                      <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
+                      <p>San Diego
+                        <br>
+                        <span class="text-xs text-grey">California</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <hr class="custom-hr border-t">
+              <ul class="custom-list relative">
+                <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
+                  <div class="list-content rounded-bl-2xl rounded-br-2xl flex items-center px-5 p-4 w-full">
+                    <i class="mr-3 text-grey fas fa-location-arrow"></i>
+                    <div>
+                      <p><a href="#">Find jobs near you</a></p>
+                      <p><a href="#" class="text-xs text-grey">or just a short drive away</a></p>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
+            <!----- dropdown menu end ----->
           </div>
-        </header>
-      </div>
-      <!-- Header End -->
+          <!----- Search Icon Filter End ----->
 
-      <!-- Filters Start -->
-      <div class="filters-section border border-l-0 border-r-0 flex items-center justify-between py-4">
-        <div class="mx-12 lg:flex flex-row lg:justify-between w-full">
-          <div class="filter-block flex sm:justify-center md:justify-center gap-4 flex-wrap md:mb-3 sm:mb-3 lg:mb-0">
-            <!---- Search Icon Filter Start ----->
-            <div class="search-icon-filter relative">
-              <button class="btn-dropdown relative border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
-                Location
-              </button>
-              <!----- dropdown menu start----->
-              <div class="absolute filter-dropdown search-filter rounded-2xl pt-4 border mt-3 z-10">
-                <div class="relative mx-4 mb-4">
-                  <button class="focus:outline-none search-icon text-grey text-base" type="submit"><i class="fas fa-search"></i></button>
-                  <input class="form-control text-grey w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search">
-                </div>
-                <hr class="custom-hr">
-                <ul class="py-2 custom-list relative">
-                  <li class="lg:text-base sm:text-sm text-white font-light inline items-center">
-                    <a href="#" class="relative">
-                      <div class="list-content flex items-center px-5 py-2 w-full">
-                        <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
-                        <p>Florida</p>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
-                    <a href="#" class="relative">
-                      <div class="list-content flex items-center px-5 py-2 w-full">
-                        <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
-                        <p>California</p>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
-                    <a href="#" class="relative">
-                      <div class="list-content flex items-center px-5 py-2 w-full">
-                        <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
-                        <p>North Carolina</p>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
-                    <a href="#" class="relative">
-                      <div class="list-content flex items-center px-5 py-2 w-full">
-                        <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
-                        <p>Tennessee</p>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
-                    <a href="#" class="relative">
-                      <div class="list-content flex items-center px-5 py-2 w-full">
-                        <i class="mr-3 text-grey fas fa-map-marker-alt"></i>
-                        <p>San Diego
-                          <br>
-                          <span class="text-xs text-grey">California</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <hr class="custom-hr">
-                <ul class="custom-list relative">
-                  <li class="lg:text-base sm:text-sm  text-white font-light inline items-center">
-                    <div class="list-content rounded-bl-2xl rounded-br-2xl flex items-center px-5 p-4 w-full">
-                      <i class="mr-3 text-grey fas fa-location-arrow"></i>
-                      <div>
-                        <p><a href="#">Find jobs near you</a></p>
-                        <p><a href="#" class="text-xs text-grey">or just a short drive away</a></p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!----- dropdown menu end ----->
-            </div>
-            <!----- Search Icon Filter End ----->
-
-            <div class="dropdown">
-              <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
-                Employment Options
-              </button>
-              <!----- dropdown menu start----->
-              <div class="absolute filter-dropdown employment-filter rounded-2xl border mt-3 z-10">
-                <fieldset class="py-2">
-                  <label for="check-1" class="custom-label px-4 py-2">
-                    <input type="checkbox" id="check-1" name="check"> 
-                    <span class="lg:text-base sm:text-sm text-white font-light">Remote Work</span>
-                  </label>
-                  <label for="check-2" class="custom-label px-4 py-2">
-                    <input type="checkbox" id="check-2" name="check"> 
-                    <span class="lg:text-base sm:text-sm text-white font-light">Office</span>
-                  </label>
-                  <label for="check-3" class="custom-label active px-4 py-2">
-                    <input type="checkbox" id="check-3" name="check" checked> 
-                    <span class="lg:text-base sm:text-sm text-white font-light">Part-time</span>
-                  </label>
-                  <label for="check-4" class="custom-label px-4 py-2">
-                    <input type="checkbox" id="check-4" name="check"> 
-                    <span class="lg:text-base sm:text-sm text-white font-light">Freelance</span>
-                  </label>
-                  <label for="check-5" class="custom-label px-4 py-2">
-                    <input type="checkbox" id="check-5" name="check"> 
-                    <span class="lg:text-base sm:text-sm text-white font-light">Relocate</span>
-                  </label>
-                </fieldset>
-                <hr class="custom-hr">
-                <div class="py-4 px-4">
-                  <div class="flex justify-between items-center">
-                    <button class="border-pink py-2 px-7 text-white rounded-xl border lg:text-base sm:text-sm font-semibold" type="button">Clear</button>
-                    <button class="bg-pink py-2 px-7 text-white rounded-xl border lg:text-base sm:text-sm font-semibold" type="button">Save</button>
-                  </div>
-                </div>
-              </div>
-              <!----- dropdown menu end ----->
-            </div>
-
-            <div class="dropdown">
-              <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
-                Category
-              </button>
-              <div class="absolute filter-dropdown category-filter rounded-2xl border mt-3 z-10 p-4">
-                <div class="grid gap-2 lg:grid-cols-3 md:grid-cols">
-                  <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
-                    <a href="#">
-                      <div class="flex card-content place-content-center">
-                        <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
-                        <span class="lg:text-base sm:text-sm text-white">Analyst</span>
-                      </div>
-                      <p class="text-grey text-sm">12434 Jobs</p>
-                    </a>
-                  </div>
-                  <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
-                    <a href="#">
-                      <div class="flex card-content place-content-center">
-                        <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
-                        <span class="lg:text-base sm:text-sm text-white">Scientist</span>
-                      </div>
-                      <p class="text-grey text-sm">7534 Jobs</p>
-                    </a>
-                  </div>
-                  <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
-                    <a href="#">
-                      <div class="flex card-content place-content-center">
-                        <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
-                        <span class="lg:text-base sm:text-sm text-white">Engineer</span>
-                      </div>
-                      <p class="text-grey text-sm">5221 Jobs</p>
-                    </a>
-                  </div>
-                  <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
-                    <a href="#">
-                      <div class="flex card-content place-content-center">
-                        <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
-                        <span class="lg:text-base sm:text-sm text-white">Other</span>
-                      </div>
-                      <p class="text-grey text-sm">221 Jobs</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
-                Salary
-              </button>
-            </div>
-
-            <button class="btn-dropdown border-0 rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
-              <label class="toggle">
-                <span class="toggle-label">Map</span>
-                <input class="toggle-checkbox" type="checkbox" checked>
-                <div class="toggle-switch"></div>
-              </label>
+          <div class="dropdown">
+            <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
+              Employment Options
             </button>
+            <!----- dropdown menu start----->
+            <div class="absolute filter-dropdown employment-filter rounded-2xl border mt-3 z-10">
+              <fieldset class="py-2">
+                <label for="check-1" class="custom-label px-4 py-2">
+                  <input type="checkbox" id="check-1" name="check"> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Remote Work</span>
+                </label>
+                <label for="check-2" class="custom-label px-4 py-2">
+                  <input type="checkbox" id="check-2" name="check"> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Office</span>
+                </label>
+                <label for="check-3" class="custom-label active px-4 py-2">
+                  <input type="checkbox" id="check-3" name="check" checked> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Part-time</span>
+                </label>
+                <label for="check-4" class="custom-label px-4 py-2">
+                  <input type="checkbox" id="check-4" name="check"> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Freelance</span>
+                </label>
+                <label for="check-5" class="custom-label px-4 py-2">
+                  <input type="checkbox" id="check-5" name="check"> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Relocate</span>
+                </label>
+              </fieldset>
+              <hr class="custom-hr border-t">
+              <div class="py-4 px-4">
+                <div class="flex justify-between items-center">
+                  <button class="border-pink py-2 px-7 text-white rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Clear</button>
+                  <button class="bg-pink py-2 px-7 text-white rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Save</button>
+                </div>
+              </div>
+            </div>
+            <!----- dropdown menu end ----->
           </div>
-          <div class="flex lg:justify-end justify-center items-center">
-            <div class="button-group flex box-border rounded-lg">  
-              <input class="button-option" id="option1" type="radio" name="option" checked/>
-              <label class="button-group-label text-white cursor-pointer rounded-lg min-w-max lg:text-base sm:text-sm font-light text-center" for="option1">
-                Available Now
-              </label>
-              <input class="button-option" id="option2" type="radio" name="option"/>
-              <label class="button-group-label text-white cursor-pointer rounded-lg min-w-max lg:text-base sm:text-sm font-light text-center" for="option2">    
-                Last 90 Days
-              </label>
+
+          <div class="dropdown">
+            <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
+              Category
+            </button>
+            <div class="absolute filter-dropdown category-filter rounded-2xl border mt-3 z-10 p-4">
+              <div class="grid gap-2 lg:grid-cols-3 md:grid-cols">
+                <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
+                  <a href="#">
+                    <div class="flex card-content place-content-center">
+                      <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
+                      <span class="lg:text-base sm:text-sm text-white">Analyst</span>
+                    </div>
+                    <p class="text-grey text-sm">12434 Jobs</p>
+                  </a>
+                </div>
+                <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
+                  <a href="#">
+                    <div class="flex card-content place-content-center">
+                      <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
+                      <span class="lg:text-base sm:text-sm text-white">Scientist</span>
+                    </div>
+                    <p class="text-grey text-sm">7534 Jobs</p>
+                  </a>
+                </div>
+                <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
+                  <a href="#">
+                    <div class="flex card-content place-content-center">
+                      <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
+                      <span class="lg:text-base sm:text-sm text-white">Engineer</span>
+                    </div>
+                    <p class="text-grey text-sm">5221 Jobs</p>
+                  </a>
+                </div>
+                <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
+                  <a href="#">
+                    <div class="flex card-content place-content-center">
+                      <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
+                      <span class="lg:text-base sm:text-sm text-white">Other</span>
+                    </div>
+                    <p class="text-grey text-sm">221 Jobs</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
+              Salary
+            </button>
+            <!----- dropdown menu start----->
+            <div class="absolute filter-dropdown salary-filter w-96 rounded-2xl border mt-3 z-10">
+              <div class="p-4">
+                <div class="text-white text-base font-light">The average salary is <span class="font-semibold">$12000/month</span></div>
+                <div class="text-center text-green text-bold py-8">
+                  Add Salary Slider
+                </div>
+                <div class="flex items-center justify-between gap-10">
+                  <input class="form-control text-white w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$7">
+                  <div class="horizontal-divider"></div>
+                  <input class="form-control text-white w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$1000+">
+                </div>
+              </div>
+              <hr class="custom-hr border-t">
+              <div class="py-4 px-4">
+                <div class="flex justify-between items-center">
+                  <button class="border-pink py-2 px-7 text-white rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Clear</button>
+                  <button class="bg-pink py-2 px-7 text-white rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Save</button>
+                </div>
+              </div>
+            </div>
+            <!----- dropdown menu end ----->
+          </div>
+
+          <button class="btn-dropdown border-0 rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
+            <label class="toggle">
+              <span class="toggle-label">Map</span>
+              <input class="toggle-checkbox" type="checkbox" checked>
+              <div class="toggle-switch"></div>
+            </label>
+          </button>
+        </div>
+        <div class="flex lg:justify-end justify-center items-center">
+          <div class="button-group flex box-border rounded-lg">  
+            <input class="button-option" id="option1" type="radio" name="option" checked/>
+            <label class="button-group-label text-white cursor-pointer rounded-lg min-w-max lg:text-base sm:text-sm font-light text-center" for="option1">
+              Available Now
+            </label>
+            <input class="button-option" id="option2" type="radio" name="option"/>
+            <label class="button-group-label text-white cursor-pointer rounded-lg min-w-max lg:text-base sm:text-sm font-light text-center" for="option2">    
+              Last 90 Days
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Filters End -->
+    <hr class="custom-hr">
+    <!-- Content Section Start-->
+    <div class="lg:flex">
+      <div class="lg:w-7/12 md:w-12/12 mx-12 sm:mb-5 mb-0">
+        <div class="section-title py-4 px-0">
+          <p class="text-white">300+ Jobs</p>
+        </div>
+        <hr class="custom-hr">
+        <div class="card py-5 job-post-card">
+          <div class="flex items-top">
+            <div class="card-icon flex justify-center items-center">
+              <i class="fas fa-user fa-2x text-white"></i>
+            </div>
+            <div class="card-content pl-5"> 
+              <div class="flex justify-between">
+                <p class="text-sm text-grey font-light mb-1 company-name">The RealReal</p>
+                <p class="text-sm text-grey font-light mb-1 post-date">Today</p>
+              </div>
+              <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist, Game Analytics</a></h1>
+              <p class="text-grey text-base font-light text-description">Do you want to help connect people all over the world, and work on a team building the next generation of planet scale AR games? We’re looking for hardworking people to help our company become more data focused; folks with the ability to be dedicated, thorough, and independent while working in a dynamic, fast-paced environment.</p>
+              <div class="flex flex-wrap job-specs mt-4 gap-8">
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <hr class="custom-hr">
+        <div class="card py-5 job-post-card">
+          <div class="flex items-top">
+            <div class="card-icon flex justify-center items-center">
+              <i class="fas fa-user fa-2x text-white"></i>
+            </div>
+            <div class="card-content pl-5"> 
+              <div class="flex justify-between">
+                <p class="text-grey text-white text-sm font-light mb-1 company-name">Teladoc Health</p>
+                <p class="text-grey text-white text-sm font-light mb-1 post-date">Date</p>
+              </div>
+              <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
+              <p class="text-grey text-white text-base font-light">Teladoc Health is transforming how people access and experience healthcare. Recognized as the world leader in virtual care, we are partnering with over a thousand clients to serve hundreds of thousands (soon millions!) of people living with chronic conditions every day.</p>
+              <div class="flex flex-wrap job-specs mt-4 gap-8">
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <hr class="custom-hr">
+        <div class="card py-5 job-post-card">
+          <div class="flex items-top">
+            <div class="card-icon flex justify-center items-center">
+              <i class="fas fa-user fa-2x text-white"></i>
+            </div>
+            <div class="card-content pl-5"> 
+              <div class="flex justify-between">
+                <p class="text-grey text-white text-sm font-light mb-1 company-name">Teladoc Health</p>
+                <p class="text-grey text-white text-sm font-light mb-1 post-date">Date</p>
+              </div>
+              <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
+              <p class="text-grey text-white text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="flex flex-wrap job-specs mt-4 gap-8">
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
+                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
+              </div>  
             </div>
           </div>
         </div>
       </div>
-      <!-- Filters End -->
+      <div class="lg:w-5/12 md:w-12/12">
+        <iframe width="100%" height="100%" 
+        src="https://api.mapbox.com/styles/v1/hashpath/ck2b77spe0ih61cnw73np10su.html?title=false&amp;access_token=pk.eyJ1IjoiaGFzaHBhdGgiLCJhIjoiY2p3Z3pxbHB0MDFrZDQzbnMwNmF1d3MybyJ9.0lLpesaHfYsX0-UivfyCzw&amp;zoomwheel=false#10/42.3624/-71.02" 
+        title="Dark" style="border: none;"></iframe>
+      </div>
+    </div>
+    <!-- Content Section End -->
 
-      <!-- Content Section Start-->
-      <div class="lg:flex">
-        <div class="lg:w-7/12 md:w-12/12 mx-12 sm:mb-5 mb-0">
-          <div class="section-title py-4 px-0">
-            <p class="text-white">300+ Jobs</p>
-          </div>
-          <div class="card py-5 job-post-card border-b-0 border-l-0 border-r-0 border">
-            <div class="flex items-top">
-              <div class="card-icon flex justify-center items-center">
-               <i class="fas fa-user fa-2x text-white"></i>
+    <!-- Popup Start -->
+    <div class="custom-popup rounded-2xl fixed inset-0 outline-none mx-auto relative z-50">
+      <div class="popup-dialog transform-none mx-auto relative w-auto pointer-events-none sm:px-5 px-0">
+        <div class="popup-content rounded-2xl  relative lg:flex md:flex pointer-events-none pointer-events-auto z-50">
+          <div class="lg:w-3/12 md:w-4/12 sm:w-12/12">
+            <div class="col-left lg:rounded-r-none lg:rounded-l-2xl md:rounded-r-none md:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl p-4 h-full">
+              <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-grey mb-7">
+                <i class="fas fa-times"></i>
               </div>
-              <div class="card-content pl-5"> 
-                <div class="flex justify-between">
-                  <p class="text-sm text-grey font-light mb-1 company-name">The RealReal</p>
-                  <p class="text-sm text-grey font-light mb-1 post-date">Today</p>
+              <div class="flex items-center mb-4">
+                <div class="card-icon flex justify-center items-center font-light">
+                  <i class="fas fa-user fa-2x text-white"></i>
                 </div>
-                <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist, Game Analytics</a></h1>
-                <p class="text-grey text-base font-light text-description">Do you want to help connect people all over the world, and work on a team building the next generation of planet scale AR games? We’re looking for hardworking people to help our company become more data focused; folks with the ability to be dedicated, thorough, and independent while working in a dynamic, fast-paced environment.</p>
+                <div class="text-base text-white ml-5">
+                  Asana
+                </div>
+              </div>
+              <div class="flex items-center ml-1 mb-3">
+                <i class="text-grey mr-3 text-sm fas fa-map-marker-alt"></i>
+                <p class="text-sm text-grey">San Francisco, California</p>
+              </div>
+              <div class="flex items-center mb-3">
+                <i class="text-grey mr-3 text-sm fas fa-users"></i>
+                <p class="text-sm text-grey">1,001-5,000 employees</p>
+              </div>
+              <div class="mt-4 mb-6">
+                <p class="text-xs text-grey">Asana helps teams orchestrate their work, from small projects to strategic initiatives. Headquartered in San Francisco, CA, Asana has more than 107,000+ paying customers and millions of free organizations across 190 countries. Global customers such as Amazon, Japan Airlines, Sky, and Under Armour rely on Asana to manage everything from company objectives to digital transformation to product launches and marketing campaigns. For more information, visit www.asana.com.</p>
+              </div>
+              <div class="flex gap-4">
+                <a href="#">
+                  <div class="action-icon custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
+                    <i class="fas fa-external-link-alt"></i>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="action-icon custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-9/12 md:w-8/12 sm:w-12/12">
+            <div class="col-right rounded-l-none rounded-r-2xl p-4">
+              <div class="pt-10 px-4">
+                <p class="text-grey text-white text-sm font-light mb-3 post-date">Today</p>
+                <div class="flex justify-between items-center">
+                  <div class="text-3xl text-white font-medium">
+                    Revenue Strategy Analyst, Customer Success
+                  </div>
+                  <button class="bg-pink py-2 px-7 text-white rounded-xl lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Apply</button>
+                </div>
+                <p class="text-base font-light text-grey mt-8">We’re looking for an experienced analyst  to join the Revenue Strategy team at Asana. In this role you will work closely with the CX leadership team to help drive key insights and define our Customer Experience strategy.</p>
                 <div class="flex flex-wrap job-specs mt-4 gap-8">
                   <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
                   <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
                   <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
                 </div> 
-              </div>
-            </div>
-          </div>
-          <div class="card py-5 job-post-card border-b-0 border-l-0 border-r-0 border">
-            <div class="flex items-top">
-              <div class="card-icon flex justify-center items-center">
-               <i class="fas fa-user fa-2x text-white"></i>
-              </div>
-              <div class="card-content pl-5"> 
-                <div class="flex justify-between">
-                  <p class="text-grey text-white text-sm font-light mb-1 company-name">Teladoc Health</p>
-                  <p class="text-grey text-white text-sm font-light mb-1 post-date">Date</p>
+                <div class="text-xl text-semibold text-white mt-6">
+                  What you’ll achieve
                 </div>
-                <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
-                <p class="text-grey text-white text-base font-light">Teladoc Health is transforming how people access and experience healthcare. Recognized as the world leader in virtual care, we are partnering with over a thousand clients to serve hundreds of thousands (soon millions!) of people living with chronic conditions every day.</p>
-                <div class="flex flex-wrap job-specs mt-4 gap-8">
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
-                </div>  
-              </div>
-            </div>
-          </div>
-          <div class="card py-5 job-post-card border-b-0 border-l-0 border-r-0 border">
-            <div class="flex items-top">
-              <div class="card-icon flex justify-center items-center">
-               <i class="fas fa-user fa-2x text-white"></i>
-              </div>
-              <div class="card-content pl-5"> 
-                <div class="flex justify-between">
-                  <p class="text-grey text-white text-sm font-light mb-1 company-name">Teladoc Health</p>
-                  <p class="text-grey text-white text-sm font-light mb-1 post-date">Date</p>
+                <ul class="list-disc text-grey text-base pl-7 font-light py-4">
+                  <li>Execute on strategic initiatives to enable our Customer Success organization to better serve and grow Asana’s customers, often working cross-functionally with sales, marketing, finance and operations</li>
+                  <li>Create quarterly and annual reporting, forecasting, dashboards, territory planning, and productivity modeling to present and share with Asana leadership team</li>
+                  <li>Complete ad-hoc data analysis to gather insights and guide investment and growth</li>
+                  <li>Assist in the annual planning process for Customer Success translating strategy into a set of decisions, investments, targets, and detailed plans</li>
+                  <li>Define customer lifecycle strategy using data driven insights  to align with broader company goals</li>
+                </ul>
+                <div class="text-xl text-semibold text-white mt-5">
+                  About you
                 </div>
-                <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
-                <p class="text-grey text-white text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="flex flex-wrap job-specs mt-4 gap-8">
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
-                </div>  
+                <ul class="list-disc text-grey text-base pl-7 font-light py-4">
+                  <li>3+ years’ relevant experience in strategy, operations, finance, management consulting, or a similar role  at a saas company</li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-        <div class="lg:w-5/12 md:w-12/12">
-          <iframe width="100%" height="100%" 
-          src="https://api.mapbox.com/styles/v1/hashpath/ck2b77spe0ih61cnw73np10su.html?title=false&amp;access_token=pk.eyJ1IjoiaGFzaHBhdGgiLCJhIjoiY2p3Z3pxbHB0MDFrZDQzbnMwNmF1d3MybyJ9.0lLpesaHfYsX0-UivfyCzw&amp;zoomwheel=false#10/42.3624/-71.02" 
-          title="Dark" style="border: none;"></iframe>
         </div>
       </div>
-      <!-- Content Section End -->
-
-      <!-- Popup Start -->
-      <!-- <div class="custom-popup rounded-2xl fixed inset-0 outline-none mx-auto relative z-50">
-        <div class="popup-dialog transform-none mx-auto relative w-auto pointer-events-none sm:px-5 px-0">
-          <div class="popup-content rounded-2xl  relative lg:flex md:flex pointer-events-none pointer-events-auto z-50">
-            <div class="lg:w-3/12 md:w-4/12 sm:w-12/12">
-              <div class="col-left lg:rounded-r-none lg:rounded-l-2xl md:rounded-r-none md:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl p-4 h-full">
-                <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-grey mb-7">
-                  <i class="fas fa-times"></i>
-                </div>
-                <div class="flex items-center mb-4">
-                  <div class="card-icon flex justify-center items-center font-light">
-                    <i class="fas fa-user fa-2x text-white"></i>
-                  </div>
-                  <div class="text-base text-white ml-5">
-                    Asana
-                  </div>
-                </div>
-                <div class="flex items-center ml-1 mb-3">
-                  <i class="text-grey mr-3 text-sm fas fa-map-marker-alt"></i>
-                  <p class="text-sm text-grey">San Francisco, California</p>
-                </div>
-                <div class="flex items-center mb-3">
-                  <i class="text-grey mr-3 text-sm fas fa-users"></i>
-                  <p class="text-sm text-grey">1,001-5,000 employees</p>
-                </div>
-                <div class="mt-4 mb-6">
-                  <p class="text-xs text-grey">Asana helps teams orchestrate their work, from small projects to strategic initiatives. Headquartered in San Francisco, CA, Asana has more than 107,000+ paying customers and millions of free organizations across 190 countries. Global customers such as Amazon, Japan Airlines, Sky, and Under Armour rely on Asana to manage everything from company objectives to digital transformation to product launches and marketing campaigns. For more information, visit www.asana.com.</p>
-                </div>
-                <div class="flex gap-4">
-                  <a href="#">
-                    <div class="action-icon custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
-                      <i class="fas fa-external-link-alt"></i>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="action-icon custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
-                      <i class="fab fa-linkedin-in"></i>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-9/12 md:w-8/12 sm:w-12/12">
-              <div class="col-right rounded-l-none rounded-r-2xl p-4">
-                <div class="pt-10 px-4">
-                  <p class="text-grey text-white text-sm font-light mb-3 post-date">Today</p>
-                  <div class="text-3xl text-white font-medium">
-                    Revenue Strategy Analyst, Customer Success
-                  </div>
-                  <p class="text-base font-light text-grey mt-8">We’re looking for an experienced analyst  to join the Revenue Strategy team at Asana. In this role you will work closely with the CX leadership team to help drive key insights and define our Customer Experience strategy.</p>
-                  <div class="flex flex-wrap job-specs mt-4 gap-8">
-                    <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
-                    <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
-                    <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
-                  </div> 
-                  <div class="text-xl text-semibold text-white mt-6">
-                    What you’ll achieve
-                  </div>
-                  <ul class="list-disc text-grey text-base pl-7 font-light py-4">
-                    <li>Execute on strategic initiatives to enable our Customer Success organization to better serve and grow Asana’s customers, often working cross-functionally with sales, marketing, finance and operations</li>
-                    <li>Create quarterly and annual reporting, forecasting, dashboards, territory planning, and productivity modeling to present and share with Asana leadership team</li>
-                    <li>Complete ad-hoc data analysis to gather insights and guide investment and growth</li>
-                    <li>Assist in the annual planning process for Customer Success translating strategy into a set of decisions, investments, targets, and detailed plans</li>
-                    <li>Define customer lifecycle strategy using data driven insights  to align with broader company goals</li>
-                  </ul>
-                  <div class="text-xl text-semibold text-white mt-5">
-                    About you
-                  </div>
-                  <ul class="list-disc text-grey text-base pl-7 font-light py-4">
-                    <li>3+ years’ relevant experience in strategy, operations, finance, management consulting, or a similar role  at a saas company</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- Popup End -->
     </div>
+    <!-- Popup End -->
+  </div>
 </template>
 
 <style>
@@ -381,6 +409,11 @@
   body {
     font-family: 'Exo', sans-serif;
     letter-spacing: 0.37px
+  }
+  .horizontal-divider {
+    width: 60px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
   }
   .border-pink {
     border-color: #c933cc;
@@ -407,7 +440,7 @@
     color: #42c62a;
   }
   .custom-hr {
-    border-top: 1px solid #49496acc; 
+    border-color: rgba(255, 255, 255, 0.08); 
   }
   .custom-tabs ul {
     border-color: #ffffff;
@@ -465,13 +498,12 @@
   }
   /* ------------------------- filter dropdown ----------------------- */
   .filter-dropdown {
-    border-color: #49496acc;
+    border-color: rgba(255, 255, 255, 0.08);
     background: rgba(34, 34, 63, 0.8);
     box-sizing: border-box;
     box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.24);
     backdrop-filter: blur(25px);  
     border-radius: 16px;
-    width: 274px;
   }
   .filter-dropdown .form-control {
     background: rgba(255, 255, 255, 0.08);
