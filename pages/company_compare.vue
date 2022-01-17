@@ -1,0 +1,3 @@
+<CompanyCompareTab>
+
+</CompanyCompareTab>

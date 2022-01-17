@@ -63,8 +63,13 @@ personas:
           icon_class: fa-chart-bar
 
         - url: job_seeker
-          src: job_seeker.html
+          src: job_seeker.vue
           title: Job Seeker
+          icon_class: fa-user-tie
+
+        - url: company_compare
+          src: company_compare.vue
+          title: Company Compare
           icon_class: fa-user-tie
 
 develop:

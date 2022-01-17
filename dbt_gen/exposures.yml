@@ -2,12 +2,6 @@ version: 2
 
 exposures:
 
-  - name: job_seeker
-    type: 'dashboard'
-    url: https://mehak.topcoatdata.app/job_seeker
-    owner: 
-        email: generated@topcoatdata.com
-
   - name: ncaa_team
     type: 'dashboard'
     url: https://mehak.topcoatdata.app/ncaa_team
@@ -42,6 +36,18 @@ exposures:
       - ref('exclude_marketing_toggle')
       - ref('department_search_filter')
       - ref('base_finance_table')
+
+  - name: company_compare
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/company_compare
+    owner: 
+        email: generated@topcoatdata.com
+
+  - name: job_seeker
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/job_seeker
+    owner: 
+        email: generated@topcoatdata.com
 
   - name: year_filter_auto_page
     type: 'dashboard'
