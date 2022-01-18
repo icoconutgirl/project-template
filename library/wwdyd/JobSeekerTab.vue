@@ -36,7 +36,7 @@
             <div class="absolute filter-dropdown search-filter rounded-2xl pt-4 border mt-3 z-10">
               <div class="relative mx-4 mb-4">
                 <button class="focus:outline-none search-icon text-grey text-base" type="submit"><i class="fas fa-search"></i></button>
-                <input class="form-control text-grey w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search">
+                <input class="form-control input-control text-grey w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search">
               </div>
               <hr class="custom-hr border-t">
               <ul class="py-2 custom-list relative">
@@ -108,23 +108,23 @@
             <!----- dropdown menu start----->
             <div class="absolute filter-dropdown employment-filter rounded-2xl border mt-3 z-10">
               <fieldset class="py-2">
-                <label for="check-1" class="custom-label px-4 py-2">
+                <label for="check-1" class="custom-label section-hover px-4 py-2">
                   <input type="checkbox" id="check-1" name="check"> 
                   <span class="lg:text-base sm:text-sm text-white font-light">Remote Work</span>
                 </label>
-                <label for="check-2" class="custom-label px-4 py-2">
+                <label for="check-2" class="custom-label section-hover px-4 py-2">
                   <input type="checkbox" id="check-2" name="check"> 
                   <span class="lg:text-base sm:text-sm text-white font-light">Office</span>
                 </label>
-                <label for="check-3" class="custom-label active px-4 py-2">
+                <label for="check-3" class="custom-label section-hover active px-4 py-2">
                   <input type="checkbox" id="check-3" name="check" checked> 
                   <span class="lg:text-base sm:text-sm text-white font-light">Part-time</span>
                 </label>
-                <label for="check-4" class="custom-label px-4 py-2">
+                <label for="check-4" class="custom-label section-hover px-4 py-2">
                   <input type="checkbox" id="check-4" name="check"> 
                   <span class="lg:text-base sm:text-sm text-white font-light">Freelance</span>
                 </label>
-                <label for="check-5" class="custom-label px-4 py-2">
+                <label for="check-5" class="custom-label section-hover px-4 py-2">
                   <input type="checkbox" id="check-5" name="check"> 
                   <span class="lg:text-base sm:text-sm text-white font-light">Relocate</span>
                 </label>
@@ -145,8 +145,8 @@
               Category
             </button>
             <div class="absolute filter-dropdown category-filter rounded-2xl border mt-3 z-10 p-4">
-              <div class="grid gap-2 lg:grid-cols-3 md:grid-cols">
-                <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
+              <div class="grid gap-2 lg:grid-cols-3 md:grid-cols-1">
+                <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
                   <a href="#">
                     <div class="flex card-content place-content-center">
                       <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
@@ -155,7 +155,7 @@
                     <p class="text-grey text-sm">12434 Jobs</p>
                   </a>
                 </div>
-                <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
+                <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
                   <a href="#">
                     <div class="flex card-content place-content-center">
                       <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
@@ -164,7 +164,7 @@
                     <p class="text-grey text-sm">7534 Jobs</p>
                   </a>
                 </div>
-                <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
+                <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
                   <a href="#">
                     <div class="flex card-content place-content-center">
                       <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
@@ -173,7 +173,7 @@
                     <p class="text-grey text-sm">5221 Jobs</p>
                   </a>
                 </div>
-                <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl card border text-center">
+                <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
                   <a href="#">
                     <div class="flex card-content place-content-center">
                       <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i>
@@ -505,7 +505,7 @@
     backdrop-filter: blur(25px);  
     border-radius: 16px;
   }
-  .filter-dropdown .form-control {
+  .input-control.form-control {
     background: rgba(255, 255, 255, 0.08);
     letter-spacing: 0.37px;
   }
@@ -514,17 +514,17 @@
     top: 8px;
     left: 8px;
   }
-  .location-filter, .employment-filter {
+  .search-filter, .employment-filter {
     width: 274px;
   } 
   .category-filter {
     width: 392px;
   }
-  .category-filter .card {
+  .bg-card {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.04);
   }
-  .category-filter .card:hover {
+  .bg-.card:hover {
     background-color: rgba(0, 0, 0, 0.16);
   }
   /* ------------------------- toggle-switch -------------------------------*/
@@ -634,11 +634,11 @@
     border-radius: 4px;
     transition: 0.2s border-color ease, 0.2s background-color ease;
   }
-  .custom-label:hover {
+  .section-hover:hover {
     background: rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
-  .custom-label.active{
+  .section-hover.active{
     background: rgba(0, 0, 0, 0.16);
   }
   @-webkit-keyframes toggleOnCheckbox {

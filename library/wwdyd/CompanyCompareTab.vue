@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-none h-screen bg-gradient-to-r from-primaryColor via-secondaryColor to-primaryColor w-full">
+  <div class="rounded-none h-auto bg-gradient-to-r from-primaryColor via-secondaryColor to-primaryColor w-full">
     <!-- Header Start-->
     <div class="mx-12">
       <header class="lg:flex md:flex w-full items-center main-header py-4">
@@ -22,9 +22,9 @@
       </header>
     </div>
     <!-- Header End -->
-    <hr class="custom-hr">
+    <hr class="custom-hr mb-5">
     <!-- Content Start -->
-    <div class="mx-12 py-6">
+    <div class="mx-12">
       <div class="lg:flex md:flex items-center mb-6">
         <div class="lg:w-3/12 md:w-3/12 sm:w-12/12">
           <div class="place-self-center sm:mb-5 md:mb-5">
@@ -34,47 +34,752 @@
         </div>
         <div class="lg:w-9/12 md:w-9/12 sm:w-12/12">
           <div class="gap-4 lg:grid-cols-3 sm:grid-cols-2 grid place-content-center">
-            <a href="#" class="new-company-card">
+            <div class="new-company-card">
               <div class="border-dashed border-color border rounded-3xl text-center p-6">
-                <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
-                  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5208 0.25C18.6615 0.25 17.9583 1.1875 17.9583 2.33333V16.9167H2.33333C1.1875 16.9167 0.25 17.6198 0.25 18.4792C0.25 19.3385 1.1875 20.0417 2.33333 20.0417H17.9583V35.6667C17.9583 36.8125 18.6615 37.75 19.5208 37.75C20.3802 37.75 21.0833 36.8125 21.0833 35.6667V20.0417H35.6667C36.8125 20.0417 37.75 19.3385 37.75 18.4792C37.75 17.6198 36.8125 16.9167 35.6667 16.9167H21.0833V2.33333C21.0833 1.1875 20.3802 0.25 19.5208 0.25Z" fill="white" fill-opacity="0.6"/>
-                  </svg>
-                </div>
-                <p class="text-base text-white font-semibold mt-5">Add Company</p>
+                <a href="#">
+                  <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5208 0.25C18.6615 0.25 17.9583 1.1875 17.9583 2.33333V16.9167H2.33333C1.1875 16.9167 0.25 17.6198 0.25 18.4792C0.25 19.3385 1.1875 20.0417 2.33333 20.0417H17.9583V35.6667C17.9583 36.8125 18.6615 37.75 19.5208 37.75C20.3802 37.75 21.0833 36.8125 21.0833 35.6667V20.0417H35.6667C36.8125 20.0417 37.75 19.3385 37.75 18.4792C37.75 17.6198 36.8125 16.9167 35.6667 16.9167H21.0833V2.33333C21.0833 1.1875 20.3802 0.25 19.5208 0.25Z" fill="white" fill-opacity="0.6"/>
+                    </svg>
+                  </div>
+                  <p class="text-base text-white font-semibold mt-5">Add Company</p>
+                </a>
               </div>
-            </a>
-            <a href="#" class="new-company-card">
+            </div>
+            <div class="new-company-card">
               <div class="border-dashed border-color border rounded-3xl text-center p-6">
-                <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
-                  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5208 0.25C18.6615 0.25 17.9583 1.1875 17.9583 2.33333V16.9167H2.33333C1.1875 16.9167 0.25 17.6198 0.25 18.4792C0.25 19.3385 1.1875 20.0417 2.33333 20.0417H17.9583V35.6667C17.9583 36.8125 18.6615 37.75 19.5208 37.75C20.3802 37.75 21.0833 36.8125 21.0833 35.6667V20.0417H35.6667C36.8125 20.0417 37.75 19.3385 37.75 18.4792C37.75 17.6198 36.8125 16.9167 35.6667 16.9167H21.0833V2.33333C21.0833 1.1875 20.3802 0.25 19.5208 0.25Z" fill="white" fill-opacity="0.6"/>
-                  </svg>
-                </div>
-                <p class="text-base text-white font-semibold mt-5">Add Company</p>
+                <a href="#">
+                  <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5208 0.25C18.6615 0.25 17.9583 1.1875 17.9583 2.33333V16.9167H2.33333C1.1875 16.9167 0.25 17.6198 0.25 18.4792C0.25 19.3385 1.1875 20.0417 2.33333 20.0417H17.9583V35.6667C17.9583 36.8125 18.6615 37.75 19.5208 37.75C20.3802 37.75 21.0833 36.8125 21.0833 35.6667V20.0417H35.6667C36.8125 20.0417 37.75 19.3385 37.75 18.4792C37.75 17.6198 36.8125 16.9167 35.6667 16.9167H21.0833V2.33333C21.0833 1.1875 20.3802 0.25 19.5208 0.25Z" fill="white" fill-opacity="0.6"/>
+                    </svg>
+                  </div>
+                  <p class="text-base text-white font-semibold mt-5">Add Company</p>
+                </a>
               </div>
-            </a>
-            <a href="#" class="new-company-card">
-              <div class="border-dashed border-color border rounded-3xl text-center p-6">
-                <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
-                  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5208 0.25C18.6615 0.25 17.9583 1.1875 17.9583 2.33333V16.9167H2.33333C1.1875 16.9167 0.25 17.6198 0.25 18.4792C0.25 19.3385 1.1875 20.0417 2.33333 20.0417H17.9583V35.6667C17.9583 36.8125 18.6615 37.75 19.5208 37.75C20.3802 37.75 21.0833 36.8125 21.0833 35.6667V20.0417H35.6667C36.8125 20.0417 37.75 19.3385 37.75 18.4792C37.75 17.6198 36.8125 16.9167 35.6667 16.9167H21.0833V2.33333C21.0833 1.1875 20.3802 0.25 19.5208 0.25Z" fill="white" fill-opacity="0.6"/>
-                  </svg>
+            </div>
+            <div class="selected-card relative">
+              <div class="flex justify-end mb-2">
+                <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-grey">
+                  <i class="fas fa-times"></i>
                 </div>
-                <p class="text-base text-white font-semibold mt-5">Add Company</p>
               </div>
-            </a>
+              <div class="flex items-center justify-around">
+                <div class="text-center">
+                  <i class="fas fa-circle fa-5x text-white"></i>
+                  <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <hr class="custom-hr">
-      <!-- Popular Companies Start -->
-      <div class="text-2xl text-white font-semibold my-5">Popular Comparisons</div>
-      <!-- Popular Companies End -->
-    </div>
+      <hr class="custom-hr my-5">
 
+      <!-- Popular Companies Start -->
+      <div class="text-2xl text-white font-semibold mb-5">Popular Comparisons</div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+        <div class="border border-color rounded-2xl p-6">
+          <div class="flex items-center justify-around">
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Amazon</p>
+            </div>
+            <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
+              <p class="text-base text-grey">VS</p>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Google</p>
+            </div>
+          </div>
+        </div>
+        <div class="border border-color rounded-2xl p-6">
+          <div class="flex items-center justify-around">
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">AT&T</p>
+            </div>
+            <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
+              <p class="text-base text-grey">VS</p>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Verizon</p>
+            </div>
+          </div>
+        </div>
+        <div class="border border-color rounded-2xl p-6">
+          <div class="flex items-center justify-around">
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">J.P.Morgan</p>
+            </div>
+            <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
+              <p class="text-base text-grey">VS</p>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Wells Fargo</p>
+            </div>
+          </div>
+        </div>
+        <div class="border border-color rounded-2xl p-6">
+          <div class="flex items-center justify-around">
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Company</p>
+            </div>
+            <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
+              <p class="text-base text-grey">VS</p>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Best Buy</p>
+            </div>
+          </div>
+        </div>
+        <div class="border border-color rounded-2xl p-6">
+          <div class="flex items-center justify-around">
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+            </div>
+            <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
+              <p class="text-base text-grey">VS</p>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">CVS Health</p>
+            </div>
+          </div>
+        </div>
+        <div class="border border-color rounded-2xl p-6">
+          <div class="flex items-center justify-around">
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Careers</p>
+            </div>
+            <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
+              <p class="text-base text-grey">VS</p>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-circle fa-5x text-white"></i>
+              <p class="text-base text-white font-semibold mt-5">Dot</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Popular Companies End -->
+      <hr class="custom-hr my-5">
+
+      <!-- Company Scroll Start -->
+      <div class="lg:w-10/12 md:w-full sm:w-full">
+
+        <!-- Info Table Start -->
+        <table class="w-full">
+          <tbody>
+            <tr>
+              <td class="py-2 lg:w-4/12">
+                <p class="text-base font-semibold text-white">
+                  Number of Openings
+                </p>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex items-center justify-center">
+                  <p class="text-base text-white">1522</p>
+                  <div class="ml-2">
+                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                    </svg>
+                  </div>
+                </div>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex items-center justify-center">
+                  <p class="text-base text-white">1522</p>
+                  <div class="ml-2">
+                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
+                    </svg>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-2 lg:w-4/12">
+                <p class="text-base font-semibold text-white">
+                  Analyst Roles
+                </p>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex items-center justify-center">
+                  <p class="text-base text-white">637</p>
+                  <div class="ml-2">
+                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
+                    </svg>
+                  </div>
+                </div>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex items-center justify-center">
+                  <p class="text-base text-white">637</p>
+                  <div class="ml-2">
+                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                    </svg>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-2 lg:w-4/12">
+                <p class="text-base font-semibold text-white">
+                  Scientist Roles
+                </p>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex items-center justify-center">
+                  <p class="text-base text-white">422</p>
+                  <div class="ml-2">
+                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
+                    </svg>
+                  </div>
+                </div>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex items-center justify-center">
+                  <p class="text-base text-white">422</p>
+                  <div class="ml-2">
+                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                    </svg>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-2 lg:w-4/12">
+                <p class="text-base font-semibold text-white">
+                  Continue for loops & ifs
+                </p>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex items-center justify-center">
+                  <p class="text-base text-white">111</p>
+                  <div class="ml-2">
+                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                    </svg>
+                  </div>
+                </div>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex items-center justify-center">
+                  <p class="text-base text-white">111</p>
+                  <div class="ml-2">
+                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                    </svg>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Info Table End -->
+
+      </div>
+
+      <hr class="custom-hr my-5">
+
+      <div class="lg:w-10/12 md:w-full sm:w-full">
+
+        <!-- Info Table Start -->
+        <table class="w-full">
+          <tbody>
+            <tr>
+              <td class="py-2 lg:w-4/12">
+                <p class="text-white text-base font-semibold">Tech Stack</p>
+                <fieldset>
+                  <label for="check-1" class="custom-label cursor-pointer py-2">
+                    <input type="checkbox" id="check-1" name="check"> 
+                    <span class="lg:text-base sm:text-sm text-white font-light">Highlight Differences</span>
+                  </label>
+                </fieldset>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex flex-wrap justify-center gap-1 mx-1">
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    React
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    NodeJS
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    TypeScript
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    AWS
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Postgres
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    MobX State Tree
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Type ORM
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Java
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Spring
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Vue.js
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Backbone.js
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Python
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    ElasticSearch
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Docker
+                  </div>
+                </div>
+              </td>
+              <td class="py-2 lg:w-4/12">
+                <div class="flex flex-wrap justify-center gap-1 mx-1">
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    React
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    NodeJS
+                  </div>
+                  <div class="custom-tag py-1 active px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    TypeScript
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    AWS
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Postgres
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    MobX State Tree
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Type ORM
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Java
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Spring
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Vue.js
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Backbone.js
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Python
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    ElasticSearch
+                  </div>
+                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                    Docker
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Info Table End -->
+
+      </div>
+
+      <hr class="custom-hr my-5">
+
+      <div class="lg:w-10/12 md:w-full sm:w-full">
+
+        <!-- Info Table Start -->
+        <table class="w-full">
+          <tbody>
+            <tr>
+              <td class="py-2 lg:w-4/12 align-top">
+                <p class="text-white text-base font-semibold">Experience</p>
+              </td>
+              <td class="py-2 lg:w-4/12 text-center">
+                <p class="text-white text-base font-light">27 Years</p>
+                <p class="text-grey text-base font-light">July 5, 1994</p>
+              </td>
+              <td class="py-2 lg:w-4/12 text-center">
+                <p class="text-white text-base font-light">23 Years</p>
+                <p class="text-grey text-base font-light">September 3, 1998</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Info Table End -->
+
+      </div>
+
+      <hr class="custom-hr my-5">
+
+      <div class="lg:w-10/12 md:w-full sm:w-full">
+
+        <!-- Info Table Start -->
+        <table class="w-full">
+          <tbody>
+            <tr>
+              <td class="py-2 lg:w-4/12 align-top">
+                <p class="text-white text-base font-semibold">Post Frequency</p>
+              </td>
+              <td class="py-2 lg:w-4/12 text-center">
+                <p class="text-white text-base font-light">1</p>
+                <p class="text-grey text-base font-light">per week</p>
+              </td>
+              <td class="py-2 lg:w-4/12 text-center">
+                <p class="text-white text-base font-light">3</p>
+                <p class="text-grey text-base font-light">Per Week</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Info Table End -->
+
+      </div>
+
+      <hr class="custom-hr my-5">
+
+      <div class="lg:w-10/12 md:w-full sm:w-full">
+
+        <!-- Info Table Start -->
+        <table class="w-full">
+          <tbody>
+            <tr>
+              <td class="py-2 lg:w-4/12 align-top">
+                <p class="text-white text-base font-semibold">Title Accuracy</p>
+              </td>
+              <td class="py-2 lg:w-4/12 text-center">
+                <p class="text-white text-base font-light">90%</p>
+              </td>
+              <td class="py-2 lg:w-4/12 text-center">
+                <p class="text-white text-base font-light">90%</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Info Table End -->
+
+      </div>
+
+      <hr class="custom-hr my-5">
+
+      <div class="lg:w-10/12 md:w-full sm:w-full">
+
+        <!-- Info Table Start -->
+        <table class="w-full">
+          <tbody>
+            <tr>
+              <td class="py-2 lg:w-4/12 align-top">
+                <p class="text-white text-base font-semibold">Similar Companies</p>
+              </td>
+              <td class="py-2 lg:w-4/12 text-center">
+                <div class="grid gap-4 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-7 mx-2">
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td class="py-2 lg:w-4/12 text-center">
+                <div class="grid gap-4 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-7 mx-2">
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Info Table End -->
+
+      </div>
+
+
+      <!-- Company Scroll End -->
+    </div>
     <!-- Content End -->
     
+
+    <!-- Popup Start -->
+    <!-- <div class="custom-popup rounded-2xl fixed inset-0 outline-none mx-auto relative z-50">
+      <div class="popup-dialog transform-none mx-auto relative w-auto pointer-events-none sm:px-5 px-0">
+        <div class="popup-content rounded-2xl  relative lg:flex md:flex pointer-events-none pointer-events-auto z-50">
+          <div class="lg:w-3/12 md:w-4/12 sm:w-12/12">
+            <div class="col-left lg:rounded-r-none lg:rounded-l-2xl md:rounded-r-none md:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl p-4 h-full">
+              <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-grey mb-7">
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="text-xl text-white mb-4">Filter by</div>
+              <div class="text-base text-white mb-3">Location</div>
+              <div class="relative">
+                <button class="focus:outline-none search-icon text-grey text-base" type="submit"><i class="fas fa-map-marker-alt"></i></button>
+                <input class="form-control input-control text-grey w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Select Company Location">
+              </div>
+              <hr class="custom-hr my-4">
+              <div class="text-base text-white mb-3">Size</div>
+              <fieldset>
+                <label for="check-1" class="custom-label cursor-pointer py-2">
+                  <input type="checkbox" id="check-1" name="check"> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Remote Work</span>
+                </label>
+                <label for="check-2" class="custom-label cursor-pointer py-2">
+                  <input type="checkbox" id="check-2" name="check"> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Office</span>
+                </label>
+                <label for="check-3" class="custom-label cursor-pointer py-2">
+                  <input type="checkbox" id="check-3" name="check" checked> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Part-time</span>
+                </label>
+                <label for="check-4" class="custom-label cursor-pointer py-2">
+                  <input type="checkbox" id="check-4" name="check"> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Freelance</span>
+                </label>
+                <label for="check-5" class="custom-label cursor-pointer py-2">
+                  <input type="checkbox" id="check-5" name="check"> 
+                  <span class="lg:text-base sm:text-sm text-white font-light">Relocate</span>
+                </label>
+              </fieldset>
+              <hr class="custom-hr my-4">
+            </div>
+          </div>
+          <div class="lg:w-9/12 md:w-8/12 sm:w-12/12">
+            <div class="col-right rounded-l-none rounded-r-2xl p-4">
+              <div class="pt-10 px-4">
+                <div class="flex justify-between items-center">
+                  <div class="text-4xl text-white font-bold">
+                    Companies
+                  </div>
+                  <div class="relative">
+                    <button class="focus:outline-none search-icon text-grey text-base" type="submit"><i class="fas fa-search"></i></button>
+                    <input class="form-control input-control text-grey w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search Company">
+                  </div>
+                </div>
+                <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 my-7">
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Popup End -->
   </div>
 </template>
 
@@ -181,7 +886,7 @@
     border-radius: 16px;
     width: 274px;
   }
-  .filter-dropdown .form-control {
+  .input-control.form-control {
     background: rgba(255, 255, 255, 0.08);
     letter-spacing: 0.37px;
   }
@@ -196,11 +901,11 @@
   .category-filter {
     width: 392px;
   }
-  .category-filter .card {
+  .bg-card {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.04);
   }
-  .category-filter .card:hover {
+  .bg-card:hover {
     background-color: rgba(0, 0, 0, 0.16);
   }
   /* ------------------------- toggle-switch -------------------------------*/
@@ -310,11 +1015,11 @@
     border-radius: 4px;
     transition: 0.2s border-color ease, 0.2s background-color ease;
   }
-  .custom-label:hover {
+  .section-hover:hover {
     background: rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
-  .custom-label.active{
+  .section-hover.active{
     background: rgba(0, 0, 0, 0.16);
   }
   @-webkit-keyframes toggleOnCheckbox {
@@ -452,6 +1157,12 @@
   }
   .new-company-card:hover .big-icon svg path {
     fill-opacity: 1;
+  }
+  /*----------------- Custom Tag ---------------------*/
+  .custom-tag.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.16);
+    font-weight: 600; 
   }
   /*----------------- Breakpoints ---------------------*/
   @media(min-width: 320px) and (max-width: 639px) {
