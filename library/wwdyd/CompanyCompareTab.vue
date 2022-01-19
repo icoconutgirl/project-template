@@ -175,420 +175,372 @@
 
       <!-- Company Scroll Start -->
       <div class="lg:w-10/12 md:w-full sm:w-full">
-
-        <!-- Info Table Start -->
-        <table class="w-full">
-          <tbody>
-            <tr>
-              <td class="py-2 lg:w-4/12">
-                <p class="text-base font-semibold text-white">
-                  Number of Openings
-                </p>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex items-center justify-center">
-                  <p class="text-base text-white">1522</p>
-                  <div class="ml-2">
-                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
-                    </svg>
-                  </div>
-                </div>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex items-center justify-center">
-                  <p class="text-base text-white">1522</p>
-                  <div class="ml-2">
-                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
-                    </svg>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="py-2 lg:w-4/12">
-                <p class="text-base font-semibold text-white">
-                  Analyst Roles
-                </p>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex items-center justify-center">
-                  <p class="text-base text-white">637</p>
-                  <div class="ml-2">
-                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
-                    </svg>
-                  </div>
-                </div>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex items-center justify-center">
-                  <p class="text-base text-white">637</p>
-                  <div class="ml-2">
-                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
-                    </svg>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="py-2 lg:w-4/12">
-                <p class="text-base font-semibold text-white">
-                  Scientist Roles
-                </p>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex items-center justify-center">
-                  <p class="text-base text-white">422</p>
-                  <div class="ml-2">
-                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
-                    </svg>
-                  </div>
-                </div>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex items-center justify-center">
-                  <p class="text-base text-white">422</p>
-                  <div class="ml-2">
-                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
-                    </svg>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="py-2 lg:w-4/12">
-                <p class="text-base font-semibold text-white">
-                  Continue for loops & ifs
-                </p>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex items-center justify-center">
-                  <p class="text-base text-white">111</p>
-                  <div class="ml-2">
-                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
-                    </svg>
-                  </div>
-                </div>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex items-center justify-center">
-                  <p class="text-base text-white">111</p>
-                  <div class="ml-2">
-                    <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
-                    </svg>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- Info Table End -->
-
+        <div class="flex">
+          <div class="py-2 w-full">
+            <p class="text-base font-semibold text-white">
+              Number of Openings
+            </p>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex items-center justify-center">
+              <p class="text-base text-white">1522</p>
+              <div class="ml-2">
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex items-center justify-center">
+              <p class="text-base text-white">1522</p>
+              <div class="ml-2">
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="py-2 w-full">
+            <p class="text-base font-normal text-white">
+              Analyst Roles
+            </p>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex items-center justify-center">
+              <p class="text-base text-white">637</p>
+              <div class="ml-2">
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex items-center justify-center">
+              <p class="text-base text-white">637</p>
+              <div class="ml-2">
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="py-2 w-full">
+            <p class="text-base font-normal text-white">
+              Scientist Roles
+            </p>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex items-center justify-center">
+              <p class="text-base text-white">422</p>
+              <div class="ml-2">
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex items-center justify-center">
+              <p class="text-base text-white">422</p>
+              <div class="ml-2">
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="py-2 w-full">
+            <p class="text-base font-normal text-white">
+              Continue for loops & ifs
+            </p>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex items-center justify-center">
+              <p class="text-base text-white">111</p>
+              <div class="ml-2">
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex items-center justify-center">
+              <p class="text-base text-white">111</p>
+              <div class="ml-2">
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <hr class="custom-hr my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
-
-        <!-- Info Table Start -->
-        <table class="w-full">
-          <tbody>
-            <tr>
-              <td class="py-2 lg:w-4/12">
-                <p class="text-white text-base font-semibold">Tech Stack</p>
-                <fieldset>
-                  <label for="check-1" class="custom-label cursor-pointer py-2">
-                    <input type="checkbox" id="check-1" name="check"> 
-                    <span class="lg:text-base sm:text-sm text-white font-light">Highlight Differences</span>
-                  </label>
-                </fieldset>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex flex-wrap justify-center gap-1 mx-1">
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    React
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    NodeJS
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    TypeScript
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    AWS
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Postgres
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    MobX State Tree
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Type ORM
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Java
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Spring
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Vue.js
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Backbone.js
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Python
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    ElasticSearch
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Docker
-                  </div>
-                </div>
-              </td>
-              <td class="py-2 lg:w-4/12">
-                <div class="flex flex-wrap justify-center gap-1 mx-1">
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    React
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    NodeJS
-                  </div>
-                  <div class="custom-tag py-1 active px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    TypeScript
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    AWS
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Postgres
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    MobX State Tree
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Type ORM
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Java
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Spring
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Vue.js
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Backbone.js
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Python
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    ElasticSearch
-                  </div>
-                  <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
-                    Docker
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- Info Table End -->
-
+        <div class="flex">
+          <div class="py-2 w-full">
+            <p class="text-white text-base font-semibold">Tech Stack</p>
+            <fieldset>
+              <label for="check-1" class="custom-label cursor-pointer py-2">
+                <input type="checkbox" id="check-1" name="check"> 
+                <span class="lg:text-base sm:text-sm text-white font-light">Highlight Differences</span>
+              </label>
+            </fieldset>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex flex-wrap justify-center gap-1 mx-1">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                React
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                NodeJS
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                TypeScript
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                AWS
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Postgres
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                MobX State Tree
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Type ORM
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Java
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Spring
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Vue.js
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Backbone.js
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Python
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                ElasticSearch
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Docker
+              </div>
+            </div>
+          </div>
+          <div class="py-2 w-full">
+            <div class="flex flex-wrap justify-center gap-1 mx-1">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                React
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                NodeJS
+              </div>
+              <div class="custom-tag py-1 active px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                TypeScript
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                AWS
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Postgres
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                MobX State Tree
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Type ORM
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Java
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Spring
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Vue.js
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Backbone.js
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Python
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                ElasticSearch
+              </div>
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+                Docker
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <hr class="custom-hr my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
-
-        <!-- Info Table Start -->
-        <table class="w-full">
-          <tbody>
-            <tr>
-              <td class="py-2 lg:w-4/12 align-top">
-                <p class="text-white text-base font-semibold">Experience</p>
-              </td>
-              <td class="py-2 lg:w-4/12 text-center">
-                <p class="text-white text-base font-light">27 Years</p>
-                <p class="text-grey text-base font-light">July 5, 1994</p>
-              </td>
-              <td class="py-2 lg:w-4/12 text-center">
-                <p class="text-white text-base font-light">23 Years</p>
-                <p class="text-grey text-base font-light">September 3, 1998</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- Info Table End -->
-
+        <div class="flex">
+          <div class="py-2 w-full align-top">
+            <p class="text-white text-base font-normal">Experience</p>
+          </div>
+          <div class="py-2 w-full text-center">
+            <p class="text-white text-base font-light">27 Years</p>
+            <p class="text-grey text-base font-light">July 5, 1994</p>
+          </div>
+          <div class="py-2 w-full text-center">
+            <p class="text-white text-base font-light">23 Years</p>
+            <p class="text-grey text-base font-light">September 3, 1998</p>
+          </div>
+        </div>
       </div>
 
       <hr class="custom-hr my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
-
-        <!-- Info Table Start -->
-        <table class="w-full">
-          <tbody>
-            <tr>
-              <td class="py-2 lg:w-4/12 align-top">
-                <p class="text-white text-base font-semibold">Post Frequency</p>
-              </td>
-              <td class="py-2 lg:w-4/12 text-center">
-                <p class="text-white text-base font-light">1</p>
-                <p class="text-grey text-base font-light">per week</p>
-              </td>
-              <td class="py-2 lg:w-4/12 text-center">
-                <p class="text-white text-base font-light">3</p>
-                <p class="text-grey text-base font-light">Per Week</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- Info Table End -->
-
+        <div class="flex">
+          <div class="py-2 w-full align-top">
+            <p class="text-white text-base font-semibold">Post Frequency</p>
+          </div>
+          <div class="py-2 w-full text-center">
+            <p class="text-white text-base font-light">1</p>
+            <p class="text-grey text-base font-light">per week</p>
+          </div>
+          <div class="py-2 w-full text-center">
+            <p class="text-white text-base font-light">3</p>
+            <p class="text-grey text-base font-light">Per Week</p>
+          </div>
+        </div>
       </div>
 
       <hr class="custom-hr my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
-
-        <!-- Info Table Start -->
-        <table class="w-full">
-          <tbody>
-            <tr>
-              <td class="py-2 lg:w-4/12 align-top">
-                <p class="text-white text-base font-semibold">Title Accuracy</p>
-              </td>
-              <td class="py-2 lg:w-4/12 text-center">
-                <p class="text-white text-base font-light">90%</p>
-              </td>
-              <td class="py-2 lg:w-4/12 text-center">
-                <p class="text-white text-base font-light">90%</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- Info Table End -->
-
+        <div class="flex">
+          <div class="py-2 w-full align-top">
+            <p class="text-white text-base font-semibold">Title Accuracy</p>
+          </div>
+          <div class="py-2 w-full text-center">
+            <p class="text-white text-base font-light">90%</p>
+          </div>
+          <div class="py-2 w-full text-center">
+            <p class="text-white text-base font-light">90%</p>
+          </div>
+        </div>
       </div>
 
       <hr class="custom-hr my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
-
-        <!-- Info Table Start -->
-        <table class="w-full">
-          <tbody>
-            <tr>
-              <td class="py-2 lg:w-4/12 align-top">
-                <p class="text-white text-base font-semibold">Similar Companies</p>
-              </td>
-              <td class="py-2 lg:w-4/12 text-center">
-                <div class="grid gap-4 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-7 mx-2">
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
+        <div class="flex">
+          <div class="py-2 w-full align-top">
+            <p class="text-white text-base font-semibold">Similar Companies</p>
+          </div>
+          <div class="py-2 w-full text-center">
+            <div class="grid gap-4 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-7 mx-2">
+              <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                <a href="#">
+                  <div class="flex items-center justify-around">
+                    <div class="text-center">
+                      <i class="fas fa-circle fa-5x text-white"></i>
+                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                    </div>
                   </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
+                </a>
+              </div>
+              <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                <a href="#">
+                  <div class="flex items-center justify-around">
+                    <div class="text-center">
+                      <i class="fas fa-circle fa-5x text-white"></i>
+                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                    </div>
                   </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
+                </a>
+              </div>
+              <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                <a href="#">
+                  <div class="flex items-center justify-around">
+                    <div class="text-center">
+                      <i class="fas fa-circle fa-5x text-white"></i>
+                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                    </div>
                   </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
+                </a>
+              </div>
+              <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                <a href="#">
+                  <div class="flex items-center justify-around">
+                    <div class="text-center">
+                      <i class="fas fa-circle fa-5x text-white"></i>
+                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                    </div>
                   </div>
-                </div>
-              </td>
-              <td class="py-2 lg:w-4/12 text-center">
-                <div class="grid gap-4 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-7 mx-2">
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="py-2 w-full text-center">
+            <div class="grid gap-4 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-7 mx-2">
+              <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                <a href="#">
+                  <div class="flex items-center justify-around">
+                    <div class="text-center">
+                      <i class="fas fa-circle fa-5x text-white"></i>
+                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                    </div>
                   </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
+                </a>
+              </div>
+              <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                <a href="#">
+                  <div class="flex items-center justify-around">
+                    <div class="text-center">
+                      <i class="fas fa-circle fa-5x text-white"></i>
+                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                    </div>
                   </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
+                </a>
+              </div>
+              <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                <a href="#">
+                  <div class="flex items-center justify-around">
+                    <div class="text-center">
+                      <i class="fas fa-circle fa-5x text-white"></i>
+                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                    </div>
                   </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
+                </a>
+              </div>
+              <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                <a href="#">
+                  <div class="flex items-center justify-around">
+                    <div class="text-center">
+                      <i class="fas fa-circle fa-5x text-white"></i>
+                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                    </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- Info Table End -->
-
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
 
@@ -596,9 +548,8 @@
     </div>
     <!-- Content End -->
     
-
     <!-- Popup Start -->
-    <!-- <div class="custom-popup rounded-2xl fixed inset-0 outline-none mx-auto relative z-50">
+    <div class="custom-popup rounded-2xl fixed inset-0 outline-none mx-auto relative z-50">
       <div class="popup-dialog transform-none mx-auto relative w-auto pointer-events-none sm:px-5 px-0">
         <div class="popup-content rounded-2xl  relative lg:flex md:flex pointer-events-none pointer-events-auto z-50">
           <div class="lg:w-3/12 md:w-4/12 sm:w-12/12">
@@ -617,23 +568,23 @@
               <fieldset>
                 <label for="check-1" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-1" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">Remote Work</span>
+                  <span class="lg:text-base sm:text-sm text-white font-light">2-9 employees (774)</span>
                 </label>
                 <label for="check-2" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-2" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">Office</span>
+                  <span class="lg:text-base sm:text-sm text-white font-light">10-99 employees (994)</span>
                 </label>
                 <label for="check-3" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-3" name="check" checked> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">Part-time</span>
+                  <span class="lg:text-base sm:text-sm text-white font-light">100-499 employees (163)</span>
                 </label>
                 <label for="check-4" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-4" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">Freelance</span>
+                  <span class="lg:text-base sm:text-sm text-white font-light">500-1000 employees (237)</span>
                 </label>
                 <label for="check-5" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-5" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">Relocate</span>
+                  <span class="lg:text-base sm:text-sm text-white font-light">More than 1000 (42)</span>
                 </label>
               </fieldset>
               <hr class="custom-hr my-4">
@@ -778,12 +729,15 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- Popup End -->
+
   </div>
 </template>
 
 <style>
+
+/* ------ progress bar ------ */
   @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   :root {
    --primary-color: #161F27;
