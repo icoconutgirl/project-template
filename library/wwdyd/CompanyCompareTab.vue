@@ -59,14 +59,14 @@
               </div>
             </div>
             <div class="selected-card relative">
-              <div class="flex justify-end mb-2">
+              <div class="flex justify-end">
                 <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-grey">
                   <i class="fas fa-times"></i>
                 </div>
               </div>
-              <div class="flex items-center justify-around">
+              <div class="flex items-center justify-around -m-2">
                 <div class="text-center">
-                  <i class="fas fa-circle fa-5x text-white"></i>
+                  <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
                   <p class="text-base text-white font-semibold mt-5">Teladoc</p>
                 </div>
               </div>
@@ -82,14 +82,14 @@
         <div class="border border-color rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/bddQGQh/amazon.png" alt="amazon" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">Amazon</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-grey">VS</p>
             </div>
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/9h7dJcg/google.png" alt="google" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">Google</p>
             </div>
           </div>
@@ -97,14 +97,14 @@
         <div class="border border-color rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/vzHtwrm/img-3.png" alt="atnt" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">AT&T</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-grey">VS</p>
             </div>
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/SrZ1SWj/verizon.png" alt="verizon" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">Verizon</p>
             </div>
           </div>
@@ -112,14 +112,14 @@
         <div class="border border-color rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/68ctrXg/jp-morgan.png" alt="jp-morgan" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">J.P.Morgan</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-grey">VS</p>
             </div>
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/3kDYnLq/wells-fargo.png" alt="wells-fargo" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">Wells Fargo</p>
             </div>
           </div>
@@ -127,14 +127,14 @@
         <div class="border border-color rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/17Gd4tF/img-1.png" alt="img-1" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">Company</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-grey">VS</p>
             </div>
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/bHc1Vk2/img-2.png" alt="img-2" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">Best Buy</p>
             </div>
           </div>
@@ -142,14 +142,14 @@
         <div class="border border-color rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">Teladoc</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-grey">VS</p>
             </div>
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/dWjSFb4/cvs.png" alt="cvs" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">CVS Health</p>
             </div>
           </div>
@@ -157,14 +157,14 @@
         <div class="border border-color rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/WHnR5fz/careers.png" alt="careers" class="w-20 h-20 rounded-full object-cover" >
               <p class="text-base text-white font-semibold mt-5">Careers</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-grey">VS</p>
             </div>
             <div class="text-center">
-              <i class="fas fa-circle fa-5x text-white"></i>
+              <img src="https://i.ibb.co/5jtZwpD/dot.png" alt="dot" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-white font-semibold mt-5">Dot</p>
             </div>
           </div>
@@ -458,8 +458,8 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <i class="fas fa-circle fa-5x text-white"></i>
-                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                      <img src="https://i.ibb.co/rcNbG1s/Im.png" alt="walmart" class="w-20 h-20 rounded-full object-cover">
+                      <p class="text-base text-white font-semibold mt-5">Walmart</p>
                     </div>
                   </div>
                 </a>
@@ -468,8 +468,8 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <i class="fas fa-circle fa-5x text-white"></i>
-                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                      <img src="https://i.ibb.co/yY4s8fY/Image.png" alt="aliexpress" class="w-20 h-20 rounded-full object-cover">
+                      <p class="text-base text-white font-semibold mt-5">Aliexpress</p>
                     </div>
                   </div>
                 </a>
@@ -478,8 +478,8 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <i class="fas fa-circle fa-5x text-white"></i>
-                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                      <img src="https://i.ibb.co/HV97Tp5/otto.png" alt="otto" class="w-20 h-20 rounded-full object-cover">
+                      <p class="text-base text-white font-semibold mt-5">Otto</p>
                     </div>
                   </div>
                 </a>
@@ -488,8 +488,8 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <i class="fas fa-circle fa-5x text-white"></i>
-                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                      <img src="https://i.ibb.co/Kwwh8CG/flipkart.png" alt="flipkart" class="w-20 h-20 rounded-full object-cover">
+                      <p class="text-base text-white font-semibold mt-5">Flipkart</p>
                     </div>
                   </div>
                 </a>
@@ -502,8 +502,8 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <i class="fas fa-circle fa-5x text-white"></i>
-                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                      <img src="https://i.ibb.co/TKjc3sd/Image-1.png" alt="Image-1" class="w-20 h-20 rounded-full object-cover">
+                      <p class="text-base text-white font-semibold mt-5">Meta</p>
                     </div>
                   </div>
                 </a>
@@ -512,8 +512,8 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <i class="fas fa-circle fa-5x text-white"></i>
-                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                      <img src="https://i.ibb.co/QJP6t20/microsoft.png" alt="microsoft" class="w-20 h-20 rounded-full object-cover">
+                      <p class="text-base text-white font-semibold mt-5">Microsoft</p>
                     </div>
                   </div>
                 </a>
@@ -522,8 +522,8 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <i class="fas fa-circle fa-5x text-white"></i>
-                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                      <img src="https://i.ibb.co/pRSGJ2J/apple.png" alt="apple" class="w-20 h-20 rounded-full object-cover">
+                      <p class="text-base text-white font-semibold mt-5">Apple</p>
                     </div>
                   </div>
                 </a>
@@ -532,8 +532,8 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <i class="fas fa-circle fa-5x text-white"></i>
-                      <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                      <img src="https://i.ibb.co/tBd9j0t/yahoo.png" alt="yahoo" class="w-20 h-20 rounded-full object-cover">
+                      <p class="text-base text-white font-semibold mt-5">Yahoo</p>
                     </div>
                   </div>
                 </a>
@@ -607,7 +607,87 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
+                          <img src="https://i.ibb.co/bddQGQh/amazon.png" alt="amazon" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">Amazon</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <img src="https://i.ibb.co/9h7dJcg/google.png" alt="google" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">Google</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <img src="https://i.ibb.co/vzHtwrm/img-3.png" alt="img-3" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">AT&T</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <img src="https://i.ibb.co/SrZ1SWj/verizon.png" alt="verizon" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">Verizon</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <img src="https://i.ibb.co/68ctrXg/jp-morgan.png" alt="jp-morgan" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">J.P. Morgan</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <img src="https://i.ibb.co/3kDYnLq/wells-fargo.png" alt="wells-fargo" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">Wells Fargo</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <img src="https://i.ibb.co/dWjSFb4/cvs.png" alt="cvs" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">CVS Health</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <img src="https://i.ibb.co/WHnR5fz/careers.png" alt="careers" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">Careers</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
+                    <a href="#">
+                      <div class="flex items-center justify-around">
+                        <div class="text-center">
+                          <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-white font-semibold mt-5">Teladoc</p>
                         </div>
                       </div>
@@ -617,8 +697,8 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                          <img src="https://i.ibb.co/5jtZwpD/dot.png" alt="dot" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">Dot</p>
                         </div>
                       </div>
                     </a>
@@ -627,8 +707,8 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                          <img src="https://i.ibb.co/YtgKyz7/Ima.png" alt="Ima" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">Company</p>
                         </div>
                       </div>
                     </a>
@@ -637,88 +717,8 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="lg:py-8 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                    <a href="#">
-                      <div class="flex items-center justify-around">
-                        <div class="text-center">
-                          <i class="fas fa-circle fa-5x text-white"></i>
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                          <img src="https://i.ibb.co/h7Fw76Y/w.png" alt="w" class="w-20 h-20 rounded-full object-cover">
+                          <p class="text-base text-white font-semibold mt-5">Company</p>
                         </div>
                       </div>
                     </a>

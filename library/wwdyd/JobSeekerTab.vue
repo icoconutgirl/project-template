@@ -4,7 +4,8 @@
     <div class="mx-12">
       <header class="lg:flex md:flex w-full items-center main-header py-4">
         <div class="brand-logo flex sm:justify-center sm:mb-4 md:mb-0 lg:mb-0">
-          <h1 class="logo-heading text-white">LOGO</h1>
+          <!-- <h1 class="logo-heading text-white">LOGO</h1> -->
+          <img src="https://i.ibb.co/FJmZ1w0/Logo.png" alt="Logo">
         </div>
         <div class="justify-center flex w-full">
           <div class="custom-tabs">
@@ -23,16 +24,17 @@
     </div>
     <!-- Header End -->
     <hr class="custom-hr">
-    <!-- Filters Start -->
-    <div class="filters-section flex items-center justify-between py-4">
+    <!-- Actions Section Start -->
+    <div class="flex items-center justify-between py-4">
       <div class="mx-12 lg:flex flex-row lg:justify-between w-full">
+        <!----- Filters Start ------>
         <div class="filter-block flex sm:justify-center md:justify-center gap-4 flex-wrap md:mb-3 sm:mb-3 lg:mb-0">
           <!---- Search Icon Filter Start ----->
-          <div class="search-icon-filter relative">
-            <button class="btn-dropdown relative border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
+          <div class="filter-block relative">
+            <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
               Location
             </button>
-            <!----- dropdown menu start----->
+            <!----- dropdown----->
             <div class="absolute filter-dropdown search-filter rounded-2xl pt-4 border mt-3 z-10">
               <div class="relative mx-4 mb-4">
                 <button class="focus:outline-none search-icon text-grey text-base" type="submit"><i class="fas fa-search"></i></button>
@@ -97,16 +99,17 @@
                 </li>
               </ul>
             </div>
-            <!----- dropdown menu end ----->
+            <!----- dropdown----->
           </div>
           <!----- Search Icon Filter End ----->
 
-          <div class="dropdown">
+          <!---- Multiselect Filter Start ----->
+          <div class="filter-block relative">
             <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
               Employment Options
             </button>
-            <!----- dropdown menu start----->
-            <div class="absolute filter-dropdown employment-filter rounded-2xl border mt-3 z-10">
+            <!----- dropdown ----->
+            <div class="absolute filter-dropdown multiselect-filter rounded-2xl border mt-3 z-10">
               <fieldset class="py-2">
                 <label for="check-1" class="custom-label section-hover px-4 py-2">
                   <input type="checkbox" id="check-1" name="check"> 
@@ -137,10 +140,12 @@
                 </div>
               </div>
             </div>
-            <!----- dropdown menu end ----->
+            <!----- dropdown ----->
           </div>
+          <!---- Multiselect Filter End ----->
 
-          <div class="dropdown">
+          <!---- Category Filter Start ----->
+          <div class="filter-block relative">
             <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
               Category
             </button>
@@ -185,22 +190,24 @@
               </div>
             </div>
           </div>
+          <!---- Category Filter End ------>
 
-          <div class="dropdown">
+          <!---- Price Filter Start ----->
+          <div class="filter-block relative">
             <button class="btn-dropdown border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
               Salary
             </button>
-            <!----- dropdown menu start----->
-            <div class="absolute filter-dropdown salary-filter w-96 rounded-2xl border mt-3 z-10">
+            <!----- dropdown ----->
+            <div class="absolute filter-dropdown price-filter w-96 rounded-2xl border mt-3 z-10">
               <div class="p-4">
                 <div class="text-white text-base font-light">The average salary is <span class="font-semibold">$12000/month</span></div>
                 <div class="text-center text-green text-bold py-8">
                   Add Salary Slider
                 </div>
                 <div class="flex items-center justify-between gap-10">
-                  <input class="form-control text-white w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$7">
+                  <input class="form-control input-control text-grey w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$7">
                   <div class="horizontal-divider"></div>
-                  <input class="form-control text-white w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$1000+">
+                  <input class="form-control input-control text-grey w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$1000+">
                 </div>
               </div>
               <hr class="custom-hr border-t">
@@ -211,9 +218,11 @@
                 </div>
               </div>
             </div>
-            <!----- dropdown menu end ----->
+            <!----- dropdown ----->
           </div>
+          <!---- Price Filter End ----->
 
+          <!---- Map Switch Start ----->
           <button class="btn-dropdown border-0 rounded-lg lg:text-base sm:text-sm text-white font-extralight" type="button">
             <label class="toggle">
               <span class="toggle-label">Map</span>
@@ -221,7 +230,10 @@
               <div class="toggle-switch"></div>
             </label>
           </button>
+          <!---- Map Switch End ----->
         </div>
+        <!----- Filters End ------>
+        <!----- Button Group Start ----->
         <div class="flex lg:justify-end justify-center items-center">
           <div class="button-group flex box-border rounded-lg">  
             <input class="button-option" id="option1" type="radio" name="option" checked/>
@@ -234,9 +246,10 @@
             </label>
           </div>
         </div>
+        <!----- Button Group End ----->
       </div>
     </div>
-    <!-- Filters End -->
+    <!-- Actions Section End -->
     <hr class="custom-hr">
     <!-- Content Section Start-->
     <div class="lg:flex">
@@ -245,11 +258,9 @@
           <p class="text-white">300+ Jobs</p>
         </div>
         <hr class="custom-hr">
-        <div class="card py-5 job-post-card">
+        <div class="card py-5 ad-card">
           <div class="flex items-top">
-            <div class="card-icon flex justify-center items-center">
-              <i class="fas fa-user fa-2x text-white"></i>
-            </div>
+            <img src="https://i.ibb.co/fHGXqf0/real.png" alt="real" class="w-16 h-16 rounded-full object-cover">
             <div class="card-content pl-5"> 
               <div class="flex justify-between">
                 <p class="text-sm text-grey font-light mb-1 company-name">The RealReal</p>
@@ -258,19 +269,17 @@
               <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist, Game Analytics</a></h1>
               <p class="text-grey text-base font-light text-description">Do you want to help connect people all over the world, and work on a team building the next generation of planet scale AR games? We’re looking for hardworking people to help our company become more data focused; folks with the ability to be dedicated, thorough, and independent while working in a dynamic, fast-paced environment.</p>
               <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/Wzfctmm/earth.png" alt="earth" class="mr-2"> Remote</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/tmKjfy0/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/4FrxLwS/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
               </div> 
             </div>
           </div>
         </div>
         <hr class="custom-hr">
-        <div class="card py-5 job-post-card">
+        <div class="card py-5 ad-card">
           <div class="flex items-top">
-            <div class="card-icon flex justify-center items-center">
-              <i class="fas fa-user fa-2x text-white"></i>
-            </div>
+            <img src="https://i.ibb.co/Xydq7Zs/course-hero.png" alt="course-hero" class="w-16 h-16 rounded-full object-cover">
             <div class="card-content pl-5"> 
               <div class="flex justify-between">
                 <p class="text-grey text-white text-sm font-light mb-1 company-name">Teladoc Health</p>
@@ -279,19 +288,17 @@
               <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
               <p class="text-grey text-white text-base font-light">Teladoc Health is transforming how people access and experience healthcare. Recognized as the world leader in virtual care, we are partnering with over a thousand clients to serve hundreds of thousands (soon millions!) of people living with chronic conditions every day.</p>
               <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/Wzfctmm/earth.png" alt="earth" class="mr-2"> Remote</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/tmKjfy0/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/4FrxLwS/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
               </div>  
             </div>
           </div>
         </div>
         <hr class="custom-hr">
-        <div class="card py-5 job-post-card">
+        <div class="card py-5 ad-card">
           <div class="flex items-top">
-            <div class="card-icon flex justify-center items-center">
-              <i class="fas fa-user fa-2x text-white"></i>
-            </div>
+            <img src="https://i.ibb.co/Xydq7Zs/course-hero.png" alt="course-hero" class="w-16 h-16 rounded-full object-cover">
             <div class="card-content pl-5"> 
               <div class="flex justify-between">
                 <p class="text-grey text-white text-sm font-light mb-1 company-name">Teladoc Health</p>
@@ -300,9 +307,9 @@
               <h1 class="text-white text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
               <p class="text-grey text-white text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
-                <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/Wzfctmm/earth.png" alt="earth" class="mr-2"> Remote</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/tmKjfy0/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
+                <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/4FrxLwS/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
               </div>  
             </div>
           </div>
@@ -326,9 +333,7 @@
                 <i class="fas fa-times"></i>
               </div>
               <div class="flex items-center mb-4">
-                <div class="card-icon flex justify-center items-center font-light">
-                  <i class="fas fa-user fa-2x text-white"></i>
-                </div>
+                <img src="https://i.ibb.co/Lg6zDcr/asana.png" alt="asana" class="w-16 h-16 rounded-full object-cover">
                 <div class="text-base text-white ml-5">
                   Asana
                 </div>
@@ -370,9 +375,9 @@
                 </div>
                 <p class="text-base font-light text-grey mt-8">We’re looking for an experienced analyst  to join the Revenue Strategy team at Asana. In this role you will work closely with the CX leadership team to help drive key insights and define our Customer Experience strategy.</p>
                 <div class="flex flex-wrap job-specs mt-4 gap-8">
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Remote</p>
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> Really a Scientist</p>
-                  <p class="text-grey text-sm font-light text-white"><i class="text-green fas fa-circle pr-2"></i> $700 - $1000</p>
+                  <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/Wzfctmm/earth.png" alt="earth" class="mr-2"> Remote</p>
+                  <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/tmKjfy0/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
+                  <p class="text-grey text-sm font-light text-white flex"><img src="https://i.ibb.co/4FrxLwS/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
                 </div> 
                 <div class="text-xl text-semibold text-white mt-6">
                   What you’ll achieve
@@ -514,7 +519,7 @@
     top: 8px;
     left: 8px;
   }
-  .search-filter, .employment-filter {
+  .search-filter, .multiselect-filter {
     width: 274px;
   } 
   .category-filter {
@@ -692,10 +697,10 @@
   .card {
     border-color: #ffffff14; 
   }
-  .job-post-card .card-content p {
+  .ad-card .card-content p {
     letter-spacing: 0.37px
   }
-  .job-post-card .card-content .text-description {
+  .ad-card .card-content .text-description {
     line-height: 22px;
     letter-spacing: 0.37px
   }
@@ -777,7 +782,7 @@
     .popup-dialog {
       padding: 0 24px;
     }
-    .employment-filter {
+    .multiselect-filter {
       width: 200px;
     } 
     .category-filter {
@@ -791,7 +796,7 @@
     }
   }
   @media(min-width: 640px) and (max-width: 825px) {
-    .employment-filter {
+    .multiselect-filter {
       width: 200px;
     } 
     .category-filter {
