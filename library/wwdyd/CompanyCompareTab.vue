@@ -1,10 +1,10 @@
 <template>
-  <div class="rounded-none h-auto bg-gradient-to-r from-primaryColor via-secondaryColor to-primaryColor w-full">
+  <div class="tracking-wide rounded-none h-auto bg-gradient-to-r from-primaryColor via-secondaryColor to-primaryColor w-full">
     <!-- Header Start-->
     <div class="mx-12">
       <header class="lg:flex md:flex w-full items-center main-header py-4">
         <div class="brand-logo flex sm:justify-center sm:mb-4 md:mb-0 lg:mb-0">
-          <h1 class="logo-heading text-white">LOGO</h1>
+          <h1 class="logo-heading text-primaryFontColor">LOGO</h1>
         </div>
         <div class="justify-center flex w-full">
           <div class="custom-tabs">
@@ -22,14 +22,14 @@
       </header>
     </div>
     <!-- Header End -->
-    <hr class="custom-hr mb-5">
+    <hr class="border-primaryBorderColor mb-5">
     <!-- Content Start -->
     <div class="mx-12">
       <div class="lg:flex md:flex items-center mb-6">
         <div class="lg:w-3/12 md:w-3/12 sm:w-12/12">
           <div class="place-self-center sm:mb-5 md:mb-5">
-            <div class="text-4xl text-white font-bold mb-3">Compare</div>
-            <div class="text-base text-grey font-light">(0 Selected)</div>
+            <div class="text-4xl text-primaryFontColor font-bold mb-3">Compare</div>
+            <div class="text-base text-secondaryFontColor font-light">(0 Selected)</div>
           </div>
         </div>
         <div class="lg:w-9/12 md:w-9/12 sm:w-12/12">
@@ -37,60 +37,60 @@
             <div class="new-company-card">
               <div class="border-dashed border-color border rounded-3xl text-center p-6">
                 <a href="#">
-                  <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
+                  <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-secondaryFontColor rounded-full">
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5208 0.25C18.6615 0.25 17.9583 1.1875 17.9583 2.33333V16.9167H2.33333C1.1875 16.9167 0.25 17.6198 0.25 18.4792C0.25 19.3385 1.1875 20.0417 2.33333 20.0417H17.9583V35.6667C17.9583 36.8125 18.6615 37.75 19.5208 37.75C20.3802 37.75 21.0833 36.8125 21.0833 35.6667V20.0417H35.6667C36.8125 20.0417 37.75 19.3385 37.75 18.4792C37.75 17.6198 36.8125 16.9167 35.6667 16.9167H21.0833V2.33333C21.0833 1.1875 20.3802 0.25 19.5208 0.25Z" fill="white" fill-opacity="0.6"/>
                     </svg>
                   </div>
-                  <p class="text-base text-white font-semibold mt-5">Add Company</p>
+                  <p class="text-base text-primaryFontColor font-semibold mt-5">Add Company</p>
                 </a>
               </div>
             </div>
             <div class="new-company-card">
               <div class="border-dashed border-color border rounded-3xl text-center p-6">
                 <a href="#">
-                  <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-grey rounded-full">
+                  <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-secondaryFontColor rounded-full">
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5208 0.25C18.6615 0.25 17.9583 1.1875 17.9583 2.33333V16.9167H2.33333C1.1875 16.9167 0.25 17.6198 0.25 18.4792C0.25 19.3385 1.1875 20.0417 2.33333 20.0417H17.9583V35.6667C17.9583 36.8125 18.6615 37.75 19.5208 37.75C20.3802 37.75 21.0833 36.8125 21.0833 35.6667V20.0417H35.6667C36.8125 20.0417 37.75 19.3385 37.75 18.4792C37.75 17.6198 36.8125 16.9167 35.6667 16.9167H21.0833V2.33333C21.0833 1.1875 20.3802 0.25 19.5208 0.25Z" fill="white" fill-opacity="0.6"/>
                     </svg>
                   </div>
-                  <p class="text-base text-white font-semibold mt-5">Add Company</p>
+                  <p class="text-base text-primaryFontColor font-semibold mt-5">Add Company</p>
                 </a>
               </div>
             </div>
             <div class="selected-card relative">
               <div class="flex justify-end">
-                <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-grey">
+                <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-secondaryFontColor">
                   <i class="fas fa-times"></i>
                 </div>
               </div>
               <div class="flex items-center justify-around -m-2">
                 <div class="text-center">
                   <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
-                  <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                  <p class="text-base text-primaryFontColor font-semibold mt-5">Teladoc</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <hr class="custom-hr my-5">
+      <hr class="border-primaryBorderColor my-5">
 
       <!-- Popular Companies Start -->
-      <div class="text-2xl text-white font-semibold mb-5">Popular Comparisons</div>
+      <div class="text-2xl text-primaryFontColor font-semibold mb-5">Popular Comparisons</div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
         <div class="border border-color rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
               <img src="https://i.ibb.co/bddQGQh/amazon.png" alt="amazon" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">Amazon</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Amazon</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
-              <p class="text-base text-grey">VS</p>
+              <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
               <img src="https://i.ibb.co/9h7dJcg/google.png" alt="google" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">Google</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Google</p>
             </div>
           </div>
         </div>
@@ -98,14 +98,14 @@
           <div class="flex items-center justify-around">
             <div class="text-center">
               <img src="https://i.ibb.co/vzHtwrm/img-3.png" alt="atnt" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">AT&T</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">AT&T</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
-              <p class="text-base text-grey">VS</p>
+              <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
               <img src="https://i.ibb.co/SrZ1SWj/verizon.png" alt="verizon" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">Verizon</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Verizon</p>
             </div>
           </div>
         </div>
@@ -113,14 +113,14 @@
           <div class="flex items-center justify-around">
             <div class="text-center">
               <img src="https://i.ibb.co/68ctrXg/jp-morgan.png" alt="jp-morgan" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">J.P.Morgan</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">J.P.Morgan</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
-              <p class="text-base text-grey">VS</p>
+              <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
               <img src="https://i.ibb.co/3kDYnLq/wells-fargo.png" alt="wells-fargo" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">Wells Fargo</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Wells Fargo</p>
             </div>
           </div>
         </div>
@@ -128,14 +128,14 @@
           <div class="flex items-center justify-around">
             <div class="text-center">
               <img src="https://i.ibb.co/17Gd4tF/img-1.png" alt="img-1" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">Company</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Company</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
-              <p class="text-base text-grey">VS</p>
+              <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
               <img src="https://i.ibb.co/bHc1Vk2/img-2.png" alt="img-2" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">Best Buy</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Best Buy</p>
             </div>
           </div>
         </div>
@@ -143,14 +143,14 @@
           <div class="flex items-center justify-around">
             <div class="text-center">
               <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Teladoc</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
-              <p class="text-base text-grey">VS</p>
+              <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
               <img src="https://i.ibb.co/dWjSFb4/cvs.png" alt="cvs" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">CVS Health</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">CVS Health</p>
             </div>
           </div>
         </div>
@@ -158,32 +158,32 @@
           <div class="flex items-center justify-around">
             <div class="text-center">
               <img src="https://i.ibb.co/WHnR5fz/careers.png" alt="careers" class="w-20 h-20 rounded-full object-cover" >
-              <p class="text-base text-white font-semibold mt-5">Careers</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Careers</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
-              <p class="text-base text-grey">VS</p>
+              <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
               <img src="https://i.ibb.co/5jtZwpD/dot.png" alt="dot" class="w-20 h-20 rounded-full object-cover">
-              <p class="text-base text-white font-semibold mt-5">Dot</p>
+              <p class="text-base text-primaryFontColor font-semibold mt-5">Dot</p>
             </div>
           </div>
         </div>
       </div>
       <!-- Popular Companies End -->
-      <hr class="custom-hr my-5">
+      <hr class="border-primaryBorderColor my-5">
 
       <!-- Company Scroll Start -->
       <div class="lg:w-10/12 md:w-full sm:w-full">
         <div class="flex">
           <div class="py-2 w-full">
-            <p class="text-base font-semibold text-white">
+            <p class="text-base font-semibold text-primaryFontColor">
               Number of Openings
             </p>
           </div>
           <div class="py-2 w-full">
             <div class="flex items-center justify-center">
-              <p class="text-base text-white">1522</p>
+              <p class="text-base text-primaryFontColor">1522</p>
               <div class="ml-2">
                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
@@ -193,7 +193,7 @@
           </div>
           <div class="py-2 w-full">
             <div class="flex items-center justify-center">
-              <p class="text-base text-white">1522</p>
+              <p class="text-base text-primaryFontColor">1522</p>
               <div class="ml-2">
                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
@@ -204,13 +204,13 @@
         </div>
         <div class="flex">
           <div class="py-2 w-full">
-            <p class="text-base font-normal text-white">
+            <p class="text-base font-normal text-primaryFontColor">
               Analyst Roles
             </p>
           </div>
           <div class="py-2 w-full">
             <div class="flex items-center justify-center">
-              <p class="text-base text-white">637</p>
+              <p class="text-base text-primaryFontColor">637</p>
               <div class="ml-2">
                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
@@ -220,7 +220,7 @@
           </div>
           <div class="py-2 w-full">
             <div class="flex items-center justify-center">
-              <p class="text-base text-white">637</p>
+              <p class="text-base text-primaryFontColor">637</p>
               <div class="ml-2">
                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
@@ -231,13 +231,13 @@
         </div>
         <div class="flex">
           <div class="py-2 w-full">
-            <p class="text-base font-normal text-white">
+            <p class="text-base font-normal text-primaryFontColor">
               Scientist Roles
             </p>
           </div>
           <div class="py-2 w-full">
             <div class="flex items-center justify-center">
-              <p class="text-base text-white">422</p>
+              <p class="text-base text-primaryFontColor">422</p>
               <div class="ml-2">
                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 11.6465C23.5386 11.9615 23 11.7384 23 11.2929V9.00005H19.691L18.191 6.00005H10.2169L8.7169 3.50005H1V2.50005H9.2831L10.7831 5.00005H18.809L20.309 8.00005H23V5.70716C23 5.2617 23.5386 5.03862 23.8536 5.3536L26.6464 8.1465C26.8417 8.34176 26.8417 8.65834 26.6464 8.8536L23.8536 11.6465Z" fill="#FF453A"/>
@@ -247,7 +247,7 @@
           </div>
           <div class="py-2 w-full">
             <div class="flex items-center justify-center">
-              <p class="text-base text-white">422</p>
+              <p class="text-base text-primaryFontColor">422</p>
               <div class="ml-2">
                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
@@ -258,13 +258,13 @@
         </div>
         <div class="flex">
           <div class="py-2 w-full">
-            <p class="text-base font-normal text-white">
+            <p class="text-base font-normal text-primaryFontColor">
               Continue for loops & ifs
             </p>
           </div>
           <div class="py-2 w-full">
             <div class="flex items-center justify-center">
-              <p class="text-base text-white">111</p>
+              <p class="text-base text-primaryFontColor">111</p>
               <div class="ml-2">
                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
@@ -274,7 +274,7 @@
           </div>
           <div class="py-2 w-full">
             <div class="flex items-center justify-center">
-              <p class="text-base text-white">111</p>
+              <p class="text-base text-primaryFontColor">111</p>
               <div class="ml-2">
                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8536 2.64745C23.5386 2.33247 23 2.55555 23 3.001V5.2939H19.691L18.191 8.2939H10.2169L8.7169 10.7939H1V11.7939H9.2831L10.7831 9.2939H18.809L20.309 6.2939H23V8.58679C23 9.03224 23.5386 9.25533 23.8536 8.94034L26.6464 6.14745C26.8417 5.95219 26.8417 5.6356 26.6464 5.44034L23.8536 2.64745Z" fill="#32D74B"/>
@@ -285,107 +285,107 @@
         </div>
       </div>
 
-      <hr class="custom-hr my-5">
+      <hr class="border-primaryBorderColor my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
         <div class="flex">
           <div class="py-2 w-full">
-            <p class="text-white text-base font-semibold">Tech Stack</p>
+            <p class="text-primaryFontColor text-base font-semibold">Tech Stack</p>
             <fieldset>
               <label for="check-1" class="custom-label cursor-pointer py-2">
                 <input type="checkbox" id="check-1" name="check"> 
-                <span class="lg:text-base sm:text-sm text-white font-light">Highlight Differences</span>
+                <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">Highlight Differences</span>
               </label>
             </fieldset>
           </div>
           <div class="py-2 w-full">
             <div class="flex flex-wrap justify-center gap-1 mx-1">
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 React
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 NodeJS
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 TypeScript
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 AWS
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Postgres
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 MobX State Tree
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Type ORM
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Java
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Spring
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Vue.js
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Backbone.js
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Python
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 ElasticSearch
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Docker
               </div>
             </div>
           </div>
           <div class="py-2 w-full">
             <div class="flex flex-wrap justify-center gap-1 mx-1">
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 React
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 NodeJS
               </div>
-              <div class="custom-tag py-1 active px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 active px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 TypeScript
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 AWS
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Postgres
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 MobX State Tree
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Type ORM
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Java
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Spring
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Vue.js
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Backbone.js
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Python
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 ElasticSearch
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-grey rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Docker
               </div>
             </div>
@@ -393,64 +393,68 @@
         </div>
       </div>
 
-      <hr class="custom-hr my-5">
+      <hr class="border-primaryBorderColor my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
         <div class="flex">
           <div class="py-2 w-full align-top">
-            <p class="text-white text-base font-normal">Experience</p>
+            <p class="text-primaryFontColor text-base font-normal">Experience</p>
           </div>
           <div class="py-2 w-full text-center">
-            <p class="text-white text-base font-light">27 Years</p>
-            <p class="text-grey text-base font-light">July 5, 1994</p>
+            <p class="text-primaryFontColor text-base font-light">27 Years</p>
+            <p class="text-secondaryFontColor text-base font-light">July 5, 1994</p>
           </div>
           <div class="py-2 w-full text-center">
-            <p class="text-white text-base font-light">23 Years</p>
-            <p class="text-grey text-base font-light">September 3, 1998</p>
+            <p class="text-primaryFontColor text-base font-light">23 Years</p>
+            <p class="text-secondaryFontColor text-base font-light">September 3, 1998</p>
           </div>
         </div>
       </div>
 
-      <hr class="custom-hr my-5">
+      <hr class="border-primaryBorderColor my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
         <div class="flex">
           <div class="py-2 w-full align-top">
-            <p class="text-white text-base font-semibold">Post Frequency</p>
+            <p class="text-primaryFontColor text-base font-semibold">Post Frequency</p>
           </div>
           <div class="py-2 w-full text-center">
-            <p class="text-white text-base font-light">1</p>
-            <p class="text-grey text-base font-light">per week</p>
+            <p class="text-primaryFontColor text-base font-light">1</p>
+            <p class="text-secondaryFontColor text-base font-light">per week</p>
           </div>
           <div class="py-2 w-full text-center">
-            <p class="text-white text-base font-light">3</p>
-            <p class="text-grey text-base font-light">Per Week</p>
+            <p class="text-primaryFontColor text-base font-light">3</p>
+            <p class="text-secondaryFontColor text-base font-light">Per Week</p>
           </div>
         </div>
       </div>
 
-      <hr class="custom-hr my-5">
+      <hr class="border-primaryBorderColor my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
         <div class="flex">
           <div class="py-2 w-full align-top">
-            <p class="text-white text-base font-semibold">Title Accuracy</p>
+            <p class="text-primaryFontColor text-base font-semibold">Title Accuracy</p>
           </div>
-          <div class="py-2 w-full text-center">
-            <p class="text-white text-base font-light">90%</p>
+          <div class="py-2 w-full flex justify-center">
+            <div class="border-2 border-color rounded-full h-16 w-16 flex items-center justify-center">
+              <p class="text-primaryFontColor text-base font-light">90%</p>
+            </div>
           </div>
-          <div class="py-2 w-full text-center">
-            <p class="text-white text-base font-light">90%</p>
+          <div class="py-2 w-full flex justify-center">
+            <div class="border-2 border-color rounded-full h-16 w-16 flex items-center justify-center">
+              <p class="text-primaryFontColor text-base font-light">90%</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <hr class="custom-hr my-5">
+      <hr class="border-primaryBorderColor my-5">
 
       <div class="lg:w-10/12 md:w-full sm:w-full">
         <div class="flex">
           <div class="py-2 w-full align-top">
-            <p class="text-white text-base font-semibold">Similar Companies</p>
+            <p class="text-primaryFontColor text-base font-semibold">Similar Companies</p>
           </div>
           <div class="py-2 w-full text-center">
             <div class="grid gap-4 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-7 mx-2">
@@ -459,7 +463,7 @@
                   <div class="flex items-center justify-around">
                     <div class="text-center">
                       <img src="https://i.ibb.co/rcNbG1s/Im.png" alt="walmart" class="w-20 h-20 rounded-full object-cover">
-                      <p class="text-base text-white font-semibold mt-5">Walmart</p>
+                      <p class="text-base text-primaryFontColor font-semibold mt-5">Walmart</p>
                     </div>
                   </div>
                 </a>
@@ -469,7 +473,7 @@
                   <div class="flex items-center justify-around">
                     <div class="text-center">
                       <img src="https://i.ibb.co/yY4s8fY/Image.png" alt="aliexpress" class="w-20 h-20 rounded-full object-cover">
-                      <p class="text-base text-white font-semibold mt-5">Aliexpress</p>
+                      <p class="text-base text-primaryFontColor font-semibold mt-5">Aliexpress</p>
                     </div>
                   </div>
                 </a>
@@ -479,7 +483,7 @@
                   <div class="flex items-center justify-around">
                     <div class="text-center">
                       <img src="https://i.ibb.co/HV97Tp5/otto.png" alt="otto" class="w-20 h-20 rounded-full object-cover">
-                      <p class="text-base text-white font-semibold mt-5">Otto</p>
+                      <p class="text-base text-primaryFontColor font-semibold mt-5">Otto</p>
                     </div>
                   </div>
                 </a>
@@ -489,7 +493,7 @@
                   <div class="flex items-center justify-around">
                     <div class="text-center">
                       <img src="https://i.ibb.co/Kwwh8CG/flipkart.png" alt="flipkart" class="w-20 h-20 rounded-full object-cover">
-                      <p class="text-base text-white font-semibold mt-5">Flipkart</p>
+                      <p class="text-base text-primaryFontColor font-semibold mt-5">Flipkart</p>
                     </div>
                   </div>
                 </a>
@@ -503,7 +507,7 @@
                   <div class="flex items-center justify-around">
                     <div class="text-center">
                       <img src="https://i.ibb.co/TKjc3sd/Image-1.png" alt="Image-1" class="w-20 h-20 rounded-full object-cover">
-                      <p class="text-base text-white font-semibold mt-5">Meta</p>
+                      <p class="text-base text-primaryFontColor font-semibold mt-5">Meta</p>
                     </div>
                   </div>
                 </a>
@@ -513,7 +517,7 @@
                   <div class="flex items-center justify-around">
                     <div class="text-center">
                       <img src="https://i.ibb.co/QJP6t20/microsoft.png" alt="microsoft" class="w-20 h-20 rounded-full object-cover">
-                      <p class="text-base text-white font-semibold mt-5">Microsoft</p>
+                      <p class="text-base text-primaryFontColor font-semibold mt-5">Microsoft</p>
                     </div>
                   </div>
                 </a>
@@ -523,7 +527,7 @@
                   <div class="flex items-center justify-around">
                     <div class="text-center">
                       <img src="https://i.ibb.co/pRSGJ2J/apple.png" alt="apple" class="w-20 h-20 rounded-full object-cover">
-                      <p class="text-base text-white font-semibold mt-5">Apple</p>
+                      <p class="text-base text-primaryFontColor font-semibold mt-5">Apple</p>
                     </div>
                   </div>
                 </a>
@@ -533,7 +537,7 @@
                   <div class="flex items-center justify-around">
                     <div class="text-center">
                       <img src="https://i.ibb.co/tBd9j0t/yahoo.png" alt="yahoo" class="w-20 h-20 rounded-full object-cover">
-                      <p class="text-base text-white font-semibold mt-5">Yahoo</p>
+                      <p class="text-base text-primaryFontColor font-semibold mt-5">Yahoo</p>
                     </div>
                   </div>
                 </a>
@@ -554,52 +558,52 @@
         <div class="popup-content rounded-2xl  relative lg:flex md:flex pointer-events-none pointer-events-auto z-50">
           <div class="lg:w-3/12 md:w-4/12 sm:w-12/12">
             <div class="col-left lg:rounded-r-none lg:rounded-l-2xl md:rounded-r-none md:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl p-4 h-full">
-              <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-grey mb-7">
+              <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-secondaryFontColor mb-7">
                 <i class="fas fa-times"></i>
               </div>
-              <div class="text-xl text-white mb-4">Filter by</div>
-              <div class="text-base text-white mb-3">Location</div>
+              <div class="text-xl text-primaryFontColor mb-4">Filter by</div>
+              <div class="text-base text-primaryFontColor mb-3">Location</div>
               <div class="relative">
-                <button class="focus:outline-none search-icon text-grey text-base" type="submit"><i class="fas fa-map-marker-alt"></i></button>
-                <input class="form-control input-control text-grey w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Select Company Location">
+                <button class="focus:outline-none search-icon text-secondaryFontColor text-base" type="submit"><i class="fas fa-map-marker-alt"></i></button>
+                <input class="form-control input-control text-secondaryFontColor w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Select Company Location">
               </div>
-              <hr class="custom-hr my-4">
-              <div class="text-base text-white mb-3">Size</div>
+              <hr class="border-primaryBorderColor my-4">
+              <div class="text-base text-primaryFontColor mb-3">Size</div>
               <fieldset>
                 <label for="check-1" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-1" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">2-9 employees (774)</span>
+                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">2-9 employees (774)</span>
                 </label>
                 <label for="check-2" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-2" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">10-99 employees (994)</span>
+                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">10-99 employees (994)</span>
                 </label>
                 <label for="check-3" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-3" name="check" checked> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">100-499 employees (163)</span>
+                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">100-499 employees (163)</span>
                 </label>
                 <label for="check-4" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-4" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">500-1000 employees (237)</span>
+                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">500-1000 employees (237)</span>
                 </label>
                 <label for="check-5" class="custom-label cursor-pointer py-2">
                   <input type="checkbox" id="check-5" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-white font-light">More than 1000 (42)</span>
+                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">More than 1000 (42)</span>
                 </label>
               </fieldset>
-              <hr class="custom-hr my-4">
+              <hr class="border-primaryBorderColor my-4">
             </div>
           </div>
           <div class="lg:w-9/12 md:w-8/12 sm:w-12/12">
             <div class="col-right rounded-l-none rounded-r-2xl p-4">
               <div class="pt-10 px-4">
                 <div class="flex justify-between items-center">
-                  <div class="text-4xl text-white font-bold">
+                  <div class="text-4xl text-primaryFontColor font-bold">
                     Companies
                   </div>
                   <div class="relative">
-                    <button class="focus:outline-none search-icon text-grey text-base" type="submit"><i class="fas fa-search"></i></button>
-                    <input class="form-control input-control text-grey w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search Company">
+                    <button class="focus:outline-none search-icon text-secondaryFontColor text-base" type="submit"><i class="fas fa-search"></i></button>
+                    <input class="form-control input-control text-secondaryFontColor w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search Company">
                   </div>
                 </div>
                 <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 my-7">
@@ -608,7 +612,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/bddQGQh/amazon.png" alt="amazon" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Amazon</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Amazon</p>
                         </div>
                       </div>
                     </a>
@@ -618,7 +622,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/9h7dJcg/google.png" alt="google" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Google</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Google</p>
                         </div>
                       </div>
                     </a>
@@ -628,7 +632,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/vzHtwrm/img-3.png" alt="img-3" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">AT&T</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">AT&T</p>
                         </div>
                       </div>
                     </a>
@@ -638,7 +642,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/SrZ1SWj/verizon.png" alt="verizon" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Verizon</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Verizon</p>
                         </div>
                       </div>
                     </a>
@@ -648,7 +652,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/68ctrXg/jp-morgan.png" alt="jp-morgan" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">J.P. Morgan</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">J.P. Morgan</p>
                         </div>
                       </div>
                     </a>
@@ -658,7 +662,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/3kDYnLq/wells-fargo.png" alt="wells-fargo" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Wells Fargo</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Wells Fargo</p>
                         </div>
                       </div>
                     </a>
@@ -668,7 +672,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/dWjSFb4/cvs.png" alt="cvs" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">CVS Health</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">CVS Health</p>
                         </div>
                       </div>
                     </a>
@@ -678,7 +682,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/WHnR5fz/careers.png" alt="careers" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Careers</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Careers</p>
                         </div>
                       </div>
                     </a>
@@ -688,7 +692,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Teladoc</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Teladoc</p>
                         </div>
                       </div>
                     </a>
@@ -698,7 +702,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/5jtZwpD/dot.png" alt="dot" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Dot</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Dot</p>
                         </div>
                       </div>
                     </a>
@@ -708,7 +712,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/YtgKyz7/Ima.png" alt="Ima" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Company</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Company</p>
                         </div>
                       </div>
                     </a>
@@ -718,7 +722,7 @@
                       <div class="flex items-center justify-around">
                         <div class="text-center">
                           <img src="https://i.ibb.co/h7Fw76Y/w.png" alt="w" class="w-20 h-20 rounded-full object-cover">
-                          <p class="text-base text-white font-semibold mt-5">Company</p>
+                          <p class="text-base text-primaryFontColor font-semibold mt-5">Company</p>
                         </div>
                       </div>
                     </a>
@@ -740,12 +744,20 @@
 /* ------ progress bar ------ */
   @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   :root {
-   --primary-color: #161F27;
-   --secondary-color: #2B2550;
+    --primary-color: #161F27;
+    --secondary-color: #2B2550;
+    --primary-font-color: #ffffff;
+    --primary-border-color: rgba(255, 255, 255, 0.08);
+
+    --secondary-font-color: rgba(255, 255, 255, 0.6);
+
+    --filter-background-color: rgba(34, 34, 63, 0.8);
+    --filter-menu-color: rgba(255, 255, 255, 0.08);
+    --filter-border-color: rgba(255, 255, 255, 0.08);
+    --filter-highlight-color: rgba(255, 255, 255, 0.24);
   }
   body {
     font-family: 'Exo', sans-serif;
-    letter-spacing: 0.37px
   }
   .border-pink {
     border-color: #c933cc;
@@ -764,17 +776,11 @@
     background: #a918ac;
     border-color: #a918ac;
   }
-  .text-white {
-    color: #ffffff;
-  }
-  .text-grey {
+  .text-secondaryFontColor {
     color: rgba(255, 255, 255, 0.6);
   }
   .text-green {
     color: #42c62a;
-  }
-  .custom-hr {
-    border-color: rgba(255, 255, 255, 0.08); 
   }
   .custom-tabs ul {
     border-color: #ffffff;
@@ -799,7 +805,7 @@
     background: #6e6984;
   }
   .filters-section {
-    border-color: #ffffff14;
+    border-color: rgba(255, 255, 255, 0.08);
   }
   .list-content:hover {
     color: #ffffff;
@@ -809,16 +815,7 @@
     color: #c933cc;
   }
   /* ----------------------------- dropdown ------------------------- */
-  .btn-dropdown {
-    padding: 7px 15px;
-    background: #ffffff14;
-    letter-spacing: 0.37px;
-    line-height: 22px;
-  }
-  .btn-dropdown:hover, .btn-dropdown:active, .btn-dropdown:focus {
-    background-color: rgba(255, 255, 255, 0.24);
-    outline: none;
-  }
+  
   .dropdown-toggle::after {
     vertical-align: 0.255em;
     margin-left: 5px;
@@ -1006,7 +1003,7 @@
 
   /* ------------------------- button group --------------------------------*/
   .button-group {
-    background: #ffffff14;
+    background: rgba(255, 255, 255, 0.08);
   }
   .button-group .button-group-label {
     transition: all 0.2s;
@@ -1025,7 +1022,7 @@
   }
   /* ------------------ card ------------------------ */
   .card {
-    border-color: #ffffff14; 
+    border-color: rgba(255, 255, 255, 0.08); 
   }
   .job-post-card .card-content p {
     letter-spacing: 0.37px
