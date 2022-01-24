@@ -1,20 +1,20 @@
 <template>
-  <div class="tracking-wide rounded-none h-auto bg-gradient-to-r from-primaryColor via-secondaryColor to-primaryColor w-full">
+  <div class="tracking-wide rounded-none h-auto bg-gradient-to-r from-primaryColor via-pageBackgroundColor to-primaryColor w-full">
     <!-- Header Start-->
     <div class="mx-12">
       <header class="lg:flex md:flex w-full items-center main-header py-4">
         <div class="brand-logo flex sm:justify-center sm:mb-4 md:mb-0 lg:mb-0">
-          <h1 class="logo-heading text-primaryFontColor">LOGO</h1>
+          <img src="https://i.ibb.co/FJmZ1w0/Logo.png" alt="Logo">
         </div>
         <div class="justify-center flex w-full">
           <div class="custom-tabs">
             <ul class="flex justify-center items-center border rounded-lg">
-              <li class="py-2 sm:px-8 px-12">
-                <a class="nav-link sm:text-sm md:text-base lg:text-lg xl:text-xl" href="/job_seeker">Job Seeker</a>
+              <li class="py-2 px-12 sm:px-8">
+                <a class="nav-link text-primaryFontColor hover:text-primaryFontColor active:text-primaryFontColor sm:text-sm md:text-base lg:text-lg xl:text-xl leading-7" href="/job_seeker">Job Seeker</a>
               </li>
               <span class="list-divider"></span>
-              <li class="py-2 sm:px-8 px-12">
-                <a class="nav-link active sm:text-sm md:text-base lg:text-lg xl:text-xl" href="/company_compare">Company Compare</a>
+              <li class="py-2 px-12 sm:px-8">
+                <a class="nav-link active text-primaryFontColor hover:text-primaryFontColor active:text-primaryFontColor sm:text-sm md:text-base lg:text-lg xl:text-xl leading-7" href="/company_compare">Company Compare</a>
               </li>
             </ul>
           </div>
@@ -745,7 +745,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   :root {
     --primary-color: #161F27;
-    --secondary-color: #2B2550;
+    /* --secondary-color: #2B2550; */
     --primary-font-color: #ffffff;
     --primary-border-color: rgba(255, 255, 255, 0.08);
 
@@ -755,6 +755,8 @@
     --filter-menu-color: rgba(255, 255, 255, 0.08);
     --filter-border-color: rgba(255, 255, 255, 0.08);
     --filter-highlight-color: rgba(255, 255, 255, 0.24);
+
+    --page-background-color: #2B2550;
   }
   body {
     font-family: 'Exo', sans-serif;
@@ -779,24 +781,15 @@
   .text-secondaryFontColor {
     color: rgba(255, 255, 255, 0.6);
   }
-  .text-green {
-    color: #42c62a;
-  }
   .custom-tabs ul {
     border-color: #ffffff;
     box-shadow: 0px 0px 0px #fa00ff, 0px 0px 4px #fa00ff, 0px 0px 0px #fa00ff, 0px 0px 3px #fa00ff;
     filter: blur(0.5px);
   }
-  .custom-tabs ul li {
-    padding: 7px 50px;
-  }
   .custom-tabs ul li a {
     text-shadow: 0px 1px 4px rgb(0 0 0 / 70%);
-    color: #ffffff;
-    line-height: 28px;
   }
   .custom-tabs ul li a.active {
-    color: #ffffff;
     text-shadow: 0px 1px 3px rgba(50, 0, 54, 0.43), 0px 0px 22px #FA00FF, 0px 0px 2px #FA00FF;
   }
   span.list-divider {
@@ -1032,9 +1025,6 @@
     letter-spacing: 0.37px
   }
   /* -------------------- delete this css later ---------------- */
-  .logo-heading {
-    font-size: 28px;
-  }
   .card-icon {
     padding: 30px;
     width: 30px;
@@ -1116,7 +1106,7 @@
     font-weight: 600; 
   }
   /*----------------- Breakpoints ---------------------*/
-  @media(min-width: 320px) and (max-width: 639px) {
+  /* @media(min-width: 320px) and (max-width: 639px) {
     .custom-tabs ul li {
       padding: 7px 30px;
     }
@@ -1143,7 +1133,7 @@
     .category-filter .card .card-content {
       align-items: center;
     }
-  }
+  } */
   @media(min-width: 640px) and (max-width: 825px) {
     .employment-filter {
       width: 200px;

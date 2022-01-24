@@ -1,21 +1,20 @@
 <template>
-  <div class="tracking-wide rounded-none h-auto bg-gradient-to-r from-primaryColor via-secondaryColor to-primaryColor w-full">
+  <div class="tracking-wide rounded-none h-auto bg-gradient-to-r from-primaryColor via-pageBackgroundColor to-primaryColor w-full">
     <!-- Header Start-->
     <div class="mx-12">
       <header class="lg:flex md:flex w-full items-center main-header py-4">
         <div class="brand-logo flex sm:justify-center sm:mb-4 md:mb-0 lg:mb-0">
-          <!-- <h1 class="logo-heading text-primaryFontColor">LOGO</h1> -->
           <img src="https://i.ibb.co/FJmZ1w0/Logo.png" alt="Logo">
         </div>
         <div class="justify-center flex w-full">
           <div class="custom-tabs">
             <ul class="flex justify-center items-center border rounded-lg">
-              <li class="py-2 sm:px-8 px-12">
-                <a class="nav-link active sm:text-sm md:text-base lg:text-lg xl:text-xl" href="/job_seeker">Job Seeker</a>
+              <li class="py-2 px-12 sm:px-8">
+                <a class="nav-link active text-primaryFontColor hover:text-primaryFontColor active:text-primaryFontColor sm:text-sm md:text-base lg:text-lg xl:text-xl leading-7" href="/job_seeker">Job Seeker</a>
               </li>
               <span class="list-divider"></span>
-              <li class="py-2 sm:px-8 px-12">
-                <a class="nav-link sm:text-sm md:text-base lg:text-lg xl:text-xl" href="/company_compare">Company Compare</a>
+              <li class="py-2 px-12 sm:px-8">
+                <a class="nav-link text-primaryFontColor hover:text-primaryFontColor active:text-primaryFontColor sm:text-sm md:text-base lg:text-lg xl:text-xl leading-7" href="/company_compare">Company Compare</a>
               </li>
             </ul>
           </div>
@@ -40,7 +39,7 @@
                 <button class="focus:outline-none search-icon text-secondaryFontColor text-base" type="submit"><i class="fas fa-search"></i></button>
                 <input class="form-control input-control text-secondaryFontColor w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search">
               </div>
-              <hr class="border-primaryBorderColor border-t">
+              <hr class="border-primaryBorderColor">
               <ul class="py-2 custom-list relative">
                 <li class="lg:text-base sm:text-sm text-primaryFontColor font-light inline items-center">
                   <a href="#" class="relative">
@@ -86,7 +85,7 @@
                   </a>
                 </li>
               </ul>
-              <hr class="border-primaryBorderColor border-t">
+              <hr class="border-primaryBorderColor">
               <ul class="custom-list relative">
                 <li class="lg:text-base sm:text-sm  text-primaryFontColor font-light inline items-center">
                   <div class="list-content rounded-bl-2xl rounded-br-2xl flex items-center px-5 p-4 w-full">
@@ -132,7 +131,7 @@
                   <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">Relocate</span>
                 </label>
               </fieldset>
-              <hr class="border-primaryBorderColor border-t">
+              <hr class="border-primaryBorderColor">
               <div class="py-4 px-4">
                 <div class="flex justify-between items-center">
                   <button class="border-pink py-2 px-7 text-primaryFontColor rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Clear</button>
@@ -309,7 +308,7 @@
                 </div>
                 <div class="flex items-center justify-between mt-2 gap-10">
                   <input class="form-control input-control text-secondaryFontColor w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$7">
-                  <div class="horizontal-divider"></div>
+                  <hr class="border-primaryBorderColor w-14">
                   <input class="form-control input-control text-secondaryFontColor w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$1000+">
                 </div>
               </div>
@@ -509,404 +508,389 @@
 </template>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  :root {
-    --primary-color: #161F27;
-    --secondary-color: #2B2550;
-    --primary-font-color: #ffffff;
-    --primary-border-color: rgba(255, 255, 255, 0.08);
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --primary-color: #161F27;
+  /* --secondary-color: #2B2550; */
+  --primary-font-color: #ffffff;
+  --primary-border-color: rgba(255, 255, 255, 0.08);
 
-    --secondary-font-color: rgba(255, 255, 255, 0.6);
+  --secondary-font-color: rgba(255, 255, 255, 0.6);
 
-    --filter-background-color: rgba(34, 34, 63, 0.8);
-    --filter-menu-color: rgba(255, 255, 255, 0.08);
-    --filter-border-color: rgba(255, 255, 255, 0.08);
-    --filter-highlight-color: rgba(255, 255, 255, 0.24);
-  }
-  .untracked .slider-grid {
-    background: #73C2F8;
-  }
-  .slider-base {
-    background: rgba(255, 255, 255, 0.08); 
-    height: 2px;
-  }
-  body {
-    font-family: 'Exo', sans-serif;
-  }
-  .horizontal-divider {
-    width: 60px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.08);
-  }
-  .border-pink {
-    border-color: #c933cc;
-  }
-  .border-pink:hover {
-    border-color:  #a918ac;
-  }
-  .bg-pink {
-    background: #c933cc;
-    border-color: #c933cc;
-  }
-  
-  .bg-pink:hover {
-    background: #a918ac;
-    border-color: #a918ac;
-  }
+  --filter-background-color: rgba(34, 34, 63, 0.8);
+  --filter-menu-color: rgba(255, 255, 255, 0.08);
+  --filter-border-color: rgba(255, 255, 255, 0.08);
+  --filter-highlight-color: rgba(255, 255, 255, 0.24);
 
-  .text-green {
-    color: #42c62a;
+  --page-background-color: #2B2550;
+}
+.untracked .slider-grid {
+  background: #73C2F8;
+}
+.slider-base {
+  background: rgba(255, 255, 255, 0.08); 
+  height: 2px;
+}
+body {
+  font-family: 'Exo', sans-serif;
+}
+.border-pink {
+  border-color: #c933cc;
+}
+.border-pink:hover {
+  border-color:  #a918ac;
+}
+.bg-pink {
+  background: #c933cc;
+  border-color: #c933cc;
+}
+
+.bg-pink:hover {
+  background: #a918ac;
+  border-color: #a918ac;
+}
+
+.custom-tabs ul {
+  border-color: #ffffff;
+  box-shadow: 0px 0px 0px #fa00ff, 0px 0px 4px #fa00ff, 0px 0px 0px #fa00ff, 0px 0px 3px #fa00ff;
+  filter: blur(0.5px);
+}
+.custom-tabs ul li a {
+  text-shadow: 0px 1px 4px rgb(0 0 0 / 70%);
+}
+.custom-tabs ul li a.active {
+  text-shadow: 0px 1px 3px rgba(50, 0, 54, 0.43), 0px 0px 22px #FA00FF, 0px 0px 2px #FA00FF;
+}
+span.list-divider {
+  height: 24px;
+  width: 1px;
+  background: #6e6984;
+}
+.filters-section {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.list-content:hover {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.16);
+}
+.list-content:hover i {
+  color: #c933cc;
+}
+/* ----------------------------- dropdown ------------------------- */
+.dropdown-toggle::after {
+  vertical-align: 0.255em;
+  margin-left: 5px;
+  content: '';
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  height: 7px;
+  width: 7px;
+}
+/* ------------------------- filter dropdown ----------------------- */
+.filter-dropdown {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(34, 34, 63, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(25px);  
+  border-radius: 16px;
+}
+.input-control.form-control {
+  background: rgba(255, 255, 255, 0.08);
+  letter-spacing: 0.37px;
+}
+.search-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.search-filter, .multiselect-filter {
+  width: 274px;
+} 
+.category-filter {
+  width: 392px;
+}
+.bg-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.bg-card:hover {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+/* ------------------------- toggle-switch -------------------------------*/
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 40px;
+  height: 22px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1px;
+  transition: left 0.25s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #C933CC;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 19px;
+}
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+/* ------------------------- checkbox ----------------------------------- */
+.custom-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.custom-label input {
+  position: relative !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 12px;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+.custom-label input:before {
+  content: '';
+  display: block;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.custom-label input:checked:before {
+  border-color: #c933cc;
+  background: #c933cc;
+}
+
+.custom-label input:after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  top: 55%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  background-color: #12CBC4;
+  width: 20px;
+  height: 20px;
+  border-radius: 100vh;
+  transform: translate(-50%, -50%) scale(0);
+}
+.custom-label input[type="checkbox"]:before {
+  border-radius: 3px;
+}
+.custom-label input[type="checkbox"]:after {
+  background-color: transparent;
+  width: 9.6px;
+  height: 16px;
+  border-radius: 0;
+  transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  background-color: transparent;
+  box-shadow: 2px 2px 0px 0px #ffffff;
+}
+.custom-label input[type="checkbox"]:checked:after {
+  -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
+  animation: toggleOnCheckbox 0.2s ease forwards;
+}
+.custom-label input[type="checkbox"].filled:before {
+  border-radius: 4px;
+  transition: 0.2s border-color ease, 0.2s background-color ease;
+}
+.section-hover:hover {
+  background: rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.section-hover.active{
+  background: rgba(0, 0, 0, 0.16);
+}
+@-webkit-keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
   }
-  .custom-tabs ul {
-    border-color: #ffffff;
-    box-shadow: 0px 0px 0px #fa00ff, 0px 0px 4px #fa00ff, 0px 0px 0px #fa00ff, 0px 0px 3px #fa00ff;
-    filter: blur(0.5px);
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
   }
+  100% {
+    transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+  }
+}
+@keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+  }
+}
+
+
+/* ------------------------- button group --------------------------------*/
+.button-group {
+  background: rgba(255, 255, 255, 0.08);
+}
+.button-group .button-group-label {
+  transition: all 0.2s;
+  padding: 3px 8px;
+  min-width: 144px;
+}
+.button-group .button-group-label:not(:first-of-type) {
+  border-left: 0;
+}
+/* Hide the radio button */
+input.button-option {
+  display: none;
+}
+input.button-option:checked + label {
+  background: #C933CC;
+}
+/* ------------------ card ------------------------ */
+.card {
+  border-color: rgba(255, 255, 255, 0.08); 
+}
+.ad-card .card-content p {
+  letter-spacing: 0.37px
+}
+.ad-card .card-content .text-description {
+  line-height: 22px;
+  letter-spacing: 0.37px
+}
+/* -------------------- delete this css later ---------------- */
+.card-icon {
+  padding: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #366dd9;
+}
+
+/* ---------------------- custom popup ------------------------ */
+.popup-content {
+  background: #22223F;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-sizing: border-box;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.custom-rounded-icon {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.action-icon {
+  width: 44px;
+  height: 44px;
+}
+.action-icon:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.col-right {
+  height: 580px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.col-left {
+  background: rgba(0, 0, 0, 0.16);
+}
+.close-popup:hover, .left-switch:hover, .right-switch:hover {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* ----------------------------- scroll bar ----------------------- */
+.col-right::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.col-right::-webkit-scrollbar {
+  width: 12px;
+}
+
+.col-right::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #1d1d34;
+}
+/*----------------- Breakpoints ---------------------*/
+/* @media(min-width: 320px) and (max-width: 639px) {
   .custom-tabs ul li {
-    padding: 7px 50px;
+    padding: 7px 30px;
   }
-  .custom-tabs ul li a {
-    text-shadow: 0px 1px 4px rgb(0 0 0 / 70%);
-    color: #ffffff;
-    line-height: 28px;
+  .brand-logo {
+    justify-content: center;
+    margin-bottom: 16px;
   }
-  .custom-tabs ul li a.active {
-    color: #ffffff;
-    text-shadow: 0px 1px 3px rgba(50, 0, 54, 0.43), 0px 0px 22px #FA00FF, 0px 0px 2px #FA00FF;
+  .filter-block {
+    justify-content: center;
+    margin-bottom: 16px;
   }
-  span.list-divider {
-    height: 24px;
-    width: 1px;
-    background: #6e6984;
+  .popup-dialog {
+    padding: 0 24px;
   }
-  .filters-section {
-    border-color: rgba(255, 255, 255, 0.08);
-  }
-  .list-content:hover {
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.16);
-  }
-  .list-content:hover i {
-    color: #c933cc;
-  }
-  /* ----------------------------- dropdown ------------------------- */
-  .dropdown-toggle::after {
-    vertical-align: 0.255em;
-    margin-left: 5px;
-    content: '';
-    display: inline-block;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    height: 7px;
-    width: 7px;
-  }
-  /* ------------------------- filter dropdown ----------------------- */
-  .filter-dropdown {
-    border-color: rgba(255, 255, 255, 0.08);
-    background: rgba(34, 34, 63, 0.8);
-    box-sizing: border-box;
-    box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.24);
-    backdrop-filter: blur(25px);  
-    border-radius: 16px;
-  }
-  .input-control.form-control {
-    background: rgba(255, 255, 255, 0.08);
-    letter-spacing: 0.37px;
-  }
-  .search-icon {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-  }
-  .search-filter, .multiselect-filter {
-    width: 274px;
+  .multiselect-filter {
+    width: 200px;
   } 
   .category-filter {
-    width: 392px;
+    width: 274px;
   }
-  .bg-card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+  .category-filter .card {
+    padding: 24px 0;
   }
-  .bg-card:hover {
-    background-color: rgba(0, 0, 0, 0.16);
-  }
-  /* ------------------------- toggle-switch -------------------------------*/
-  .toggle {
-    cursor: pointer;
-    display: inline-block;
-  }
-
-  .toggle-switch {
-    display: inline-block;
-    background: #ccc;
-    border-radius: 16px;
-    width: 40px;
-    height: 22px;
-    position: relative;
-    vertical-align: middle;
-    transition: background 0.25s;
-  }
-  .toggle-switch:before, .toggle-switch:after {
-    content: "";
-  }
-  .toggle-switch:before {
-    display: block;
-    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 1px;
-    transition: left 0.25s;
-  }
-  .toggle-checkbox:checked + .toggle-switch {
-    background: #C933CC;
-  }
-  .toggle-checkbox:checked + .toggle-switch:before {
-    left: 19px;
-  }
-  .toggle-checkbox {
-    position: absolute;
-    visibility: hidden;
-  }
-  .toggle-label {
-    margin-left: 5px;
-    position: relative;
-    top: 2px;
-  }
-  /* ------------------------- checkbox ----------------------------------- */
-  .custom-label {
-    display: flex;
-    flex-direction: row;
+  .category-filter .card .card-content {
     align-items: center;
   }
-
-  .custom-label input {
-    position: relative !important;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin-right: 12px;
-    box-sizing: content-box;
-    overflow: hidden;
+} */
+@media(min-width: 640px) and (max-width: 825px) {
+  .multiselect-filter {
+    width: 200px;
+  } 
+  .category-filter {
+    width: 200px;
   }
-  .custom-label input:before {
-    content: '';
-    display: block;
-    box-sizing: content-box;
-    width: 20px;
-    height: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+@media(min-width: 1280px) {
+  .custom-popup {
+    max-width: 1178px;
+    max-height: 577px;
   }
-  .custom-label input:checked:before {
-    border-color: #c933cc;
-    background: #c933cc;
-  }
-
-  .custom-label input:after {
-    content: '';
-    display: block;
-    position: absolute;
-    box-sizing: content-box;
-    top: 55%;
-    left: 50%;
-    transform-origin: 50% 50%;
-    background-color: #12CBC4;
-    width: 20px;
-    height: 20px;
-    border-radius: 100vh;
-    transform: translate(-50%, -50%) scale(0);
-  }
-  .custom-label input[type="checkbox"]:before {
-    border-radius: 3px;
-  }
-  .custom-label input[type="checkbox"]:after {
-    background-color: transparent;
-    width: 9.6px;
-    height: 16px;
-    border-radius: 0;
-    transform: translate(-50%, -85%) scale(0) rotate(45deg);
-    background-color: transparent;
-    box-shadow: 2px 2px 0px 0px #ffffff;
-  }
-  .custom-label input[type="checkbox"]:checked:after {
-    -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
-    animation: toggleOnCheckbox 0.2s ease forwards;
-  }
-  .custom-label input[type="checkbox"].filled:before {
-    border-radius: 4px;
-    transition: 0.2s border-color ease, 0.2s background-color ease;
-  }
-  .section-hover:hover {
-    background: rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-  }
-  .section-hover.active{
-    background: rgba(0, 0, 0, 0.16);
-  }
-  @-webkit-keyframes toggleOnCheckbox {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -85%) scale(0) rotate(45deg);
-    }
-    70% {
-      opacity: 1;
-      transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
-    }
-    100% {
-      transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
-    }
-  }
-  @keyframes toggleOnCheckbox {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -85%) scale(0) rotate(45deg);
-    }
-    70% {
-      opacity: 1;
-      transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
-    }
-    100% {
-      transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
-    }
-  }
-
-
-  /* ------------------------- button group --------------------------------*/
-  .button-group {
-    background: rgba(255, 255, 255, 0.08);
-  }
-  .button-group .button-group-label {
-    transition: all 0.2s;
-    padding: 3px 8px;
-    min-width: 144px;
-  }
-  .button-group .button-group-label:not(:first-of-type) {
-    border-left: 0;
-  }
-  /* Hide the radio button */
-  input.button-option {
-    display: none;
-  }
-  input.button-option:checked + label {
-    background: #C933CC;
-  }
-  /* ------------------ card ------------------------ */
-  .card {
-    border-color: rgba(255, 255, 255, 0.08); 
-  }
-  .ad-card .card-content p {
-    letter-spacing: 0.37px
-  }
-  .ad-card .card-content .text-description {
-    line-height: 22px;
-    letter-spacing: 0.37px
-  }
-  /* -------------------- delete this css later ---------------- */
-  .logo-heading {
-    font-size: 28px;
-  }
-  .card-icon {
-    padding: 30px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #366dd9;
-  }
-
-  /* ---------------------- custom popup ------------------------ */
-  .popup-content {
-    background: #22223F;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-sizing: border-box;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-  }
-  .custom-rounded-icon {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(50px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-  }
-  .action-icon {
-    width: 44px;
-    height: 44px;
-  }
-  .action-icon:hover {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-  }
-  .col-right {
-    height: 580px;
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-  .col-left {
-    background: rgba(0, 0, 0, 0.16);
-  }
-  .close-popup:hover, .left-switch:hover, .right-switch:hover {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  /* ----------------------------- scroll bar ----------------------- */
-  .col-right::-webkit-scrollbar-track {
-    border-radius: 10px;
-    margin: 10px;
-  }
-
-  .col-right::-webkit-scrollbar {
-    width: 12px;
-  }
-
-  .col-right::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #1d1d34;
-  }
-  /*----------------- Breakpoints ---------------------*/
-  @media(min-width: 320px) and (max-width: 639px) {
-    .custom-tabs ul li {
-      padding: 7px 30px;
-    }
-    .brand-logo {
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-    .filter-block {
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-    .popup-dialog {
-      padding: 0 24px;
-    }
-    .multiselect-filter {
-      width: 200px;
-    } 
-    .category-filter {
-      width: 274px;
-    }
-    .category-filter .card {
-      padding: 24px 0;
-    }
-    .category-filter .card .card-content {
-      align-items: center;
-    }
-  }
-  @media(min-width: 640px) and (max-width: 825px) {
-    .multiselect-filter {
-      width: 200px;
-    } 
-    .category-filter {
-      width: 200px;
-    }
-  }
-  @media(min-width: 1280px) {
-    .custom-popup {
-      max-width: 1178px;
-      max-height: 577px;
-    }
-  }
+}
 </style>
