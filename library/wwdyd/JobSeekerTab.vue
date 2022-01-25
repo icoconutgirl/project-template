@@ -1,349 +1,39 @@
 <template>
   <div class="tracking-wide rounded-none h-auto bg-gradient-to-r from-primaryColor via-pageBackgroundColor to-primaryColor w-full">
+
     <!-- Header Start-->
-    <div class="mx-12">
-      <header class="lg:flex md:flex w-full items-center main-header py-4">
-        <div class="brand-logo flex sm:justify-center sm:mb-4 md:mb-0 lg:mb-0">
-          <img src="https://i.ibb.co/FJmZ1w0/Logo.png" alt="Logo">
-        </div>
-        <div class="justify-center flex w-full">
-          <div class="custom-tabs">
-            <ul class="flex justify-center items-center border rounded-lg">
-              <li class="py-2 px-12 sm:px-8">
-                <a class="nav-link active text-primaryFontColor hover:text-primaryFontColor active:text-primaryFontColor sm:text-sm md:text-base lg:text-lg xl:text-xl leading-7" href="/job_seeker">Job Seeker</a>
-              </li>
-              <span class="list-divider"></span>
-              <li class="py-2 px-12 sm:px-8">
-                <a class="nav-link text-primaryFontColor hover:text-primaryFontColor active:text-primaryFontColor sm:text-sm md:text-base lg:text-lg xl:text-xl leading-7" href="/company_compare">Company Compare</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-    </div>
+    <WwdydHeader></WwdydHeader>
     <!-- Header End -->
+
     <hr class="border-primaryBorderColor">
+    
     <!-- Actions Section Start -->
     <div class="flex items-center justify-between py-4">
       <div class="mx-12 lg:flex flex-row lg:justify-between w-full">
         <!----- Filters Start ------>
-        <div class="filter-block flex sm:justify-center md:justify-center gap-4 flex-wrap md:mb-3 sm:mb-3 lg:mb-0">
-          <!---- Search Icon Filter Start ----->
-          <div class="filter-block relative">
-            <button class="btn-dropdown py-2 px-4 tracking-wide focus:outline-none bg-filterMenuColor hover:bg-filterHighlightColor active:bg-filterHighlightColor focus:bg-filterHighlightColor border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-primaryFontColor font-extralight" type="button">
-              Location
-            </button>
-            <!----- dropdown----->
-            <div class="absolute filter-dropdown search-filter rounded-2xl pt-4 border mt-3 z-10">
-              <div class="relative mx-4 mb-4">
-                <button class="focus:outline-none search-icon text-secondaryFontColor text-base" type="submit"><i class="fas fa-search"></i></button>
-                <input class="form-control input-control text-secondaryFontColor w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search">
-              </div>
-              <hr class="border-primaryBorderColor">
-              <ul class="py-2 custom-list relative">
-                <li class="lg:text-base sm:text-sm text-primaryFontColor font-light inline items-center">
-                  <a href="#" class="relative">
-                    <div class="list-content flex items-center px-5 py-2 w-full">
-                      <i class="mr-3 text-secondaryFontColor fas fa-map-marker-alt"></i>
-                      <p>Florida</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="lg:text-base sm:text-sm  text-primaryFontColor font-light inline items-center">
-                  <a href="#" class="relative">
-                    <div class="list-content flex items-center px-5 py-2 w-full">
-                      <i class="mr-3 text-secondaryFontColor fas fa-map-marker-alt"></i>
-                      <p>California</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="lg:text-base sm:text-sm  text-primaryFontColor font-light inline items-center">
-                  <a href="#" class="relative">
-                    <div class="list-content flex items-center px-5 py-2 w-full">
-                      <i class="mr-3 text-secondaryFontColor fas fa-map-marker-alt"></i>
-                      <p>North Carolina</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="lg:text-base sm:text-sm  text-primaryFontColor font-light inline items-center">
-                  <a href="#" class="relative">
-                    <div class="list-content flex items-center px-5 py-2 w-full">
-                      <i class="mr-3 text-secondaryFontColor fas fa-map-marker-alt"></i>
-                      <p>Tennessee</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="lg:text-base sm:text-sm  text-primaryFontColor font-light inline items-center">
-                  <a href="#" class="relative">
-                    <div class="list-content flex items-center px-5 py-2 w-full">
-                      <i class="mr-3 text-secondaryFontColor fas fa-map-marker-alt"></i>
-                      <p>San Diego
-                        <br>
-                        <span class="text-xs text-secondaryFontColor">California</span>
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <hr class="border-primaryBorderColor">
-              <ul class="custom-list relative">
-                <li class="lg:text-base sm:text-sm  text-primaryFontColor font-light inline items-center">
-                  <div class="list-content rounded-bl-2xl rounded-br-2xl flex items-center px-5 p-4 w-full">
-                    <i class="mr-3 text-secondaryFontColor fas fa-location-arrow"></i>
-                    <div>
-                      <p><a href="#">Find jobs near you</a></p>
-                      <p><a href="#" class="text-xs text-secondaryFontColor">or just a short drive away</a></p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!----- dropdown----->
-          </div>
-          <!----- Search Icon Filter End ----->
-
-          <!---- Multiselect Filter Start ----->
-          <div class="filter-block relative">
-            <button class="btn-dropdown py-2 px-4 tracking-wide focus:outline-none bg-filterMenuColor hover:bg-filterHighlightColor active:bg-filterHighlightColor focus:bg-filterHighlightColor border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-primaryFontColor font-extralight" type="button">
-              Employment Options
-            </button>
-            <!----- dropdown ----->
-            <div class="absolute filter-dropdown multiselect-filter rounded-2xl border mt-3 z-10">
-              <fieldset class="py-2">
-                <label for="check-1" class="custom-label section-hover px-4 py-2">
-                  <input type="checkbox" id="check-1" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">Remote Work</span>
-                </label>
-                <label for="check-2" class="custom-label section-hover px-4 py-2">
-                  <input type="checkbox" id="check-2" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">Office</span>
-                </label>
-                <label for="check-3" class="custom-label section-hover active px-4 py-2">
-                  <input type="checkbox" id="check-3" name="check" checked> 
-                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">Part-time</span>
-                </label>
-                <label for="check-4" class="custom-label section-hover px-4 py-2">
-                  <input type="checkbox" id="check-4" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">Freelance</span>
-                </label>
-                <label for="check-5" class="custom-label section-hover px-4 py-2">
-                  <input type="checkbox" id="check-5" name="check"> 
-                  <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">Relocate</span>
-                </label>
-              </fieldset>
-              <hr class="border-primaryBorderColor">
-              <div class="py-4 px-4">
-                <div class="flex justify-between items-center">
-                  <button class="border-pink py-2 px-7 text-primaryFontColor rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Clear</button>
-                  <button class="bg-pink py-2 px-7 text-primaryFontColor rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Save</button>
-                </div>
-              </div>
-            </div>
-            <!----- dropdown ----->
-          </div>
-          <!---- Multiselect Filter End ----->
-
-          <!---- Category Filter Start ----->
-          <div class="filter-block relative">
-            <button class="btn-dropdown py-2 px-4 tracking-wide focus:outline-none bg-filterMenuColor hover:bg-filterHighlightColor active:bg-filterHighlightColor focus:bg-filterHighlightColor border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-primaryFontColor font-extralight" type="button">
-              Category
-            </button>
-            <div class="absolute filter-dropdown category-filter rounded-2xl border mt-3 z-10 p-4">
-              <div class="grid gap-2 lg:grid-cols-3 md:grid-cols-1">
-                <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                  <a href="#">
-                    <div class="flex card-content place-content-center">
-                      <!-- <i class="fas fa-chart-bar mr-2 lg:text-base sm:text-sm text-green"></i> -->
-                      <img src="https://i.ibb.co/ctq6Qjv/analyst.png" alt="analyst" class="w-5 h-5 mr-2">
-                      <span class="lg:text-base sm:text-sm text-primaryFontColor">Analyst</span>
-                    </div>
-                    <p class="text-secondaryFontColor text-sm">12434 Jobs</p>
-                  </a>
-                </div>
-                <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                  <a href="#">
-                    <div class="flex card-content place-content-center">
-                      <img src="https://i.ibb.co/YTPG0wd/microscope.png" alt="microscope" class="w-5 h-5 mr-2">
-                      <span class="lg:text-base sm:text-sm text-primaryFontColor">Scientist</span>
-                    </div>
-                    <p class="text-secondaryFontColor text-sm">7534 Jobs</p>
-                  </a>
-                </div>
-                <div class="lg:col-span-2 lg:py-14 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                  <a href="#">
-                    <div class="flex card-content place-content-center">
-                      <img src="https://i.ibb.co/8xydc4f/engineering.png" alt="engineering" class="w-5 h-5 mr-2">
-                      <span class="lg:text-base sm:text-sm text-primaryFontColor">Engineer</span>
-                    </div>
-                    <p class="text-secondaryFontColor text-sm">5221 Jobs</p>
-                  </a>
-                </div>
-                <div class="lg:col lg:py-14 md:py-6 sm:py-6 rounded-2xl bg-card border text-center">
-                  <a href="#">
-                    <div class="flex card-content place-content-center">
-                      <img src="https://i.ibb.co/Hhb6Qhz/ghost.png" alt="ghost" class="w-5 h-5 mr-2">
-                      <span class="lg:text-base sm:text-sm text-primaryFontColor">Other</span>
-                    </div>
-                    <p class="text-secondaryFontColor text-sm">221 Jobs</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!---- Category Filter End ------>
-
-          <!---- Price Filter Start ----->
-          <div class="filter-block relative">
-            <button class="btn-dropdown py-2 px-4 tracking-wide focus:outline-none bg-filterMenuColor hover:bg-filterHighlightColor active:bg-filterHighlightColor focus:bg-filterHighlightColor border-0 dropdown-toggle rounded-lg lg:text-base sm:text-sm text-primaryFontColor font-extralight" type="button">
-              Salary
-            </button>
-            <!----- dropdown ----->
-            <div class="absolute filter-dropdown price-filter w-96 rounded-2xl border mt-3 z-10">
-              <div class="p-4">
-                <div class="text-primaryFontColor text-base font-light">The average salary is <span class="font-semibold">$12000/month</span></div>
-                <div class="text-center text-green text-bold py-5 slider-block relative">
-                  <div class="px-9">
-                    <div class="slider-grids flex justify-center gap-1 items-end">
-                      <div class="untracked">
-                        <div class="w-2 h-1 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-3 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-6 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-7 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-9 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-12 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-14 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-16 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-20 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-24 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-24 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-20 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-16 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-7 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-7 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-11 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-10 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-14 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-7 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-4 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-3 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-2 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                      <div class="untracked">
-                        <div class="w-2 h-1 slider-grid rounded-sm">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slider-base w-full"></div>
-                    </div>
-                  <button class="left-switch focus:outline-none absolute top-24 blur-2xl rounded-full custom-rounded-icon w-9 h-9 flex items-center justify-center">
-                    <img src="https://i.ibb.co/PDj0hM6/switch.png" alt="switch" class="h-4">
-                  </button>
-                  <button class="right-switch focus:outline-none absolute top-24 blur-2xl right-0 rounded-full custom-rounded-icon w-9 h-9  flex items-center justify-center">
-                    <img src="https://i.ibb.co/PDj0hM6/switch.png" alt="switch" class="h-4">
-                  </button>
-                </div>
-                <div class="flex items-center justify-between mt-2 gap-10">
-                  <input class="form-control input-control text-secondaryFontColor w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$7">
-                  <hr class="border-primaryBorderColor w-14">
-                  <input class="form-control input-control text-secondaryFontColor w-full rounded-xl py-2 px-3 focus:outline-none sm:text-sm lg:text-base font-light" type="text" value="$1000+">
-                </div>
-              </div>
-              <hr class="border-primaryBorderColor">
-              <div class="py-4 px-4">
-                <div class="flex justify-between items-center">
-                  <button class="border-pink py-2 px-7 text-primaryFontColor rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Clear</button>
-                  <button class="bg-pink py-2 px-7 text-primaryFontColor rounded-xl border lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Save</button>
-                </div>
-              </div>
-            </div>
-            <!----- dropdown ----->
-          </div>
-          <!---- Price Filter End ----->
+        <div class="filter-block flex sm:justify-center md:justify-center gap-4 flex-wrap flex-row md:mb-3 sm:mb-3 lg:mb-0">
+          <slot name="filters"></slot>
 
           <!---- Map Switch Start ----->
-          <button class="btn-dropdown py-2 px-4 tracking-wide focus:outline-none bg-filterMenuColor hover:bg-filterHighlightColor active:bg-filterHighlightColor focus:bg-filterHighlightColor border-0 rounded-lg lg:text-base sm:text-sm text-primaryFontColor font-extralight" type="button">
-            <label class="toggle">
-              <span class="toggle-label">Map</span>
-              <input class="toggle-checkbox" type="checkbox" checked>
-              <div class="toggle-switch"></div>
+          <!-- <button class="btn-dropdown py-2 px-4 tracking-wide focus:outline-none bg-filterMenuColor hover:bg-filterHighlightColor active:bg-filterHighlightColor focus:bg-filterHighlightColor border-0 rounded-lg lg:text-base sm:text-sm text-primaryFontColor font-extralight" type="button">
+            <label class="toggle cursor-pointer inline-block">
+              <span class="toggle-label relative ml-1">Map</span>
+              <input class="toggle-checkbox absolute invisible" type="checkbox" checked>
+              <div class="toggle-switch inline-block rounded-2xl w-10 h-6 relative align-middle"></div>
             </label>
-          </button>
+          </button> -->
           <!---- Map Switch End ----->
         </div>
         <!----- Filters End ------>
         <!----- Button Group Start ----->
         <div class="flex lg:justify-end justify-center items-center">
           <div class="button-group bg-filterMenuColor flex box-border rounded-lg">  
-            <input class="button-option " id="option1" type="radio" name="option" checked/>
-            <label class="button-group-label text-primaryFontColor cursor-pointer rounded-lg min-w-max lg:text-base sm:text-sm font-light text-center" for="option1">
+            <input class="button-option hidden" id="option1" type="radio" name="option" checked/>
+            <label class="button-group-label py-1 px-2 text-primaryFontColor cursor-pointer rounded-lg min-w-max lg:text-base sm:text-sm font-light text-center" for="option1">
               Available Now
             </label>
-            <input class="button-option bg-filterMenuColor" id="option2" type="radio" name="option"/>
-            <label class="button-group-label text-primaryFontColor cursor-pointer rounded-lg min-w-max lg:text-base sm:text-sm font-light text-center" for="option2">    
+            <input class="button-option hidden bg-filterMenuColor" id="option2" type="radio" name="option"/>
+            <label class="button-group-label py-1 px-2 text-primaryFontColor cursor-pointer rounded-lg min-w-max lg:text-base sm:text-sm font-light text-center" for="option2">    
               Last 90 Days
             </label>
           </div>
@@ -357,23 +47,25 @@
     <div class="lg:flex">
       <div class="lg:w-7/12 md:w-12/12 mx-12 sm:mb-5 mb-0">
         <div class="section-title py-4 px-0">
-          <p class="text-primaryFontColor">300+ Jobs</p>
+          <p class="text-primaryFontColor tracking-wide">300+ Jobs</p>
         </div>
-        <hr class="border-primaryBorderColor">
+        <slot></slot>
+        
+        <!-- <hr class="border-primaryBorderColor">
         <div class="card py-5 ad-card">
           <div class="flex items-top">
-            <img src="https://i.ibb.co/fHGXqf0/real.png" alt="real" class="w-16 h-16 rounded-full object-cover">
+            <img src="https://mehak.topcoatdata.app/static/mehak/images/real.png" alt="real" class="w-16 h-16 rounded-full object-cover">
             <div class="card-content pl-5"> 
               <div class="flex justify-between">
-                <p class="text-sm text-secondaryFontColor font-light mb-1 company-name">The RealReal</p>
-                <p class="text-sm text-secondaryFontColor font-light mb-1 post-date">Today</p>
+                <p class="tracking-wide text-sm text-secondaryFontColor font-light mb-1 company-name">The RealReal</p>
+                <p class="tracking-wide text-sm text-secondaryFontColor font-light mb-1 post-date">Today</p>
               </div>
               <h1 class="text-primaryFontColor text-2xl mb-1"><a href="#" id="#">Data Scientist, Game Analytics</a></h1>
-              <p class="text-secondaryFontColor text-base font-light text-description">Do you want to help connect people all over the world, and work on a team building the next generation of planet scale AR games? We’re looking for hardworking people to help our company become more data focused; folks with the ability to be dedicated, thorough, and independent while working in a dynamic, fast-paced environment.</p>
+              <p class="tracking-wide text-secondaryFontColor text-base font-light text-description leading-6">Do you want to help connect people all over the world, and work on a team building the next generation of planet scale AR games? We’re looking for hardworking people to help our company become more data focused; folks with the ability to be dedicated, thorough, and independent while working in a dynamic, fast-paced environment.</p>
               <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/Wzfctmm/earth.png" alt="earth" class="mr-2"> Remote</p>
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/tmKjfy0/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/4FrxLwS/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/earth.png" alt="earth" class="mr-2"> Remote</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
               </div> 
             </div>
           </div>
@@ -381,18 +73,18 @@
         <hr class="border-primaryBorderColor">
         <div class="card py-5 ad-card">
           <div class="flex items-top">
-            <img src="https://i.ibb.co/Xydq7Zs/course-hero.png" alt="course-hero" class="w-16 h-16 rounded-full object-cover">
+            <img src="https://mehak.topcoatdata.app/static/mehak/images/course-hero.png" alt="course-hero" class="w-16 h-16 rounded-full object-cover">
             <div class="card-content pl-5"> 
               <div class="flex justify-between">
-                <p class="text-secondaryFontColor text-sm font-light mb-1 company-name">Teladoc Health</p>
-                <p class="text-secondaryFontColor text-sm font-light mb-1 post-date">Date</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light mb-1 company-name">Teladoc Health</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light mb-1 post-date">Date</p>
               </div>
               <h1 class="text-primaryFontColor text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
-              <p class="text-secondaryFontColor text-base font-light">Teladoc Health is transforming how people access and experience healthcare. Recognized as the world leader in virtual care, we are partnering with over a thousand clients to serve hundreds of thousands (soon millions!) of people living with chronic conditions every day.</p>
+              <p class="tracking-wide text-secondaryFontColor text-base font-light text-description leading-6">Teladoc Health is transforming how people access and experience healthcare. Recognized as the world leader in virtual care, we are partnering with over a thousand clients to serve hundreds of thousands (soon millions!) of people living with chronic conditions every day.</p>
               <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/Wzfctmm/earth.png" alt="earth" class="mr-2"> Remote</p>
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/tmKjfy0/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/4FrxLwS/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/earth.png" alt="earth" class="mr-2"> Remote</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
               </div>  
             </div>
           </div>
@@ -400,22 +92,22 @@
         <hr class="border-primaryBorderColor">
         <div class="card py-5 ad-card">
           <div class="flex items-top">
-            <img src="https://i.ibb.co/Xydq7Zs/course-hero.png" alt="course-hero" class="w-16 h-16 rounded-full object-cover">
+            <img src="https://mehak.topcoatdata.app/static/mehak/images/course-hero.png" alt="course-hero" class="w-16 h-16 rounded-full object-cover">
             <div class="card-content pl-5"> 
               <div class="flex justify-between">
-                <p class="text-secondaryFontColor text-sm font-light mb-1 company-name">Teladoc Health</p>
-                <p class="text-secondaryFontColor text-sm font-light mb-1 post-date">Date</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light mb-1 company-name">Teladoc Health</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light mb-1 post-date">Date</p>
               </div>
               <h1 class="text-primaryFontColor text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
-              <p class="text-secondaryFontColor text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="tracking-wide text-secondaryFontColor text-base font-light text-description leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/Wzfctmm/earth.png" alt="earth" class="mr-2"> Remote</p>
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/tmKjfy0/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
-                <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/4FrxLwS/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/earth.png" alt="earth" class="mr-2"> Remote</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
+                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
               </div>  
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="lg:w-5/12 md:w-12/12">
         <iframe width="100%" height="100%" 
@@ -425,85 +117,8 @@
     </div>
     <!-- Content Section End -->
 
-    <!-- Popup Start -->
-    <div class="custom-popup rounded-2xl fixed inset-0 outline-none mx-auto relative z-50">
-      <div class="popup-dialog transform-none mx-auto relative w-auto pointer-events-none sm:px-5 px-0">
-        <div class="popup-content rounded-2xl  relative lg:flex md:flex pointer-events-none pointer-events-auto z-50">
-          <div class="lg:w-3/12 md:w-4/12 sm:w-12/12">
-            <div class="col-left lg:rounded-r-none lg:rounded-l-2xl md:rounded-r-none md:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl p-4 h-full">
-              <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-secondaryFontColor mb-7">
-                <i class="fas fa-times"></i>
-              </div>
-              <div class="flex items-center mb-4">
-                <img src="https://i.ibb.co/Lg6zDcr/asana.png" alt="asana" class="w-16 h-16 rounded-full object-cover">
-                <div class="text-base text-primaryFontColor ml-5">
-                  Asana
-                </div>
-              </div>
-              <div class="flex items-center ml-1 mb-3">
-                <i class="text-secondaryFontColor mr-3 text-sm fas fa-map-marker-alt"></i>
-                <p class="text-sm text-secondaryFontColor">San Francisco, California</p>
-              </div>
-              <div class="flex items-center mb-3">
-                <i class="text-secondaryFontColor mr-3 text-sm fas fa-users"></i>
-                <p class="text-sm text-secondaryFontColor">1,001-5,000 employees</p>
-              </div>
-              <div class="mt-4 mb-6">
-                <p class="text-xs text-secondaryFontColor">Asana helps teams orchestrate their work, from small projects to strategic initiatives. Headquartered in San Francisco, CA, Asana has more than 107,000+ paying customers and millions of free organizations across 190 countries. Global customers such as Amazon, Japan Airlines, Sky, and Under Armour rely on Asana to manage everything from company objectives to digital transformation to product launches and marketing campaigns. For more information, visit www.asana.com.</p>
-              </div>
-              <div class="flex gap-4">
-                <a href="#">
-                  <div class="action-icon custom-rounded-icon flex text-lg items-center justify-center text-secondaryFontColor rounded-full">
-                    <i class="fas fa-external-link-alt"></i>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="action-icon custom-rounded-icon flex text-lg items-center justify-center text-secondaryFontColor rounded-full">
-                    <i class="fab fa-linkedin-in"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-9/12 md:w-8/12 sm:w-12/12">
-            <div class="col-right rounded-l-none rounded-r-2xl p-4">
-              <div class="pt-10 px-4">
-                <p class="text-secondaryFontColor text-sm font-light mb-3 post-date">Today</p>
-                <div class="flex justify-between items-center">
-                  <div class="text-3xl text-primaryFontColor font-medium">
-                    Revenue Strategy Analyst, Customer Success
-                  </div>
-                  <button class="bg-pink py-2 px-7 text-primaryFontColor rounded-xl lg:text-base sm:text-sm font-semibold focus:outline-none" type="button">Apply</button>
-                </div>
-                <p class="text-base font-light text-secondaryFontColor mt-8">We’re looking for an experienced analyst  to join the Revenue Strategy team at Asana. In this role you will work closely with the CX leadership team to help drive key insights and define our Customer Experience strategy.</p>
-                <div class="flex flex-wrap job-specs mt-4 gap-8">
-                  <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/Wzfctmm/earth.png" alt="earth" class="mr-2"> Remote</p>
-                  <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/tmKjfy0/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
-                  <p class="text-secondaryFontColor text-sm font-light flex"><img src="https://i.ibb.co/4FrxLwS/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
-                </div> 
-                <div class="text-xl text-semibold text-primaryFontColor mt-6">
-                  What you’ll achieve
-                </div>
-                <ul class="list-disc text-secondaryFontColor text-base pl-7 font-light py-4">
-                  <li>Execute on strategic initiatives to enable our Customer Success organization to better serve and grow Asana’s customers, often working cross-functionally with sales, marketing, finance and operations</li>
-                  <li>Create quarterly and annual reporting, forecasting, dashboards, territory planning, and productivity modeling to present and share with Asana leadership team</li>
-                  <li>Complete ad-hoc data analysis to gather insights and guide investment and growth</li>
-                  <li>Assist in the annual planning process for Customer Success translating strategy into a set of decisions, investments, targets, and detailed plans</li>
-                  <li>Define customer lifecycle strategy using data driven insights  to align with broader company goals</li>
-                </ul>
-                <div class="text-xl text-semibold text-primaryFontColor mt-5">
-                  About you
-                </div>
-                <ul class="list-disc text-secondaryFontColor text-base pl-7 font-light py-4">
-                  <li>3+ years’ relevant experience in strategy, operations, finance, management consulting, or a similar role  at a saas company</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Popup End -->
+    
+
   </div>
 </template>
 
@@ -562,19 +177,11 @@ body {
   text-shadow: 0px 1px 3px rgba(50, 0, 54, 0.43), 0px 0px 22px #FA00FF, 0px 0px 2px #FA00FF;
 }
 span.list-divider {
-  height: 24px;
   width: 1px;
   background: #6e6984;
 }
-.filters-section {
-  border-color: rgba(255, 255, 255, 0.08);
-}
 .list-content:hover {
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.16);
-}
-.list-content:hover i {
-  color: #c933cc;
+  background-color: rgba(0, 0, 0, 0.16);
 }
 /* ----------------------------- dropdown ------------------------- */
 .dropdown-toggle::after {
@@ -590,21 +197,8 @@ span.list-divider {
 }
 /* ------------------------- filter dropdown ----------------------- */
 .filter-dropdown {
-  border-color: rgba(255, 255, 255, 0.08);
-  background: rgba(34, 34, 63, 0.8);
-  box-sizing: border-box;
   box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.24);
-  backdrop-filter: blur(25px);  
-  border-radius: 16px;
-}
-.input-control.form-control {
-  background: rgba(255, 255, 255, 0.08);
-  letter-spacing: 0.37px;
-}
-.search-icon {
-  position: absolute;
-  top: 8px;
-  left: 8px;
+  backdrop-filter: blur(25px); 
 }
 .search-filter, .multiselect-filter {
   width: 274px;
@@ -620,19 +214,8 @@ span.list-divider {
   background-color: rgba(0, 0, 0, 0.16);
 }
 /* ------------------------- toggle-switch -------------------------------*/
-.toggle {
-  cursor: pointer;
-  display: inline-block;
-}
-
 .toggle-switch {
-  display: inline-block;
   background: #ccc;
-  border-radius: 16px;
-  width: 40px;
-  height: 22px;
-  position: relative;
-  vertical-align: middle;
   transition: background 0.25s;
 }
 .toggle-switch:before, .toggle-switch:after {
@@ -642,8 +225,8 @@ span.list-divider {
   display: block;
   background: linear-gradient(to bottom, #fff 0%, #eee 100%);
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   position: absolute;
   top: 1px;
   transition: left 0.25s;
@@ -652,33 +235,13 @@ span.list-divider {
   background: #C933CC;
 }
 .toggle-checkbox:checked + .toggle-switch:before {
-  left: 19px;
-}
-.toggle-checkbox {
-  position: absolute;
-  visibility: hidden;
+  left: 17px;
 }
 .toggle-label {
-  margin-left: 5px;
-  position: relative;
   top: 2px;
 }
 /* ------------------------- checkbox ----------------------------------- */
-.custom-label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
-.custom-label input {
-  position: relative !important;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin-right: 12px;
-  box-sizing: content-box;
-  overflow: hidden;
-}
 .custom-label input:before {
   content: '';
   display: block;
@@ -705,9 +268,6 @@ span.list-divider {
   height: 20px;
   border-radius: 100vh;
   transform: translate(-50%, -50%) scale(0);
-}
-.custom-label input[type="checkbox"]:before {
-  border-radius: 3px;
 }
 .custom-label input[type="checkbox"]:after {
   background-color: transparent;
@@ -767,44 +327,14 @@ span.list-divider {
 }
 .button-group .button-group-label {
   transition: all 0.2s;
-  padding: 3px 8px;
   min-width: 144px;
 }
-.button-group .button-group-label:not(:first-of-type) {
-  border-left: 0;
-}
 /* Hide the radio button */
-input.button-option {
-  display: none;
-}
 input.button-option:checked + label {
   background: #C933CC;
 }
-/* ------------------ card ------------------------ */
-.card {
-  border-color: rgba(255, 255, 255, 0.08); 
-}
-.ad-card .card-content p {
-  letter-spacing: 0.37px
-}
-.ad-card .card-content .text-description {
-  line-height: 22px;
-  letter-spacing: 0.37px
-}
-/* -------------------- delete this css later ---------------- */
-.card-icon {
-  padding: 30px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #366dd9;
-}
-
 /* ---------------------- custom popup ------------------------ */
 .popup-content {
-  background: #22223F;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-sizing: border-box;
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -812,28 +342,18 @@ input.button-option:checked + label {
 .custom-rounded-icon {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(50px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.action-icon {
-  width: 44px;
-  height: 44px;
 }
 .action-icon:hover {
-  color: #ffffff;
   border: 1px solid #ffffff;
 }
 .col-right {
   height: 580px;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 .col-left {
   background: rgba(0, 0, 0, 0.16);
 }
 .close-popup:hover, .left-switch:hover, .right-switch:hover {
   border: 1px solid #ffffff;
-  color: #ffffff;
-  cursor: pointer;
 }
 /* ----------------------------- scroll bar ----------------------- */
 .col-right::-webkit-scrollbar-track {

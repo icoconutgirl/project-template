@@ -48,6 +48,8 @@ exposures:
     url: https://mehak.topcoatdata.app/job_seeker
     owner: 
         email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
 
   - name: year_filter_auto_page
     type: 'dashboard'

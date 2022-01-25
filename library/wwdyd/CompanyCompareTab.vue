@@ -1,28 +1,12 @@
 <template>
   <div class="tracking-wide rounded-none h-auto bg-gradient-to-r from-primaryColor via-pageBackgroundColor to-primaryColor w-full">
+      
     <!-- Header Start-->
-    <div class="mx-12">
-      <header class="lg:flex md:flex w-full items-center main-header py-4">
-        <div class="brand-logo flex sm:justify-center sm:mb-4 md:mb-0 lg:mb-0">
-          <img src="https://i.ibb.co/FJmZ1w0/Logo.png" alt="Logo">
-        </div>
-        <div class="justify-center flex w-full">
-          <div class="custom-tabs">
-            <ul class="flex justify-center items-center border rounded-lg">
-              <li class="py-2 px-12 sm:px-8">
-                <a class="nav-link text-primaryFontColor hover:text-primaryFontColor active:text-primaryFontColor sm:text-sm md:text-base lg:text-lg xl:text-xl leading-7" href="/job_seeker">Job Seeker</a>
-              </li>
-              <span class="list-divider"></span>
-              <li class="py-2 px-12 sm:px-8">
-                <a class="nav-link active text-primaryFontColor hover:text-primaryFontColor active:text-primaryFontColor sm:text-sm md:text-base lg:text-lg xl:text-xl leading-7" href="/company_compare">Company Compare</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-    </div>
+    <WwdydHeader></WwdydHeader>
     <!-- Header End -->
+
     <hr class="border-primaryBorderColor mb-5">
+    
     <!-- Content Start -->
     <div class="mx-12">
       <div class="lg:flex md:flex items-center mb-6">
@@ -34,8 +18,8 @@
         </div>
         <div class="lg:w-9/12 md:w-9/12 sm:w-12/12">
           <div class="gap-4 lg:grid-cols-3 sm:grid-cols-2 grid place-content-center">
-            <div class="new-company-card">
-              <div class="border-dashed border-color border rounded-3xl text-center p-6">
+            <div class="new-company-card rounded-3xl">
+              <div class="border-dashed border-primaryBorderColor border rounded-3xl text-center p-6">
                 <a href="#">
                   <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-secondaryFontColor rounded-full">
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,8 +30,8 @@
                 </a>
               </div>
             </div>
-            <div class="new-company-card">
-              <div class="border-dashed border-color border rounded-3xl text-center p-6">
+            <div class="new-company-card rounded-3xl">
+              <div class="border-dashed border-primaryBorderColor border rounded-3xl text-center p-6">
                 <a href="#">
                   <div class="big-icon w-20 h-20 mx-auto custom-rounded-icon flex text-lg items-center justify-center text-secondaryFontColor rounded-full">
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,13 +44,13 @@
             </div>
             <div class="selected-card relative">
               <div class="flex justify-end">
-                <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-secondaryFontColor">
-                  <i class="fas fa-times"></i>
-                </div>
+                <div class="close-popup cursor-pointer hover:text-primaryFontColor custom-rounded-icon border border-primaryBorderColor w-8 h-8 rounded-full justify-center flex items-center text-base text-secondaryFontColor mb-7">
+                <i class="fas fa-times"></i>
+              </div>
               </div>
               <div class="flex items-center justify-around -m-2">
                 <div class="text-center">
-                  <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
+                  <img src="https://mehak.topcoatdata.app/static/mehak/images/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
                   <p class="text-base text-primaryFontColor font-semibold mt-5">Teladoc</p>
                 </div>
               </div>
@@ -79,92 +63,92 @@
       <!-- Popular Companies Start -->
       <div class="text-2xl text-primaryFontColor font-semibold mb-5">Popular Comparisons</div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
-        <div class="border border-color rounded-2xl p-6">
+        <div class="border border-primaryBorderColor rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <img src="https://i.ibb.co/bddQGQh/amazon.png" alt="amazon" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/amazon.png" alt="amazon" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">Amazon</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
-              <img src="https://i.ibb.co/9h7dJcg/google.png" alt="google" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/google.png" alt="google" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">Google</p>
             </div>
           </div>
         </div>
-        <div class="border border-color rounded-2xl p-6">
+        <div class="border border-primaryBorderColor rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <img src="https://i.ibb.co/vzHtwrm/img-3.png" alt="atnt" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/img-3.png" alt="atnt" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">AT&T</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
-              <img src="https://i.ibb.co/SrZ1SWj/verizon.png" alt="verizon" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/verizon.png" alt="verizon" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">Verizon</p>
             </div>
           </div>
         </div>
-        <div class="border border-color rounded-2xl p-6">
+        <div class="border border-primaryBorderColor rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <img src="https://i.ibb.co/68ctrXg/jp-morgan.png" alt="jp-morgan" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/jp-morgan.png" alt="jp-morgan" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">J.P.Morgan</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
-              <img src="https://i.ibb.co/3kDYnLq/wells-fargo.png" alt="wells-fargo" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/wells-fargo.png" alt="wells-fargo" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">Wells Fargo</p>
             </div>
           </div>
         </div>
-        <div class="border border-color rounded-2xl p-6">
+        <div class="border border-primaryBorderColor rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <img src="https://i.ibb.co/17Gd4tF/img-1.png" alt="img-1" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/img-1.png" alt="img-1" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">Company</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
-              <img src="https://i.ibb.co/bHc1Vk2/img-2.png" alt="img-2" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/img-2.png" alt="img-2" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">Best Buy</p>
             </div>
           </div>
         </div>
-        <div class="border border-color rounded-2xl p-6">
+        <div class="border border-primaryBorderColor rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">Teladoc</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
-              <img src="https://i.ibb.co/dWjSFb4/cvs.png" alt="cvs" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/cvs.png" alt="cvs" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">CVS Health</p>
             </div>
           </div>
         </div>
-        <div class="border border-color rounded-2xl p-6">
+        <div class="border border-primaryBorderColor rounded-2xl p-6">
           <div class="flex items-center justify-around">
             <div class="text-center">
-              <img src="https://i.ibb.co/WHnR5fz/careers.png" alt="careers" class="w-20 h-20 rounded-full object-cover" >
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/careers.png" alt="careers" class="w-20 h-20 rounded-full object-cover" >
               <p class="text-base text-primaryFontColor font-semibold mt-5">Careers</p>
             </div>
             <div class="custom-rounded-icon w-10 h-10 rounded-full justify-center flex items-center mb-7">
               <p class="text-base text-secondaryFontColor">VS</p>
             </div>
             <div class="text-center">
-              <img src="https://i.ibb.co/5jtZwpD/dot.png" alt="dot" class="w-20 h-20 rounded-full object-cover">
+              <img src="https://mehak.topcoatdata.app/static/mehak/images/dot.png" alt="dot" class="w-20 h-20 rounded-full object-cover">
               <p class="text-base text-primaryFontColor font-semibold mt-5">Dot</p>
             </div>
           </div>
@@ -292,100 +276,100 @@
           <div class="py-2 w-full">
             <p class="text-primaryFontColor text-base font-semibold">Tech Stack</p>
             <fieldset>
-              <label for="check-1" class="custom-label cursor-pointer py-2">
-                <input type="checkbox" id="check-1" name="check"> 
+              <label for="check-1" class="custom-label flex flex-row items-center py-2 cursor-pointer">
+                <input type="checkbox" id="check-1" name="check" class="relative appearance-none mr-3 box-content overflow-hidden before:rounded"> 
                 <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">Highlight Differences</span>
               </label>
             </fieldset>
           </div>
           <div class="py-2 w-full">
             <div class="flex flex-wrap justify-center gap-1 mx-1">
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 React
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 NodeJS
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 TypeScript
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 AWS
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Postgres
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 MobX State Tree
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Type ORM
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Java
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Spring
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Vue.js
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Backbone.js
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Python
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 ElasticSearch
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Docker
               </div>
             </div>
           </div>
           <div class="py-2 w-full">
             <div class="flex flex-wrap justify-center gap-1 mx-1">
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 React
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 NodeJS
               </div>
-              <div class="custom-tag py-1 active px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 active px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 TypeScript
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 AWS
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Postgres
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 MobX State Tree
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Type ORM
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Java
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Spring
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Vue.js
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Backbone.js
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Python
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 ElasticSearch
               </div>
-              <div class="custom-tag py-1 px-3 border border-color text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
+              <div class="custom-tag py-1 px-3 border border-primaryBorderColor text-sm cursor-pointer font-light text-secondaryFontColor rounded-2xl">
                 Docker
               </div>
             </div>
@@ -437,12 +421,12 @@
             <p class="text-primaryFontColor text-base font-semibold">Title Accuracy</p>
           </div>
           <div class="py-2 w-full flex justify-center">
-            <div class="border-2 border-color rounded-full h-16 w-16 flex items-center justify-center">
+            <div class="border-2 border-primaryBorderColor rounded-full h-16 w-16 flex items-center justify-center">
               <p class="text-primaryFontColor text-base font-light">90%</p>
             </div>
           </div>
           <div class="py-2 w-full flex justify-center">
-            <div class="border-2 border-color rounded-full h-16 w-16 flex items-center justify-center">
+            <div class="border-2 border-primaryBorderColor rounded-full h-16 w-16 flex items-center justify-center">
               <p class="text-primaryFontColor text-base font-light">90%</p>
             </div>
           </div>
@@ -462,7 +446,7 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <img src="https://i.ibb.co/rcNbG1s/Im.png" alt="walmart" class="w-20 h-20 rounded-full object-cover">
+                      <img src="https://mehak.topcoatdata.app/static/mehak/images/Im.png" alt="walmart" class="w-20 h-20 rounded-full object-cover">
                       <p class="text-base text-primaryFontColor font-semibold mt-5">Walmart</p>
                     </div>
                   </div>
@@ -472,7 +456,7 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <img src="https://i.ibb.co/yY4s8fY/Image.png" alt="aliexpress" class="w-20 h-20 rounded-full object-cover">
+                      <img src="https://mehak.topcoatdata.app/static/mehak/images/Image.png" alt="aliexpress" class="w-20 h-20 rounded-full object-cover">
                       <p class="text-base text-primaryFontColor font-semibold mt-5">Aliexpress</p>
                     </div>
                   </div>
@@ -482,7 +466,7 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <img src="https://i.ibb.co/HV97Tp5/otto.png" alt="otto" class="w-20 h-20 rounded-full object-cover">
+                      <img src="https://mehak.topcoatdata.app/static/mehak/images/otto.png" alt="otto" class="w-20 h-20 rounded-full object-cover">
                       <p class="text-base text-primaryFontColor font-semibold mt-5">Otto</p>
                     </div>
                   </div>
@@ -492,7 +476,7 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <img src="https://i.ibb.co/Kwwh8CG/flipkart.png" alt="flipkart" class="w-20 h-20 rounded-full object-cover">
+                      <img src="https://mehak.topcoatdata.app/static/mehak/images/flipkart.png" alt="flipkart" class="w-20 h-20 rounded-full object-cover">
                       <p class="text-base text-primaryFontColor font-semibold mt-5">Flipkart</p>
                     </div>
                   </div>
@@ -506,7 +490,7 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <img src="https://i.ibb.co/TKjc3sd/Image-1.png" alt="Image-1" class="w-20 h-20 rounded-full object-cover">
+                      <img src="https://mehak.topcoatdata.app/static/mehak/images/Image-1.png" alt="Image-1" class="w-20 h-20 rounded-full object-cover">
                       <p class="text-base text-primaryFontColor font-semibold mt-5">Meta</p>
                     </div>
                   </div>
@@ -516,7 +500,7 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <img src="https://i.ibb.co/QJP6t20/microsoft.png" alt="microsoft" class="w-20 h-20 rounded-full object-cover">
+                      <img src="https://mehak.topcoatdata.app/static/mehak/images/microsoft.png" alt="microsoft" class="w-20 h-20 rounded-full object-cover">
                       <p class="text-base text-primaryFontColor font-semibold mt-5">Microsoft</p>
                     </div>
                   </div>
@@ -526,7 +510,7 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <img src="https://i.ibb.co/pRSGJ2J/apple.png" alt="apple" class="w-20 h-20 rounded-full object-cover">
+                      <img src="https://mehak.topcoatdata.app/static/mehak/images/apple.png" alt="apple" class="w-20 h-20 rounded-full object-cover">
                       <p class="text-base text-primaryFontColor font-semibold mt-5">Apple</p>
                     </div>
                   </div>
@@ -536,7 +520,7 @@
                 <a href="#">
                   <div class="flex items-center justify-around">
                     <div class="text-center">
-                      <img src="https://i.ibb.co/tBd9j0t/yahoo.png" alt="yahoo" class="w-20 h-20 rounded-full object-cover">
+                      <img src="https://mehak.topcoatdata.app/static/mehak/images/yahoo.png" alt="yahoo" class="w-20 h-20 rounded-full object-cover">
                       <p class="text-base text-primaryFontColor font-semibold mt-5">Yahoo</p>
                     </div>
                   </div>
@@ -555,7 +539,7 @@
     <!-- Popup Start -->
     <div class="custom-popup rounded-2xl fixed inset-0 outline-none mx-auto relative z-50">
       <div class="popup-dialog transform-none mx-auto relative w-auto pointer-events-none sm:px-5 px-0">
-        <div class="popup-content rounded-2xl  relative lg:flex md:flex pointer-events-none pointer-events-auto z-50">
+        <div class="popup-content bg-pageBackgroundColor rounded-2xl  relative lg:flex md:flex pointer-events-none pointer-events-auto z-50">
           <div class="lg:w-3/12 md:w-4/12 sm:w-12/12">
             <div class="col-left lg:rounded-r-none lg:rounded-l-2xl md:rounded-r-none md:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl p-4 h-full">
               <div class="close-popup custom-rounded-icon w-8 h-8 rounded-full justify-center flex items-center text-base text-secondaryFontColor mb-7">
@@ -564,30 +548,30 @@
               <div class="text-xl text-primaryFontColor mb-4">Filter by</div>
               <div class="text-base text-primaryFontColor mb-3">Location</div>
               <div class="relative">
-                <button class="focus:outline-none search-icon text-secondaryFontColor text-base" type="submit"><i class="fas fa-map-marker-alt"></i></button>
-                <input class="form-control input-control text-secondaryFontColor w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Select Company Location">
+                <button class="focus:outline-none search-icon absolute top-2 left-2 text-secondaryFontColor text-base" type="submit"><i class="fas fa-search"></i></button>
+                <input class="form-control tracking-wide bg-filterMenuColor text-secondaryFontColor w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search">
               </div>
               <hr class="border-primaryBorderColor my-4">
               <div class="text-base text-primaryFontColor mb-3">Size</div>
               <fieldset>
-                <label for="check-1" class="custom-label cursor-pointer py-2">
-                  <input type="checkbox" id="check-1" name="check"> 
+                <label for="check-1" class="custom-label flex flex-row items-center py-2 cursor-pointer">
+                  <input type="checkbox" id="check-1" name="check" class="relative appearance-none mr-3 box-content overflow-hidden before:rounded"> 
                   <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">2-9 employees (774)</span>
                 </label>
-                <label for="check-2" class="custom-label cursor-pointer py-2">
-                  <input type="checkbox" id="check-2" name="check"> 
+                <label for="check-2" class="custom-label flex flex-row items-center py-2 cursor-pointer">
+                  <input type="checkbox" id="check-1" name="check" class="relative appearance-none mr-3 box-content overflow-hidden before:rounded">  
                   <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">10-99 employees (994)</span>
                 </label>
-                <label for="check-3" class="custom-label cursor-pointer py-2">
-                  <input type="checkbox" id="check-3" name="check" checked> 
+                <label for="check-3" class="custom-label flex flex-row items-center py-2 cursor-pointer">
+                  <input type="checkbox" id="check-1" name="check" class="relative appearance-none mr-3 box-content overflow-hidden before:rounded" checked>  
                   <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">100-499 employees (163)</span>
                 </label>
-                <label for="check-4" class="custom-label cursor-pointer py-2">
-                  <input type="checkbox" id="check-4" name="check"> 
+                <label for="check-4" class="custom-label flex flex-row items-center py-2 cursor-pointer">
+                  <input type="checkbox" id="check-1" name="check" class="relative appearance-none mr-3 box-content overflow-hidden before:rounded">  
                   <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">500-1000 employees (237)</span>
                 </label>
-                <label for="check-5" class="custom-label cursor-pointer py-2">
-                  <input type="checkbox" id="check-5" name="check"> 
+                <label for="check-5" class="custom-label flex flex-row items-center py-2 cursor-pointer">
+                  <input type="checkbox" id="check-1" name="check" class="relative appearance-none mr-3 box-content overflow-hidden before:rounded">  
                   <span class="lg:text-base sm:text-sm text-primaryFontColor font-light">More than 1000 (42)</span>
                 </label>
               </fieldset>
@@ -595,15 +579,15 @@
             </div>
           </div>
           <div class="lg:w-9/12 md:w-8/12 sm:w-12/12">
-            <div class="col-right rounded-l-none rounded-r-2xl p-4">
+            <div class="col-right overflow-x-hidden overflow-y-scroll rounded-l-none rounded-r-2xl p-4">
               <div class="pt-10 px-4">
                 <div class="flex justify-between items-center">
                   <div class="text-4xl text-primaryFontColor font-bold">
                     Companies
                   </div>
                   <div class="relative">
-                    <button class="focus:outline-none search-icon text-secondaryFontColor text-base" type="submit"><i class="fas fa-search"></i></button>
-                    <input class="form-control input-control text-secondaryFontColor w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search Company">
+                    <button class="focus:outline-none search-icon absolute top-2 left-2 text-secondaryFontColor text-base" type="submit"><i class="fas fa-search"></i></button>
+                    <input class="form-control tracking-wide bg-filterMenuColor text-secondaryFontColor w-full rounded-xl p-2 pl-8 focus:outline-none sm:text-sm lg:text-base font-light" type="search" placeholder="Search">
                   </div>
                 </div>
                 <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 my-7">
@@ -611,7 +595,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/bddQGQh/amazon.png" alt="amazon" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/amazon.png" alt="amazon" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Amazon</p>
                         </div>
                       </div>
@@ -621,7 +605,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/9h7dJcg/google.png" alt="google" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/google.png" alt="google" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Google</p>
                         </div>
                       </div>
@@ -631,7 +615,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/vzHtwrm/img-3.png" alt="img-3" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/img-3.png" alt="img-3" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">AT&T</p>
                         </div>
                       </div>
@@ -641,7 +625,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/SrZ1SWj/verizon.png" alt="verizon" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/verizon.png" alt="verizon" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Verizon</p>
                         </div>
                       </div>
@@ -651,7 +635,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/68ctrXg/jp-morgan.png" alt="jp-morgan" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/jp-morgan.png" alt="jp-morgan" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">J.P. Morgan</p>
                         </div>
                       </div>
@@ -661,7 +645,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/3kDYnLq/wells-fargo.png" alt="wells-fargo" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/wells-fargo.png" alt="wells-fargo" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Wells Fargo</p>
                         </div>
                       </div>
@@ -671,7 +655,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/dWjSFb4/cvs.png" alt="cvs" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/cvs.png" alt="cvs" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">CVS Health</p>
                         </div>
                       </div>
@@ -681,7 +665,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/WHnR5fz/careers.png" alt="careers" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/careers.png" alt="careers" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Careers</p>
                         </div>
                       </div>
@@ -691,7 +675,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/JkB0sGt/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/img-4.png" alt="img-4" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Teladoc</p>
                         </div>
                       </div>
@@ -701,7 +685,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/5jtZwpD/dot.png" alt="dot" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/dot.png" alt="dot" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Dot</p>
                         </div>
                       </div>
@@ -711,7 +695,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/YtgKyz7/Ima.png" alt="Ima" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/Ima.png" alt="Ima" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Company</p>
                         </div>
                       </div>
@@ -721,7 +705,7 @@
                     <a href="#">
                       <div class="flex items-center justify-around">
                         <div class="text-center">
-                          <img src="https://i.ibb.co/h7Fw76Y/w.png" alt="w" class="w-20 h-20 rounded-full object-cover">
+                          <img src="https://mehak.topcoatdata.app/static/mehak/images/w.png" alt="w" class="w-20 h-20 rounded-full object-cover">
                           <p class="text-base text-primaryFontColor font-semibold mt-5">Company</p>
                         </div>
                       </div>
@@ -740,356 +724,260 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --primary-color: #161F27;
+  /* --secondary-color: #2B2550; */
+  --primary-font-color: #ffffff;
+  --primary-border-color: rgba(255, 255, 255, 0.08);
 
-/* ------ progress bar ------ */
-  @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  :root {
-    --primary-color: #161F27;
-    /* --secondary-color: #2B2550; */
-    --primary-font-color: #ffffff;
-    --primary-border-color: rgba(255, 255, 255, 0.08);
+  --secondary-font-color: rgba(255, 255, 255, 0.6);
 
-    --secondary-font-color: rgba(255, 255, 255, 0.6);
+  --filter-background-color: rgba(34, 34, 63, 0.8);
+  --filter-menu-color: rgba(255, 255, 255, 0.08);
+  --filter-border-color: rgba(255, 255, 255, 0.08);
+  --filter-highlight-color: rgba(255, 255, 255, 0.24);
 
-    --filter-background-color: rgba(34, 34, 63, 0.8);
-    --filter-menu-color: rgba(255, 255, 255, 0.08);
-    --filter-border-color: rgba(255, 255, 255, 0.08);
-    --filter-highlight-color: rgba(255, 255, 255, 0.24);
+  --page-background-color: #2B2550;
+}
+.untracked .slider-grid {
+  background: #73C2F8;
+}
+.slider-base {
+  background: rgba(255, 255, 255, 0.08); 
+  height: 2px;
+}
+body {
+  font-family: 'Exo', sans-serif;
+}
+.border-pink {
+  border-color: #c933cc;
+}
+.border-pink:hover {
+  border-color:  #a918ac;
+}
+.bg-pink {
+  background: #c933cc;
+  border-color: #c933cc;
+}
 
-    --page-background-color: #2B2550;
-  }
-  body {
-    font-family: 'Exo', sans-serif;
-  }
-  .border-pink {
-    border-color: #c933cc;
-  }
-  .border-pink:hover {
-    border-color:  #a918ac;
-  }
-  .bg-pink {
-    background: #c933cc;
-    border-color: #c933cc;
-  }
-  .border-color {
-    border-color: rgba(255, 255, 255, 0.16);
-  }
-  .bg-pink:hover {
-    background: #a918ac;
-    border-color: #a918ac;
-  }
-  .text-secondaryFontColor {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .custom-tabs ul {
-    border-color: #ffffff;
-    box-shadow: 0px 0px 0px #fa00ff, 0px 0px 4px #fa00ff, 0px 0px 0px #fa00ff, 0px 0px 3px #fa00ff;
-    filter: blur(0.5px);
-  }
-  .custom-tabs ul li a {
-    text-shadow: 0px 1px 4px rgb(0 0 0 / 70%);
-  }
-  .custom-tabs ul li a.active {
-    text-shadow: 0px 1px 3px rgba(50, 0, 54, 0.43), 0px 0px 22px #FA00FF, 0px 0px 2px #FA00FF;
-  }
-  span.list-divider {
-    height: 24px;
-    width: 1px;
-    background: #6e6984;
-  }
-  .filters-section {
-    border-color: rgba(255, 255, 255, 0.08);
-  }
-  .list-content:hover {
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.16);
-  }
-  .list-content:hover i {
-    color: #c933cc;
-  }
-  /* ----------------------------- dropdown ------------------------- */
-  
-  .dropdown-toggle::after {
-    vertical-align: 0.255em;
-    margin-left: 5px;
-    content: '';
-    display: inline-block;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    height: 7px;
-    width: 7px;
-  }
-  /* ------------------------- filter dropdown ----------------------- */
-  .filter-dropdown {
-    border-color: rgba(255, 255, 255, 0.08);
-    background: rgba(34, 34, 63, 0.8);
-    box-sizing: border-box;
-    box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.24);
-    backdrop-filter: blur(25px);  
-    border-radius: 16px;
-    width: 274px;
-  }
-  .input-control.form-control {
-    background: rgba(255, 255, 255, 0.08);
-    letter-spacing: 0.37px;
-  }
-  .search-icon {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-  }
-  .location-filter, .employment-filter {
-    width: 274px;
-  } 
-  .category-filter {
-    width: 392px;
-  }
-  .bg-card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-  }
-  .bg-card:hover {
-    background-color: rgba(0, 0, 0, 0.16);
-  }
-  /* ------------------------- toggle-switch -------------------------------*/
-  .toggle {
-    cursor: pointer;
-    display: inline-block;
-  }
+.bg-pink:hover {
+  background: #a918ac;
+  border-color: #a918ac;
+}
 
-  .toggle-switch {
-    display: inline-block;
-    background: #ccc;
-    border-radius: 16px;
-    width: 40px;
-    height: 22px;
-    position: relative;
-    vertical-align: middle;
-    transition: background 0.25s;
-  }
-  .toggle-switch:before, .toggle-switch:after {
-    content: "";
-  }
-  .toggle-switch:before {
-    display: block;
-    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 1px;
-    transition: left 0.25s;
-  }
-  .toggle-checkbox:checked + .toggle-switch {
-    background: #C933CC;
-  }
-  .toggle-checkbox:checked + .toggle-switch:before {
-    left: 19px;
-  }
-  .toggle-checkbox {
-    position: absolute;
-    visibility: hidden;
-  }
-  .toggle-label {
-    margin-left: 5px;
-    position: relative;
-    top: 2px;
-  }
-  /* ------------------------- checkbox ----------------------------------- */
-  .custom-label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.custom-tabs ul {
+  border-color: #ffffff;
+  box-shadow: 0px 0px 0px #fa00ff, 0px 0px 4px #fa00ff, 0px 0px 0px #fa00ff, 0px 0px 3px #fa00ff;
+  filter: blur(0.5px);
+}
+.custom-tabs ul li a {
+  text-shadow: 0px 1px 4px rgb(0 0 0 / 70%);
+}
+.custom-tabs ul li a.active {
+  text-shadow: 0px 1px 3px rgba(50, 0, 54, 0.43), 0px 0px 22px #FA00FF, 0px 0px 2px #FA00FF;
+}
+span.list-divider {
+  width: 1px;
+  background: #6e6984;
+}
+.list-content:hover {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+/* ----------------------------- dropdown ------------------------- */
+.dropdown-toggle::after {
+  vertical-align: 0.255em;
+  margin-left: 5px;
+  content: '';
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  height: 7px;
+  width: 7px;
+}
+/* ------------------------- filter dropdown ----------------------- */
+.filter-dropdown {
+  box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(25px); 
+}
+.search-filter, .multiselect-filter {
+  width: 274px;
+} 
+.category-filter {
+  width: 392px;
+}
+.bg-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.bg-card:hover {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+/* ------------------------- toggle-switch -------------------------------*/
+.toggle-switch {
+  background: #ccc;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 1px;
+  transition: left 0.25s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #C933CC;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 17px;
+}
+.toggle-label {
+  top: 2px;
+}
+/* ------------------------- checkbox ----------------------------------- */
 
-  .custom-label input {
-    position: relative !important;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin-right: 12px;
-    box-sizing: content-box;
-    overflow: hidden;
-  }
-  .custom-label input:before {
-    content: '';
-    display: block;
-    box-sizing: content-box;
-    width: 20px;
-    height: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-  }
-  .custom-label input:checked:before {
-    border-color: #c933cc;
-    background: #c933cc;
-  }
+.custom-label input:before {
+  content: '';
+  display: block;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.custom-label input:checked:before {
+  border-color: #c933cc;
+  background: #c933cc;
+}
 
-  .custom-label input:after {
-    content: '';
-    display: block;
-    position: absolute;
-    box-sizing: content-box;
-    top: 55%;
-    left: 50%;
-    transform-origin: 50% 50%;
-    background-color: #12CBC4;
-    width: 20px;
-    height: 20px;
-    border-radius: 100vh;
-    transform: translate(-50%, -50%) scale(0);
-  }
-  .custom-label input[type="checkbox"]:before {
-    border-radius: 3px;
-  }
-  .custom-label input[type="checkbox"]:after {
-    background-color: transparent;
-    width: 9.6px;
-    height: 16px;
-    border-radius: 0;
+.custom-label input:after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  top: 55%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  background-color: #12CBC4;
+  width: 20px;
+  height: 20px;
+  border-radius: 100vh;
+  transform: translate(-50%, -50%) scale(0);
+}
+.custom-label input[type="checkbox"]:after {
+  background-color: transparent;
+  width: 9.6px;
+  height: 16px;
+  border-radius: 0;
+  transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  background-color: transparent;
+  box-shadow: 2px 2px 0px 0px #ffffff;
+}
+.custom-label input[type="checkbox"]:checked:after {
+  -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
+  animation: toggleOnCheckbox 0.2s ease forwards;
+}
+.custom-label input[type="checkbox"].filled:before {
+  border-radius: 4px;
+  transition: 0.2s border-color ease, 0.2s background-color ease;
+}
+.section-hover:hover {
+  background: rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.section-hover.active{
+  background: rgba(0, 0, 0, 0.16);
+}
+@-webkit-keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
     transform: translate(-50%, -85%) scale(0) rotate(45deg);
-    background-color: transparent;
-    box-shadow: 2px 2px 0px 0px #ffffff;
   }
-  .custom-label input[type="checkbox"]:checked:after {
-    -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
-    animation: toggleOnCheckbox 0.2s ease forwards;
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
   }
-  .custom-label input[type="checkbox"].filled:before {
-    border-radius: 4px;
-    transition: 0.2s border-color ease, 0.2s background-color ease;
+  100% {
+    transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
   }
-  .section-hover:hover {
-    background: rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+}
+@keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
   }
-  .section-hover.active{
-    background: rgba(0, 0, 0, 0.16);
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
   }
-  @-webkit-keyframes toggleOnCheckbox {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -85%) scale(0) rotate(45deg);
-    }
-    70% {
-      opacity: 1;
-      transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
-    }
-    100% {
-      transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
-    }
+  100% {
+    transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
   }
-  @keyframes toggleOnCheckbox {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -85%) scale(0) rotate(45deg);
-    }
-    70% {
-      opacity: 1;
-      transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
-    }
-    100% {
-      transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
-    }
-  }
+}
 
 
-  /* ------------------------- button group --------------------------------*/
-  .button-group {
-    background: rgba(255, 255, 255, 0.08);
-  }
-  .button-group .button-group-label {
-    transition: all 0.2s;
-    padding: 3px 8px;
-    min-width: 144px;
-  }
-  .button-group .button-group-label:not(:first-of-type) {
-    border-left: 0;
-  }
-  /* Hide the radio button */
-  input.button-option {
-    display: none;
-  }
-  input.button-option:checked + label {
-    background: #C933CC;
-  }
-  /* ------------------ card ------------------------ */
-  .card {
-    border-color: rgba(255, 255, 255, 0.08); 
-  }
-  .job-post-card .card-content p {
-    letter-spacing: 0.37px
-  }
-  .job-post-card .card-content .text-description {
-    line-height: 22px;
-    letter-spacing: 0.37px
-  }
-  /* -------------------- delete this css later ---------------- */
-  .card-icon {
-    padding: 30px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #366dd9;
-  }
+/* ------------------------- button group --------------------------------*/
+.button-group {
+  background: rgba(255, 255, 255, 0.08);
+}
+.button-group .button-group-label {
+  transition: all 0.2s;
+  min-width: 144px;
+}
+/* Hide the radio button */
+input.button-option:checked + label {
+  background: #C933CC;
+}
+/* ---------------------- custom popup ------------------------ */
+.popup-content {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.custom-rounded-icon {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(50px);
+}
+.action-icon:hover {
+  border: 1px solid #ffffff;
+}
+.col-right {
+  height: 580px;
+}
+.col-left {
+  background: rgba(0, 0, 0, 0.16);
+}
+.close-popup:hover, .left-switch:hover, .right-switch:hover {
+  border: 1px solid #ffffff;
+}
+/* ----------------------------- scroll bar ----------------------- */
+.col-right::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 10px;
+}
 
-  /* ---------------------- custom popup ------------------------ */
-  .popup-content {
-    background: #22223F;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-sizing: border-box;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-  }
-  .custom-rounded-icon {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(50px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-  }
-  .action-icon {
-    width: 44px;
-    height: 44px;
-  }
-  .action-icon:hover {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-  }
-  .col-right {
-    height: 580px;
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-  .col-left {
-    background: rgba(0, 0, 0, 0.16);
-  }
-  .close-popup:hover {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  /* ----------------------------- scroll bar ----------------------- */
-  .col-right::-webkit-scrollbar-track {
-    border-radius: 10px;
-    margin: 10px;
-  }
+.col-right::-webkit-scrollbar {
+  width: 12px;
+}
 
-  .col-right::-webkit-scrollbar {
-    width: 12px;
-  }
+.col-right::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #1d1d34;
+}
 
-  .col-right::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #1d1d34;
-  }
-  /* ---------------------------- company cards ------------------- */
+/* ---------------------------- company cards ------------------- */
   .new-company-card {
     transition: transform .5s;
   }
   .new-company-card:hover {
     background: rgba(0, 0, 0, 0.16);
-    border-radius: 24px;
     transform: scale(1.07);
   }
   .new-company-card:hover .big-icon {
@@ -1105,47 +993,47 @@
     background: rgba(255, 255, 255, 0.16);
     font-weight: 600; 
   }
-  /*----------------- Breakpoints ---------------------*/
-  /* @media(min-width: 320px) and (max-width: 639px) {
-    .custom-tabs ul li {
-      padding: 7px 30px;
-    }
-    .brand-logo {
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-    .filter-block {
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-    .popup-dialog {
-      padding: 0 24px;
-    }
-    .employment-filter {
-      width: 200px;
-    } 
-    .category-filter {
-      width: 274px;
-    }
-    .category-filter .card {
-      padding: 24px 0;
-    }
-    .category-filter .card .card-content {
-      align-items: center;
-    }
-  } */
-  @media(min-width: 640px) and (max-width: 825px) {
-    .employment-filter {
-      width: 200px;
-    } 
-    .category-filter {
-      width: 200px;
-    }
+/*----------------- Breakpoints ---------------------*/
+/* @media(min-width: 320px) and (max-width: 639px) {
+  .custom-tabs ul li {
+    padding: 7px 30px;
   }
-  @media(min-width: 1280px) {
-    .custom-popup {
-      max-width: 1178px;
-      max-height: 577px;
-    }
+  .brand-logo {
+    justify-content: center;
+    margin-bottom: 16px;
   }
+  .filter-block {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .popup-dialog {
+    padding: 0 24px;
+  }
+  .multiselect-filter {
+    width: 200px;
+  } 
+  .category-filter {
+    width: 274px;
+  }
+  .category-filter .card {
+    padding: 24px 0;
+  }
+  .category-filter .card .card-content {
+    align-items: center;
+  }
+} */
+@media(min-width: 640px) and (max-width: 825px) {
+  .multiselect-filter {
+    width: 200px;
+  } 
+  .category-filter {
+    width: 200px;
+  }
+}
+@media(min-width: 1280px) {
+  .custom-popup {
+    max-width: 1178px;
+    max-height: 577px;
+  }
+}
 </style>
