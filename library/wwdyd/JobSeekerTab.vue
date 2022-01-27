@@ -12,17 +12,19 @@
       <div class="mx-12 lg:flex flex-row lg:justify-between w-full">
         <!----- Filters Start ------>
         <div class="filter-block flex sm:justify-center md:justify-center gap-4 flex-wrap flex-row md:mb-3 sm:mb-3 lg:mb-0">
+
           <slot name="filters"></slot>
 
           <!---- Map Switch Start ----->
-          <!-- <button class="btn-dropdown py-2 px-4 tracking-wide focus:outline-none bg-filterMenuColor hover:bg-filterHighlightColor active:bg-filterHighlightColor focus:bg-filterHighlightColor border-0 rounded-lg lg:text-base sm:text-sm text-primaryFontColor font-extralight" type="button">
+          <button class="btn-dropdown py-2 px-4 tracking-wide focus:outline-none bg-filterMenuColor hover:bg-filterHighlightColor active:bg-filterHighlightColor focus:bg-filterHighlightColor border-0 rounded-lg lg:text-base sm:text-sm text-primaryFontColor font-extralight" type="button">
             <label class="toggle cursor-pointer inline-block">
               <span class="toggle-label relative ml-1">Map</span>
               <input class="toggle-checkbox absolute invisible" type="checkbox" checked>
               <div class="toggle-switch inline-block rounded-2xl w-10 h-6 relative align-middle"></div>
             </label>
-          </button> -->
+          </button>
           <!---- Map Switch End ----->
+            
         </div>
         <!----- Filters End ------>
         <!----- Button Group Start ----->
@@ -49,65 +51,9 @@
         <div class="section-title py-4 px-0">
           <p class="text-primaryFontColor tracking-wide">300+ Jobs</p>
         </div>
+
         <slot></slot>
-        
-        <!-- <hr class="border-primaryBorderColor">
-        <div class="card py-5 ad-card">
-          <div class="flex items-top">
-            <img src="https://mehak.topcoatdata.app/static/mehak/images/real.png" alt="real" class="w-16 h-16 rounded-full object-cover">
-            <div class="card-content pl-5"> 
-              <div class="flex justify-between">
-                <p class="tracking-wide text-sm text-secondaryFontColor font-light mb-1 company-name">The RealReal</p>
-                <p class="tracking-wide text-sm text-secondaryFontColor font-light mb-1 post-date">Today</p>
-              </div>
-              <h1 class="text-primaryFontColor text-2xl mb-1"><a href="#" id="#">Data Scientist, Game Analytics</a></h1>
-              <p class="tracking-wide text-secondaryFontColor text-base font-light text-description leading-6">Do you want to help connect people all over the world, and work on a team building the next generation of planet scale AR games? We’re looking for hardworking people to help our company become more data focused; folks with the ability to be dedicated, thorough, and independent while working in a dynamic, fast-paced environment.</p>
-              <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/earth.png" alt="earth" class="mr-2"> Remote</p>
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
-              </div> 
-            </div>
-          </div>
-        </div>
-        <hr class="border-primaryBorderColor">
-        <div class="card py-5 ad-card">
-          <div class="flex items-top">
-            <img src="https://mehak.topcoatdata.app/static/mehak/images/course-hero.png" alt="course-hero" class="w-16 h-16 rounded-full object-cover">
-            <div class="card-content pl-5"> 
-              <div class="flex justify-between">
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light mb-1 company-name">Teladoc Health</p>
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light mb-1 post-date">Date</p>
-              </div>
-              <h1 class="text-primaryFontColor text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
-              <p class="tracking-wide text-secondaryFontColor text-base font-light text-description leading-6">Teladoc Health is transforming how people access and experience healthcare. Recognized as the world leader in virtual care, we are partnering with over a thousand clients to serve hundreds of thousands (soon millions!) of people living with chronic conditions every day.</p>
-              <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/earth.png" alt="earth" class="mr-2"> Remote</p>
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
-              </div>  
-            </div>
-          </div>
-        </div>
-        <hr class="border-primaryBorderColor">
-        <div class="card py-5 ad-card">
-          <div class="flex items-top">
-            <img src="https://mehak.topcoatdata.app/static/mehak/images/course-hero.png" alt="course-hero" class="w-16 h-16 rounded-full object-cover">
-            <div class="card-content pl-5"> 
-              <div class="flex justify-between">
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light mb-1 company-name">Teladoc Health</p>
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light mb-1 post-date">Date</p>
-              </div>
-              <h1 class="text-primaryFontColor text-2xl mb-1"><a href="#" id="#">Data Scientist II, Connected Devices</a></h1>
-              <p class="tracking-wide text-secondaryFontColor text-base font-light text-description leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="flex flex-wrap job-specs mt-4 gap-8">
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/earth.png" alt="earth" class="mr-2"> Remote</p>
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/test-tube.png" alt="test-tube" class="mr-2"> Really a Scientist</p>
-                <p class="tracking-wide text-secondaryFontColor text-sm font-light flex"><img src="https://mehak.topcoatdata.app/static/mehak/images/dollar.png" alt="dollar" class="mr-2"> $700 - $1000</p>
-              </div>  
-            </div>
-          </div>
-        </div> -->
+
       </div>
       <div class="lg:w-5/12 md:w-12/12">
         <iframe width="100%" height="100%" 
@@ -116,8 +62,6 @@
       </div>
     </div>
     <!-- Content Section End -->
-
-    
 
   </div>
 </template>

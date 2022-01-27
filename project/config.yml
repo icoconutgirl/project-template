@@ -72,6 +72,11 @@ personas:
           title: Company Compare
           icon_class: fa-user-tie
 
+        - url: beetle_report
+          src: beetle_report.vue
+          title: Report
+          icon_class: fa-file
+
 develop:
   defaults:
     filters:

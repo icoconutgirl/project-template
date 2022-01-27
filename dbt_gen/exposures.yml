@@ -26,6 +26,12 @@ exposures:
     owner: 
         email: generated@topcoatdata.com
 
+  - name: beetle_report
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/beetle_report
+    owner: 
+        email: generated@topcoatdata.com
+
   - name: page1
     type: 'dashboard'
     url: https://mehak.topcoatdata.app/page1
