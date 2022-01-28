@@ -1,7 +1,8 @@
 <template>
   <div class="bg-pageBackgroundColor">
     <!-- Header Start -->
-    <div class="w-full py-3 bg-gradient-to-r from-primaryColor to-secondaryColor flex justify-between px-8 items-center">
+    <!-- <div class="w-full py-3 bg-gradient-to-r from-primaryColor to-secondaryColor flex justify-between px-8 items-center"> -->
+    <div class="w-full py-3 bg-gradient-to-r from-primary-300 to-primary-900 flex justify-between px-8 items-center">
       <div class="lg:flex items-center">
         <div class="flex items-center">
           <img src="https://mehak.topcoatdata.app/static/mehak/beetle/images/synk.png" class="h-6">
@@ -288,7 +289,10 @@
             </div>
           </div>
           <div class="grid lg:grid-cols-2 gap-4 mb-4">
-            <div class="tile border border-tileBorderColor bg-tileBackgroundColor">
+
+            <slot></slot>
+
+            <!-- <div class="tile border border-tileBorderColor bg-tileBackgroundColor">
               <div class="tile-header h-14 flex items-center p-4 border-b border-tileBorderColor bg-pageBackgroundColor">
                 <div class="text-lg font-semibold">Security Issues</div>
                 <div class="tooltip text-violet mx-2">
@@ -299,30 +303,22 @@
                 <div class="flex flex-wrap gap-4 justify-between">
                   <div class="content-block">
                     <p class="text-sm text-uppercase text-extralight">Critical Severity</p>
-                    <div class="mt-5 mb-4">
-                      <a class="text-4xl text-red text-semibold border-b-2 border-red big-number">13</a>
-                    </div>
+                    <h1 class="mt-5 mb-4 text-4xl text-red text-semibold border-b-2 border-red big-number w-max">13</h1>
                     <p class="text-sm text-violet text-light">9 auto fixable</p>
                   </div>
                   <div class="content-block">
                     <p class="text-sm text-uppercase text-extralight">High Severity</p>
-                    <div class="mt-5 mb-4">
-                      <a class="text-4xl text-orange text-semibold border-b-2 border-orange big-number">19</a>
-                    </div>
+                    <h1 class="mt-5 mb-4 text-4xl text-orange text-semibold border-b-2 border-orange big-number w-max">19</h1>
                     <p class="text-sm text-violet text-light">9 auto fixable</p>
                   </div>
                   <div class="content-block">
                     <p class="text-sm text-uppercase text-extralight">Medium Severity</p>
-                    <div class="mt-5 mb-4">
-                      <a class="text-4xl text-yellow text-semibold border-b-2 border-yellow big-number">32</a>
-                    </div>
+                    <h1 class="text-4xl text-yellow text-semibold border-b-2 border-yellow big-number mt-5 mb-4 w-max">32</h1>
                     <p class="text-sm text-violet text-light">22 auto fixable</p>
                   </div>
                   <div class="content-block">
                     <p class="text-sm text-uppercase text-extralight">Low Severity</p>
-                    <div class="mt-5 mb-4">
-                      <a class="text-4xl text-grey text-semibold border-b-2 border-grey big-number">2</a>
-                    </div>
+                    <h1 class="mt-5 mb-4 text-4xl text-grey text-semibold border-b-2 border-grey big-number w-max">2</h1>
                     <p class="text-sm text-violet text-light">2 auto fixable</p>
                   </div>
                 </div>
@@ -339,21 +335,15 @@
                 <div class="flex flex-wrap gap-4 justify-between">
                   <div class="content-block">
                     <p class="text-sm text-uppercase text-extralight">High Severity</p>
-                    <div class="mt-5 mb-4">
-                      <a class="text-4xl text-orange text-semibold border-b-2 border-orange big-number">50</a>
-                    </div>
+                    <h1 class="mt-5 mb-4 text-4xl text-orange text-semibold border-b-2 border-orange big-number w-max">50</h1>
                   </div>
                   <div class="content-block">
                     <p class="text-sm text-uppercase text-extralight">Medium Severity</p>
-                    <div class="mt-5 mb-4">
-                      <a class="text-4xl text-yellow text-semibold border-b-2 border-yellow big-number">270</a>
-                    </div>
+                    <h1 class="mt-5 mb-4 text-4xl text-yellow text-semibold border-b-2 border-yellow big-number w-max">270</h1>
                   </div>
                   <div class="content-block">
                     <p class="text-sm text-uppercase text-extralight">Low Severity</p>
-                    <div class="mt-5 mb-4">
-                      <a class="text-4xl text-grey text-semibold border-b-2 border-grey big-number">2</a>
-                    </div>
+                    <h1 class="mt-5 mb-4 text-4xl text-grey text-semibold border-b-2 border-grey big-number w-max">2</h1>
                   </div>
                 </div>
               </div>
@@ -381,7 +371,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="grid gap-4">
             <div class="tile border border-tileBorderColor">

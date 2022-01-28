@@ -31,6 +31,8 @@ exposures:
     url: https://mehak.topcoatdata.app/beetle_report
     owner: 
         email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
 
   - name: page1
     type: 'dashboard'
