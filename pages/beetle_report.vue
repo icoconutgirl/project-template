@@ -26,8 +26,15 @@
     <BeetleBigNumber t-layer="season_filter"></BeetleBigNumber>
     <BeetleBigNumber t-layer="season_filter"></BeetleBigNumber>
   </BeetleTile>
+
   
-  <!-- <BeetleBigNumber></BeetleBigNumber>
-  <BeetleBigNumber></BeetleBigNumber>
-  <BeetleBigNumber></BeetleBigNumber> -->
+  <BeetleTile slot="bigTile">
+    <BeetleBigNumber t-layer="season_filter"></BeetleBigNumber>
+    <BeetleBigNumber t-layer="season_filter" tooltip="tooltips"></BeetleBigNumber>
+    <BeetleBigNumber t-layer="season_filter" tooltip="tooltips"></BeetleBigNumber>
+    <BeetleBigNumber t-layer="season_filter" tooltip="tooltips"></BeetleBigNumber>
+    <BeetleBigNumber t-layer="season_filter" tooltip="tooltips"></BeetleBigNumber>
+    <BeetleBigNumber t-layer="season_filter"></BeetleBigNumber>
+  </BeetleTile>
+
 </Report>

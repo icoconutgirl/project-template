@@ -1,91 +1,45 @@
 <template>
-  <div class="bg-pageBackgroundColor">
+  <div class="bg-white">
     <!-- Header Start -->
-    <!-- <div class="w-full py-3 bg-gradient-to-r from-primaryColor to-secondaryColor flex justify-between px-8 items-center"> -->
-    <div class="w-full py-3 bg-gradient-to-r from-primary-300 to-primary-900 flex justify-between px-8 items-center">
-      <div class="lg:flex items-center">
-        <div class="flex items-center">
-          <img src="https://mehak.topcoatdata.app/static/mehak/beetle/images/synk.png" class="h-6">
-          <div class="ml-4 mr-2 px-3 py-2 border border-primaryBorderColor flex">
-            <div class="organisation-logo flex justify-between items-center mr-14">
-              <img src="https://mehak.topcoatdata.app/static/mehak/beetle/images/hooli.png" class="h-6">
-              <span class="vr-divider h-6 bg-primaryBorderColor mx-3"></span>
-              <p class="text-base text-primaryFontColor">Hooli</p>
-            </div>
-            <div class="flex items-center">
-              <div class="overview-btn px-2 py-1 text-xs text-uppercase rounded-md border">Group Overview</div>
-              <div class="ml-2 text-primaryFontColor"><i class="fas fa-chevron-down"></i></div>
-            </div>
-          </div>
-        </div>
-        <ul class="lg:inline-flex main-nav sm:hidden">
-          <li><a href="#" class="px-3 py-4 text-primaryFontColor text-base font-light hover:text-primaryFontColor">Organisations</a></li>
-          <li><a href="#" class="px-3 py-5 text-primaryFontColor text-base active hover:text-primaryFontColor active:font-normal active:font-medium active:border-b-2 active:border-primaryBorderColor">Reports</a></li>
-          <li><a href="#" class="px-3 py-4 text-primaryFontColor text-base font-light hover:text-primaryFontColor">Policies</a></li>
-          <li><a href="#" class="px-3 py-4 text-primaryFontColor text-base font-light hover:text-primaryFontColor">Members</a></li>
-        </ul>
-      </div>
-      <div class="flex items-center">
-        <div class="settings-dropdown text-primaryFontColor text-lg mx-3 sm:hidden lg:block md:block sm:hidden cursor-pointer">
-          <i class="fas fa-cog"></i>
-        </div>
-        <div class="notifications-dropdown text-primaryFontColor text-lg mx-3 relative cursor-pointer">
-          <i class="fas fa-bell"></i>
-          <div class="absolute rounded-full h-6 min-w-max p-1 bg-red text-primaryFontcolor text-xs text-center left-1 -top-4">15</div>
-        </div>
-        <div class="help-center text-primaryFontColor text-lg mx-3 lg:block md:block sm:hidden cursor-pointer">
-          <i class="fas fa-question-circle"></i>
-        </div>
-        <div class="user-profile lg:flex md:flex items-center mx-3 sm:hidden cursor-pointer">
-          <img src="https://mehak.topcoatdata.app/static/mehak/beetle/images/user.png" class="rounded-full h-9 w-9 object-fit">
-          <div class="text-primaryFontColor ml-1"><i class="fas fa-chevron-down"></i></div>
-        </div>
-
-        <!-- Mobile Menu Start -->
-        <div class="help-center text-primaryFontColor text-lg mx-3 lg:hidden md:hidden sm:block cursor-pointer">
-          <i class="fas fa-bars"></i>
-        </div>
-        <!-- Mobile Menu End -->
-      </div>
-    </div>
+    <Beetle_Header></Beetle_Header>
     <!-- Header End -->
 
     <!-- Filter Start -->
-    <div class="p-8 filter-block lg:flex md:flex items-center justify-between bg-pageSectionColor">
+    <div class="p-8 filter-block lg:flex md:flex items-center justify-between bg-neutral-50">
       <div class="lg:flex flex-wrap md:flex gap-4">
         <div class="relative">
           <div @click="popup=!popup" class="relative flex items-center justify-between lg:mb-0 md:mb-0 sm:mb-3">
             <button class="focus:outline-none search-icon absolute left-3 text-base" type="submit"><i class="fas fa-search"></i></button>
-            <input class="tracking-wide bg-filterColor w-full py-2 px-9 border border-filterBorderColor focus:outline-none text-sm font-normal" type="search" placeholder="Organisations">
+            <input class="tracking-wide bg-filterColor w-full py-2 px-9 border border-neutral-300 focus:outline-none text-sm font-normal" type="search" placeholder="Organisations">
             <div class="right-3 absolute text-sm"><i class="fas fa-chevron-down"></i></div>
           </div>
           <!----- dropdown----->
-          <div v-if="popup" class="w-full absolute border-t-0 border-filterBorderColor box-border bg-filterBackgroundColor border z-10">
+          <div v-if="popup" class="w-full absolute border-t-0 border-neutral-300 box-border bg-white border z-10">
             <ul class="custom-list relative">
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Organisation-1</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Organisation-2</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Organisation-3</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Organisation-4</p>
                   </div>
                 </a>
@@ -98,38 +52,38 @@
         <!-- Filter 2 Start -->
         <div class="relative">
           <div @click="popup1=!popup1" class="relative flex items-center justify-between cursor-pointer lg:mb-0 md:mb-0 sm:mb-3">
-            <div class="tracking-wide bg-filterBackgroundColor w-full py-2 pl-3 pr-9 border border-filterBorderColor focus:outline-none text-sm font-normal">
+            <div class="tracking-wide bg-white w-full py-2 pl-3 pr-9 border border-neutral-300 text-neutral-900 focus:outline-none text-sm font-normal">
               Organisations Filter
             </div>
             <div class="right-3 absolute text-sm"><i class="fas fa-chevron-down"></i></div>
           </div>
           <!----- dropdown----->
-          <div v-if="popup1" class="w-full absolute border-t-0 border-filterBorderColor box-border bg-filterBackgroundColor border z-10">
+          <div v-if="popup1" class="w-full absolute border-t-0 border-neutral-300 box-border bg-white border z-10">
             <ul class="custom-list relative">
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Organisation-1</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Organisation-2</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Organisation-3</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Organisation-4</p>
                   </div>
                 </a>
@@ -143,38 +97,38 @@
         <!-- Filter 3 Start -->
         <div class="relative">
           <div @click="popup2=!popup2" class="relative flex items-center justify-between cursor-pointer lg:mb-0 md:mb-0 sm:mb-3">
-            <div class="tracking-wide bg-filterBackgroundColor w-full py-2 pl-3 pr-9 border border-filterBorderColor focus:outline-none text-sm font-normal">
+            <div class="text-neutral-900 tracking-wide bg-white w-full py-2 pl-3 pr-9 border border-neutral-300 focus:outline-none text-sm font-normal">
               Filters
             </div>
             <div class="right-3 absolute text-sm"><i class="fas fa-chevron-down"></i></div>
           </div>
           <!----- dropdown----->
-          <div v-if="popup2" class="w-32 absolute border-filterBorderColor box-border bg-filterBackgroundColor border z-10">
+          <div v-if="popup2" class="w-32 absolute border-neutral-300 box-border bg-white border z-10">
             <ul class="custom-list relative">
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor bg- flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white bg- flex items-center px-3 py-2 w-full">
                     <p>Filter-1</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Filter-2</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Filter-3</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Filter-4</p>
                   </div>
                 </a>
@@ -188,38 +142,38 @@
         <!-- Time Filter Start -->
         <div class="relative">
           <div @click="timeFilter=!timeFilter" class="relative flex items-center justify-between cursor-pointer lg:mb-0 md:mb-0 sm:mb-3">
-            <div class="tracking-wide bg-filterBackgroundColor w-full py-2 pl-3 pr-9 border border-filterBorderColor focus:outline-none text-sm font-normal">
+            <div class="text-neutral-900 tracking-wide bg-white w-full py-2 pl-3 pr-9 border border-neutral-300 focus:outline-none text-sm font-normal">
               Last 90 days
             </div>
             <div class="right-3 absolute text-sm"><i class="fas fa-chevron-down"></i></div>
           </div>
           <!----- dropdown----->
-          <div v-if="timeFilter" class="w-full absolute border-t-0 border-filterBorderColor box-border bg-filterBackgroundColor border z-10">
+          <div v-if="timeFilter" class="w-full absolute border-t-0 border-neutral-300 box-border bg-white border z-10">
             <ul class="custom-list relative">
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Yesterday</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Last month</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Last Year</p>
                   </div>
                 </a>
               </li>
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
-                  <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                  <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                     <p>Last 5 Years</p>
                   </div>
                 </a>
@@ -234,19 +188,19 @@
     <!-- Filter End -->
 
     <!-- Tabs Start -->
-    <div class="bg-pageSectionColor mb-5">
-      <ul class="pl-8 nav nav-tabs inline-flex w-full border-b border-filterBorderColor" id="infoTab" role="tablist">
+    <div class="bg-neutral-50 mb-5">
+      <ul class="pl-8 nav nav-tabs inline-flex w-full border-b border-neutral-300" id="infoTab" role="tablist">
         <li class="nav-item border-0" role="presentation">
-          <button class="nav-link active px-4 py-2 bg-filterBackgroundColor focus:outline-none border-top-2 border-b-0 border border-filterBorderColor" id="one-tab" type="button">Summary</button>
+          <button class="text-neutral-900 nav-link active px-4 py-2 bg-white focus:outline-none border-top-2 border-b-0 border border-neutral-300" id="one-tab" type="button">Summary</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link px-4 py-2 focus:outline-none" id="two-tab" type="button">Issues</button>
+          <button class="text-neutral-900 nav-link px-4 py-2 focus:outline-none" id="two-tab" type="button">Issues</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link px-4 py-2 focus:outline-none" id="three-tab" type="button">Dependencies</button>
+          <button class="text-neutral-900 nav-link px-4 py-2 focus:outline-none" id="three-tab" type="button">Dependencies</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link px-4 py-2 focus:outline-none" id="four-tab" type="button">Licenses</button>
+          <button class="text-neutral-900 nav-link px-4 py-2 focus:outline-none" id="four-tab" type="button">Licenses</button>
         </li>
       </ul>
       <div class="tab-content px-8 bg-pageBackgroundColor" id="infoTabContent">
@@ -254,31 +208,31 @@
           <div class="flex py-6">
             <div class="relative">
               <div @click="summaryFilter=!summaryFilter" class="relative flex items-center justify-between cursor-pointer">
-                <div class="tracking-wide bg-filterBackgroundColor py-2 pl-3 pr-9 border border-filterBorderColor focus:outline-none text-sm font-normal">
+                <div class="text-neutral-900 tracking-wide bg-filterBackgroundColor py-2 pl-3 pr-9 border border-neutral-300 focus:outline-none text-sm font-normal">
                   Summary Filters
                 </div>
                 <div class="right-3 absolute text-sm"><i class="fas fa-chevron-down"></i></div>
               </div>
               <!----- dropdown----->
-              <div v-if="summaryFilter" class="w-full absolute border-t-0 border-filterBorderColor box-border bg-filterBackgroundColor border z-10">
+              <div v-if="summaryFilter" class="w-full absolute border-t-0 border-neutral-300 box-border bg-filterBackgroundColor border z-10">
                 <ul class="custom-list relative">
                   <li class="text-sm font-light inline items-center">
                     <a href="#" class="relative">
-                      <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                      <div class="text-neutral-900 list-content bg-filterBackgroundColor hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                         <p>First Filter</p>
                       </div>
                     </a>
                   </li>
                   <li class="text-sm font-light inline items-center">
                     <a href="#" class="relative">
-                      <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                      <div class="text-neutral-900 list-content bg-filterBackgroundColor hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                         <p>Second Filter</p>
                       </div>
                     </a>
                   </li>
                   <li class="text-sm font-light inline items-center">
                     <a href="#" class="relative">
-                      <div class="list-content bg-filterBackgroundColor hover:bg-filterHighlightColor hover:text-primaryFontColor flex items-center px-3 py-2 w-full">
+                      <div class="text-neutral-900 list-content bg-filterBackgroundColor hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
                         <p>Third Filter</p>
                       </div>
                     </a>
@@ -374,68 +328,71 @@
             </div> -->
           </div>
           <div class="grid gap-4">
-            <div class="tile border border-tileBorderColor">
+
+            <slot name="bigTile"></slot>
+
+            <!-- <div class="tile border border-tileBorderColor">
               <div class="tile-header h-14 flex items-center p-4 border-b border-tileBorderColor">
-                <div class="text-lg font-semibold">Activity</div>
+                <div class="text-lg font-semibold text-neutral-800">Activity</div>
               </div>
               <div class="tile-content bg-tileBackgroundColor p-4">
                 <div class="flex gap-4 flex-wrap justify-between">
                   <div class="content-block">
-                    <p class="text-sm text-uppercase text-extralight">Tests Run</p>
+                    <p class="text-sm text-uppercase text-extralight text-neutral-800">Tests Run</p>
                     <div class="mt-5 mb-4">
-                      <a class="text-4xl text-semibold big-number">24,044</a>
+                      <div class="text-4xl text-semibold big-number text-neutral-800">24,044</div>
                     </div>
-                    <p class="text-sm text-light">153 Private</p>
+                    <p class="text-sm text-light text-primary-700">153 Private</p>
                   </div>
                   <div class="content-block">
-                    <p class="text-sm text-uppercase text-extralight">Projects</p>
+                    <p class="text-sm text-uppercase text-extralight text-neutral-800">Projects</p>
                     <div class="mt-5 mb-4">
-                      <a class="text-4xl text-semibold big-number">324</a>
+                      <div class="text-4xl text-semibold big-number text-neutral-800">324</div>
                     </div>
                   </div>
                   <div class="content-block">
                     <div class="flex items-center">
-                      <p class="text-sm text-uppercase text-extralight">New Issues</p>
+                      <p class="text-sm text-uppercase text-extralight text-neutral-800">New Issues</p>
                       <div class="tooltip text-violet mx-2">
                         <i class="fas fa-question-circle"></i>
                       </div>
                     </div>
                     <div class="mt-5 mb-4">
-                      <a class="text-4xl text-semibold big-number">515</a>
+                      <div class="text-4xl text-semibold big-number text-neutral-800">515</div>
                     </div>
                   </div>
                   <div class="content-block">
                     <div class="flex items-center">
-                      <p class="text-sm text-uppercase text-extralight">Fixed Issues</p>
+                      <p class="text-sm text-uppercase text-extralight text-neutral-800">Fixed Issues</p>
                       <div class="tooltip text-violet mx-2">
                         <i class="fas fa-question-circle"></i>
                       </div>
                     </div>
                     <div class="mt-5 mb-4">
-                      <a class="text-4xl text-semibold big-number">233</a>
+                      <h1 class="text-4xl text-semibold big-number text-neutral-800">233</h1>
                     </div>
                   </div>
                   <div class="content-block">
                     <div class="flex">
-                      <p class="text-sm text-uppercase text-extralight">Tests Preventing Issues</p>
+                      <p class="text-sm text-uppercase text-extralight text-neutral-800">Tests Preventing Issues</p>
                       <div class="tooltip text-violet mx-2">
                         <i class="fas fa-question-circle"></i>
                       </div>
                     </div>
                     <div class="mt-5 mb-4">
-                      <a class="text-4xl text-semibold big-number">0</a>
+                      <h1 class="text-4xl text-semibold big-number text-neutral-800">0</h1>
                     </div>
                   </div>
                   <div class="content-block">
-                    <p class="text-sm text-uppercase text-extralight">Ignored Issues</p>
+                    <p class="text-sm text-uppercase text-extralight text-neutral-800">Ignored Issues</p>
                     <div class="mt-5 mb-4">
-                      <a class="text-4xl text-semibold big-number border-b-2">1,653</a>
+                      <h1 class="text-4xl text-semibold big-number border-b-2 text-neutral-800">1,653</h1>
                     </div>
-                    <p class="text-sm text-light">738 auto fixable</p>
+                    <p class="text-sm text-light text-primary-700">738 auto fixable</p>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">...</div>
@@ -444,29 +401,11 @@
       </div>
     </div>
     <!-- Tabs End --> 
-    <p class="px-8 pb-5 text-italic"><i>There may be a delay of up to 9 hours from the time a project is tested until that data appears in Reports</i></p>
+    <p class="px-8 pb-5"><i>There may be a delay of up to 9 hours from the time a project is tested until that data appears in Reports</i></p>
   </div>
 </template>
 
 <style>
-  :root {
-    --primary-color: #652ba4;
-    --primary-border-color: #ffffff;
-    --primary-font-color: #ffffff;
-    --secondary-color: #451da2;
-    --secondary-font-color: #652ba4;
-    --page-section-color: #f5f9fc;
-    --page-background-color: #ffffff;
-    --filter-border-color: #ced2d5;
-    --filter-menu-color: #ffffff;
-    --filter-highlight-color: #451da2;
-    --filter-background-color: #ffffff;
-    --tile-border-color: #ced2d5;
-    --tile-background-color: #f8f8f8;
-  }
-  .bg-red {
-    background-color: #b71715;
-  }
   .text-red {
     color: #ba1515;
   }
@@ -506,7 +445,7 @@
     border-bottom: 2px solid #ffffff;
   }
   .nav-link.active {
-    border-top: 3px solid #504c7f;
+    border-top: 3px solid hsla(273, 100%, 48%, 1);
   }
 </style>
 
