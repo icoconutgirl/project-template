@@ -19,6 +19,7 @@
               <li class="text-sm font-light inline items-center">
                 <a href="#" class="relative">
                   <div class="text-neutral-900 list-content bg-white hover:bg-primary-600 hover:text-white flex items-center px-3 py-2 w-full">
+                    <i class="mr-3 text-secondaryFontColor fas fa-map-marker-alt"></i>
                     <p>Organisation-1</p>
                   </div>
                 </a>

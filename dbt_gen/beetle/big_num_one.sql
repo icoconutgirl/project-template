@@ -1,0 +1,1 @@
+SELECT 21 as issues, 2 as auto_fixable

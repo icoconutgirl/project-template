@@ -33,6 +33,8 @@ exposures:
         email: generated@topcoatdata.com
     depends_on:
       - ref('season_filter')
+      - ref('big_num_one')
+      - ref('big_num_two')
 
   - name: page1
     type: 'dashboard'
@@ -58,6 +60,14 @@ exposures:
         email: generated@topcoatdata.com
     depends_on:
       - ref('season_filter')
+
+  - name: main_page_file
+    type: 'dashboard'
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('big_num_one')
+      - ref('big_num_two')
 
   - name: year_filter_auto_page
     type: 'dashboard'
@@ -111,6 +121,22 @@ exposures:
       - ref('department_search_filter')
       - ref('base_finance_table')
       - ref('seed_financial_data')
+
+  - name: big_num_one_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/big_num_one
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('big_num_one')
+
+  - name: big_num_two_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/big_num_two
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('big_num_two')
 
   - name: season_filter_auto_page
     type: 'dashboard'
