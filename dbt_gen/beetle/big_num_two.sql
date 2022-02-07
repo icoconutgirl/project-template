@@ -1,1 +1,1 @@
-SELECT 21 as issues, 1 as auto_fixable
+SELECT 21 as issues

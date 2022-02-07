@@ -1,11 +1,7 @@
-SELECT 21 as issues, 1 as auto_fixable
+SELECT 21 as issues
 
 {{column(
   name='issues',
   tags='bigNumber'
 )}}
 
-{{column(
-  name='auto_fixable',
-  tags='smallNumber'
-)}}

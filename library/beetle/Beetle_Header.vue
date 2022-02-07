@@ -31,12 +31,12 @@
           <i class="fas fa-bell"></i>
           <div class="absolute rounded-full h-6 min-w-max p-1 bg-red text-white text-xs text-center left-1 -top-4">15</div>
         </div>
-        <div class="absolute w-80 bg-white shadow-md -left-36 mt-3">
+        <!-- <div class="absolute w-80 bg-white shadow-md -left-36 mt-3">
           <ul>
             <li class="p-3 hover:bg-primary-500"><a href="#">Hello notify</a></li>
             <li class="p-3"><a href="#">Hello notify</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
       <div class="help-center text-white text-lg mx-3 lg:block md:block sm:hidden cursor-pointer">
         <i class="fas fa-question-circle"></i>
