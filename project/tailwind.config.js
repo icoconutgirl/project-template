@@ -7,28 +7,28 @@ module.exports = {
     extend: {},
     colors: {
       neutral: {
-        50: "hsla(216, 2%, 97%, 1)",
-        100: "hsla(212, 6%, 91%, 1)",
-        200: "hsla(215, 11%, 85%, 1)",
-        300: "hsla(216, 17%, 79%, 1)",
-        400: "hsla(217, 39%, 55%, 1)",
-        500: "hsla(217, 39%, 45%, 1)",
-        600: "hsla(216, 39%, 35%, 1)",
-        700: "hsla(216, 39%, 20%, 1)",
-        800: "hsla(216, 39%, 15%, 1)",
-        900: "hsla(216, 38%, 5%, 1)"
+        50: "hsla(0, 0%, 96%, 1)",
+        100: "hsla(0, 0%, 86%, 1)",
+        200: "hsla(240, 2%, 40%, 1)",
+        300: "hsla(240, 2%, 36%, 1)",
+        400: "hsla(240, 2%, 32%, 1)",
+        500: "hsla(240, 2%, 28%, 1)",
+        600: "hsla(240, 2%, 24%, 1)",
+        700: "hsla(240, 2%, 20%, 1)",
+        800: "hsla(240, 2%, 16%, 1)",
+        900: "hsla(240, 2%, 12%, 1)"
       },
       primary: {
-        50: "hsla(273, 88%, 100%, 1)",
-        100: "hsla(273, 96%, 100%, 1)",
-        200: "hsla(273, 100%, 88%, 1)",
-        300: "hsla(273, 100%, 80%, 1)",
-        400: "hsla(273, 100%, 72%, 1)",
-        500: "hsla(273, 100%, 64%, 1)",
-        600: "hsla(273, 100%, 48%, 1)",
-        700: "hsla(273, 100%, 40%, 1)",
-        800: "hsla(273, 100%, 32%, 1)",
-        900: "hsla(273, 100%, 24%, 1)"
+        50: "hsla(270, 91%, 64%, 1)",
+        100: "hsla(270, 91%, 60%, 1)",
+        200: "hsla(270, 91%, 56%, 1)",
+        300: "hsla(270, 91%, 52%, 1)",
+        400: "hsla(270, 91%, 48%, 1)",
+        500: "hsla(270, 91%, 44%, 1)",
+        600: "hsla(270, 91%, 40%, 1)",
+        700: "hsla(270, 91%, 36%, 1)",
+        800: "hsla(270, 92%, 28%, 1)",
+        900: "hsla(270, 91%, 21%, 1)"
       },
       secondary: {
         50: "hsla(273, 56%, 100%, 1)",
@@ -79,41 +79,12 @@ module.exports = {
         900: "hsla(0, 63%, 31%, 1)"
       },
       white: "hsla(0, 0%, 100%, 1)",
+      aliceblue: "hsla(205, 60%, 96%, 1)",
       black: "hsla(0, 0%, 0%, 1)",
       red: "hsla(352, 68%, 50%, 1)",
       current: "currentColor",
       transparent: "transparent",
       inherit: "inherit",
-
-      primaryColor: "var(--primary-color)",
-      primaryHighlightColor: "var(--primary-highlight-color)",
-      primaryBorderColor: "var(--primary-border-color)",
-      primaryFontColor: "var(--primary-font-color)",
-
-      secondaryColor: "var(--secondary-color)",
-      secondaryHighlightColor: "var(--secondary-highlight-color)",
-      secondaryBorderColor: "var(--secondary-border-color)",
-      secondaryFontColor: "var(--secondary-font-color)",
-
-      grayscaleOneColor: "var(--grayscale-one-color)",
-      grayscaleTwoColor: "var(--grayscale-two-color)",
-      grayscaleThreeColor: "var(--grayscale-three-color)",
-      grayscaleHoverColor: "var(--grayscale-hover-color)",
-
-      filterBackgroundColor: "var(--filter-background-color)",
-      filterMenuColor: "var(--filter-menu-color)",
-      filterHighlightColor: "var(--filter-highlight-color)",
-      filterFontHighlightColor: "var(--filter-font-highlight-color)",
-      filterFontColor: "var(--filter-font-color)",
-      filterBorderColor: "var(--filter-border-color)",
-
-      pageSectionColor: "var(--page-section-color)",
-      pageBackgroundColor: "var(--page-background-color)",
-
-      tileBorderColor: "var(--tile-border-color)",
-      tileBackgroundColor: "var(--tile-background-color)",
-      primaryButtonColor: "var(--primary-button-color)",
-      secondaryButtonColor: "var(--secondary-button-color)"
     },
     fontFamily: {
       inter: "Inter, sans-serif"

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full py-3 bg-gradient-to-r from-primary-600 to-primary-900 flex justify-between px-8 items-center">
+  <div class="w-full py-3 bg-gradient-to-r from-primary-200 to-primary-900 flex justify-between px-8 items-center">
     <div class="lg:flex items-center">
       <div class="flex items-center">
         <img src="https://mehak.topcoatdata.app/static/mehak/beetle/images/synk.png" class="h-6">

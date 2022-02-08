@@ -5,7 +5,7 @@
     <!-- Header End -->
 
     <!-- Filter Start -->
-    <div class="p-8 filter-block lg:flex md:flex items-center justify-between bg-neutral-50">
+    <div class="p-8 filter-block lg:flex md:flex items-center justify-between bg-aliceblue">
       <div class="lg:flex flex-wrap md:flex gap-4">
         <slot name="leftFilters"></slot>
       </div>
@@ -16,10 +16,10 @@
     <!-- Filter End -->
 
     <!-- Tabs Start -->
-    <div class="bg-neutral-50 mb-5">
-      <ul class="pl-8 nav nav-tabs inline-flex w-full border-b border-neutral-300" id="infoTab" role="tablist">
+    <div class="bg-aliceblue mb-5">
+      <ul class="pl-8 nav nav-tabs inline-flex w-full border-b border-neutral-100" id="infoTab" role="tablist">
         <li class="nav-item border-0" role="presentation">
-          <button class="text-neutral-900 nav-link active px-4 py-2 bg-white focus:outline-none border-top-2 border-b-0 border border-neutral-300" id="one-tab" type="button">Summary</button>
+          <button class="text-neutral-900 nav-link active px-4 py-2 bg-white focus:outline-none border-top-2 border-b-0 border border-neutral-100" id="one-tab" type="button">Summary</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="text-neutral-900 nav-link px-4 py-2 focus:outline-none" id="two-tab" type="button">Issues</button>
@@ -31,15 +31,15 @@
           <button class="text-neutral-900 nav-link px-4 py-2 focus:outline-none" id="four-tab" type="button">Licenses</button>
         </li>
       </ul>
-      <div class="tab-content px-8 bg-pageBackgroundColor" id="infoTabContent">
+      <div class="tab-content px-8 bg-white" id="infoTabContent">
         <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
           <div class="flex py-6">
             <slot name="tabFilters"></slot>
           </div>
-          <div class="grid lg:grid-cols-2 gap-4 mb-4">
+          <div class="flex gap-4 mb-4">
             <slot></slot>
           </div>
-          <div class="grid gap-4">
+          <div class="flex gap-4">
             <slot name="bigTile"></slot>
           </div>
         </div>

@@ -1,1 +1,1 @@
-SELECT 21 as issues
+SELECT 30 as issues

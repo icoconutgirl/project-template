@@ -1,8 +1,8 @@
 <template>
-  <div class="tile border border-neutral-200 bg-neutral-50">
-    <div class="tile-header h-14 flex items-center p-4 border-b border-neutral-200 bg-white">
+  <div class="tile border border-neutral-100 bg-neutral-50">
+    <div class="tile-header h-14 flex items-center p-4 border-b border-neutral-100 bg-white">
       <div class="text-lg font-semibold text-neutral-700">Security Issues</div>
-      <div class="tooltip text-primary-800 mx-2" @mouseover="isTooltipVisible=true" @mouseleave="isTooltipVisible=false">
+      <div class="tooltip text-primary-400 mx-2 cursor-pointer" @mouseover="isTooltipVisible=true" @mouseleave="isTooltipVisible=false">
         <i class="fas fa-question-circle"></i>
       </div>
       <div class="relative">

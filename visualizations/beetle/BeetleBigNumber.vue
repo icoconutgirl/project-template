@@ -10,14 +10,14 @@
     >
       <div class="flex items-center">
         <p
-          class="text-sm text-uppercase text-extralight text-neutral-800"
-          :class='styles.textColors[bigLabelColor]'
+          class="text-sm text-uppercase text-extralight"
+          :class="styles.textColors[bigLabelColor]"
         >
           {{ bigLabel }}
         </p>
         <div
           v-if="tooltip"
-          class="cursor-pointer tooltip mx-2 text-primary-900"
+          class="cursor-pointer tooltip mx-2"
           :class="styles.textColors[tooltipIconColor]"
           @mouseover="isTooltipVisible=true"
           @mouseleave="isTooltipVisible=false"
@@ -44,14 +44,14 @@
       <h1
         class="mt-5 mb-4 text-4xl text-semibold big-number w-max"
         :class="[
-          { 'underline': hasUnderline },
-          
+          { 'border-b-2': hasUnderline },
+          bigNumberColor
         ]"
       >
         {{ bigNumber }}
       </h1>
       <p
-        class="text-sm text-light text-primary-700"
+        class="text-sm text-light"
         :class='styles.textColors[smallLabelColor]'
         v-if="smallNumber"
       >
@@ -133,11 +133,27 @@
         validator: (v) => ['primary', 'secondary', 'light', 'dark', 'neutral'].includes(v),
       },
 
+      // Integers
+      minNumber: {
+        type: Number,
+        default: null,
+      },
+      maxNumber: {
+        type: Number,
+        default: null,
+      },
+
       // Boolean
       hasUnderline: {
         type: Boolean,
         default: false,
       },
+      isLowCritical: {
+        // Case where low bigNumber is critical but high is good (Example: 0 => critical, 100 => good)
+        type: Boolean,
+        default: false,
+      }
+      
     },
     data:()=>({
       is_filter:true,
@@ -150,7 +166,6 @@
           light: 'text-neutral-50',
           dark: 'text-neutral-900',
           neutral: 'text-neutral-400',
-          purple: 'text-primary-800',
         },
         bgColors: {
           primary: 'bg-primary-50',
@@ -175,7 +190,10 @@
           transparent: 'border-transparent'
         },
         severityColors: {
-          low: ''
+          0: 'text-neutral-200',
+          25: 'text-warning-400',
+          50: 'text-error-400',
+          75: 'text-error-900'
         }
       }
     }),
@@ -191,7 +209,31 @@
         return value;
       },
       bigNumberColor() {
-
+        let color = this.styles.textColors[this.bigLabelColor];
+        const min = this.minNumber;
+        const max = this.maxNumber;
+        const value = this.bigNumber;
+        if (min && max && value) {
+          if (value > min) {
+            const percentage = Math.ceil(((value - min) * 100) / (max - min));
+            const severityColors = this.styles.severityColors;
+            const severityNumbers = Object.keys(severityColors);
+            let highestPercentage = 0;
+            for (let sNum of severityNumbers) {
+              if (this.isLowCritical) {
+                if (sNum >= percentage) {
+                  highestPercentage = sNum;
+                }
+              } else {
+                if (sNum <= percentage) {
+                  highestPercentage = sNum;
+                }
+              }
+            }
+            return severityColors[highestPercentage];
+          }
+        }
+        return color;
       }
     },
     methods: {

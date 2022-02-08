@@ -13,66 +13,66 @@
       big-label='Critical Severity'
       small-label='auto fixable'
       has-underline
-      small-label-color='primary-600'
-      max-number='100'
-      min-number='20'
+      small-label-color='primary'
+      max-number='20'
+      min-number='0'
     />
     <beetle-big-number
       t-layer='big_num_one'
       big-label='High Severity'
       small-label='auto fixable'
       has-underline
-      small-label-color='primary-600'
-      max-number='100'
-      min-number='20'
+      small-label-color='primary'
+      max-number='40'
+      min-number='0'
     />
     <beetle-big-number
       t-layer='big_num_one'
       big-label='Medium Severity'
       small-label='auto fixable'
       has-underline
-      small-label-color='primary-600'
-      max-number='100'
-      min-number='20'
+      small-label-color='primary'
+      max-number='60'
+      min-number='0'
     />
     <beetle-big-number
       t-layer='big_num_one'
       big-label='Low Severity'
       small-label='auto fixable'
       has-underline
-      small-label-color='primary-600'
+      small-label-color='primary'
       max-number='100'
-      min-number='20'
+      min-number='0'
     />
   </BeetleTile>
 
   <BeetleTile>
     <beetle-big-number
       t-layer='big_num_one'
-      big-label='Critical Severity'
-      small-label='auto fixable'
-      has-underline
-      small-label-color='primary-600'
-      max-number='100'
-      min-number='20'
-    />
-    <beetle-big-number
-      t-layer='big_num_one'
       big-label='High Severity'
       small-label='auto fixable'
       has-underline
-      small-label-color='primary-600'
-      max-number='100'
-      min-number='20'
+      small-label-color='primary'
+      max-number='40'
+      min-number='0'
     />
     <beetle-big-number
       t-layer='big_num_one'
       big-label='Medium Severity'
       small-label='auto fixable'
       has-underline
-      small-label-color='primary-600'
+      small-label-color='primary'
+      max-number='60'
+      min-number='0'
+    />
+    <beetle-big-number
+      t-layer='big_num_one'
+      big-label='Low Severity'
+      small-label='auto fixable'
+      has-underline
+      small-label-color='primary'
       max-number='100'
-      min-number='20'
+      min-number='0'
     />
   </BeetleTile>
 
@@ -82,15 +82,11 @@
       big-label='Tests Run'
       small-label='Private'
       has-underline
-      small-label-color='primary-600'
-      max-number='100'
-      min-number='20'
+      small-label-color='dark'
     />
     <beetle-big-number
       t-layer='big_num_two'
       big-label='Projects'
-      max-number='100'
-      min-number='20'
     />
     <beetle-big-number
       t-layer='big_num_two'
@@ -98,8 +94,7 @@
       tooltip='This has tooltip'
       tooltip-bg-color='light'
       tooltip-text-color='dark'
-      max-number='100'
-      min-number='20'
+      tooltip-icon-color='primary'
     />
     <beetle-big-number
       t-layer='big_num_two'
@@ -107,8 +102,7 @@
       tooltip='This has tooltip'
       tooltip-bg-color='light'
       tooltip-text-color='dark'
-      max-number='100'
-      min-number='20'
+      tooltip-icon-color='primary'
     />
     <beetle-big-number
       t-layer='big_num_two'
@@ -116,17 +110,14 @@
       tooltip='This has tooltip'
       tooltip-bg-color='light'
       tooltip-text-color='dark'
-      max-number='100'
-      min-number='20'
+      tooltip-icon-color='primary'
     />
     <beetle-big-number
       t-layer='big_num_one'
       big-label='Ignored'
       small-label='auto fixable'
       has-underline
-      small-label-color='primary-600'
-      max-number='100'
-      min-number='20'
+      small-label-color='dark'
     />
   </BeetleTile>
 

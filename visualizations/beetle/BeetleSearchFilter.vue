@@ -3,11 +3,11 @@
     <div class="relative">
       <div @click="popup=!popup" class="relative flex items-center justify-between lg:mb-0 md:mb-0 sm:mb-3">
         <button class="focus:outline-none search-icon absolute left-3 text-base" type="submit"><i class="fas fa-search"></i></button>
-        <input class="tracking-wide bg-filterColor w-full py-2 px-9 border border-neutral-300 focus:outline-none text-sm font-normal" type="search" placeholder="Organisations">
+        <input class="tracking-wide bg-filterColor w-full py-2 px-9 border border-neutral-100 focus:outline-none text-sm font-normal" type="search" placeholder="Organisations">
         <div class="right-3 absolute text-sm"><i class="fas fa-chevron-down"></i></div>
       </div>
       <!----- dropdown----->
-      <div v-if="popup" class="w-full absolute border-t-0 border-neutral-300 box-border bg-white border z-10">
+      <div v-if="popup" class="w-full absolute border-t-0 border-neutral-100 box-border bg-white border z-10">
         <ul class="custom-list relative">
           <li class="text-sm font-light inline items-center">
             <a href="#" class="relative">
