@@ -77,6 +77,11 @@ personas:
           title: Report
           icon_class: fa-file
 
+        - url: pothole_summary
+          src: pothole_summary.vue
+          title: Summary
+          icon_class: fa-file
+
 develop:
   defaults:
     filters:

@@ -36,6 +36,12 @@ exposures:
       - ref('big_num_one')
       - ref('big_num_two')
 
+  - name: pothole_summary
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/pothole_summary
+    owner: 
+        email: generated@topcoatdata.com
+
   - name: page1
     type: 'dashboard'
     url: https://mehak.topcoatdata.app/page1
