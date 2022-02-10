@@ -82,6 +82,11 @@ personas:
           title: Summary
           icon_class: fa-file
 
+        - url: pothole_error_detail
+          src: pothole_error_detail.vue
+          title: Error Detail
+          icon_class: fa-file
+
 develop:
   defaults:
     filters:

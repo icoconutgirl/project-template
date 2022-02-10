@@ -2,6 +2,12 @@ version: 2
 
 exposures:
 
+  - name: pothole_error_detail
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app/pothole_error_detail
+    owner: 
+        email: generated@topcoatdata.com
+
   - name: ncaa_team
     type: 'dashboard'
     url: https://mehak.topcoatdata.app/ncaa_team
