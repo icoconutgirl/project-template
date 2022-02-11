@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div class="px-8 py-5">
       <div class="relative">
-        <div class="button-group p-1 flex box-border rounded-lg bg-primary-700 items-center">
+        <div class="button-group p-1 inline-flex box-border rounded-lg bg-primary-700">
           <input id="option1" type="radio" name="option" checked="checked" class="hidden"> 
           <label for="option1" class="bg-transparent py-2 px-4 text-primary-800 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
           Summary

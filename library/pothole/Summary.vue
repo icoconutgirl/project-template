@@ -1,15 +1,15 @@
 <template>
-  <div class="bg-black">
+  <div class="bg-black h-full">
     <div class="px-8 py-5 grid lg:grid-cols-2 gap-4 w-full">
-      <div class="bg-black w-full">
+      <div class="bg-black w-full h-screen">
         <div class="lg:flex w-full items-center relative">
-          <div class="button-group p-1 bg-black flex box-border rounded-lg bg-primary-700">
+          <div class="button-group p-1 bg-black inline-flex box-border rounded-lg bg-primary-700">
             <input id="option1" type="radio" name="option" checked="checked" class="hidden"> 
-            <label for="option1" class="bg-white py-2 px-4 text-primary-900 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
+            <label for="option1" class="bg-white shadow py-2 px-4 text-primary-900 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
             Summary
             </label> 
-            <input id="option2" type="radio" name="option" class="hidden bg-filterMenuColor"> 
-            <label for="option2" class="py-2 px-4 text-secondary-100 bg-primary-700 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">    
+            <input id="option2" type="radio" name="option" class="hidden"> 
+            <label for="option2" class="py-2 px-4 text-secondary-100 bg-transparent cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">    
             Error Detail
             </label>
           </div>
@@ -53,9 +53,9 @@
         </div>
         <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-1.jpg" class="object-cover w-100 mt-8">
       </div>
-      <div class="bg-white w-full rounded-3xl pt-6 pb-4">
+      <div class="bg-white w-full rounded-3xl pt-6 pb-4 scroll-section">
         <div class="bg-white mb-4 px-5 pb-4 rounded-3xl">
-          <div class="flex flex-wrap items-center lg:gap-1 md:gap-2 sm:gap-4 justify-between">
+          <div class="flex flex-wrap items-center gap-4 justify-between">
             <p class="text-xl">Granular Look</p>
             <div class="flex">
               <span class="text-black text-base">Sort by:</span>
@@ -92,12 +92,13 @@
             </div>
           </div>
         </div>
-        <div class="chart-tab overflow-scroll overflow-x-hidden gap-3 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pl-5 pr-3">
-          <div class="chart-card rounded-3xl bg-primary-700 h-80 p-4">
-            <div class="theme-heading flex gap-4 w-full items-end justify-between">
+        <div class="chart-tab overflow-scroll overflow-x-hidden gap-3 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pl-5 pr-3 max-h-screen">
+          <slot></slot>
+          <!-- <div class="chart-card rounded-3xl bg-primary-700 h-80 p-4">
+            <div class="theme-heading flex gap-1 w-full items-end justify-between">
               <div class="metric-bignumber">
                 <p class="text-base font-normal text-primary-800">Kennan</p>
-                <h1 class="text-black text-3xl font-bold mt-2">99.2%</h1>
+                <h1 class="text-black text-2xl xl:text-3xl  2xl:text-7xl font-bold mt-2">99.2%</h1>
               </div>
               <div class="heading-tag">
                 <div class="py-2 px-3 bg-success-50 rounded-full text-success-100">
@@ -108,10 +109,10 @@
             <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
           </div>
           <div class="chart-card rounded-3xl bg-error-50 h-80 p-4">
-            <div class="theme-heading flex gap-4 w-full items-end justify-between">
+            <div class="theme-heading flex gap-1 w-full items-end justify-between">
               <div class="metric-bignumber">
                 <p class="text-base font-normal text-primary-800">Ezra</p>
-                <h1 class="text-black text-3xl font-bold mt-2">89.5%</h1>
+                <h1 class="text-black text-2xl font-bold mt-2">89.5%</h1>
               </div>
               <div class="heading-tag">
                 <div class="py-2 px-3 bg-error-50 rounded-full text-error-900">
@@ -126,10 +127,10 @@
             <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-3.jpg" class="object-cover w-100 mt-6">
           </div>
           <div class="chart-card rounded-3xl bg-primary-700 h-80 p-4">
-            <div class="theme-heading flex gap-4 w-full items-end justify-between">
+            <div class="theme-heading flex gap-1 w-full items-end justify-between">
               <div class="metric-bignumber">
                 <p class="text-base font-normal text-primary-800">Gaurav</p>
-                <h1 class="text-black text-3xl font-bold mt-2">99.2%</h1>
+                <h1 class="text-black text-2xl font-bold mt-2">99.2%</h1>
               </div>
               <div class="heading-tag">
                 <div class="py-2 px-3 bg-primary-700 rounded-full text-primary-900">
@@ -140,10 +141,10 @@
             <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
           </div>
           <div class="chart-card rounded-3xl bg-primary-700 h-80 p-4">
-            <div class="theme-heading flex gap-4 w-full items-end justify-between">
+            <div class="theme-heading flex gap-1 w-full items-end justify-between">
               <div class="metric-bignumber">
                 <p class="text-base font-normal text-primary-800">Seth</p>
-                <h1 class="text-black text-3xl font-bold mt-2">99.5%</h1>
+                <h1 class="text-black text-2xl font-bold mt-2">99.5%</h1>
               </div>
               <div class="heading-tag">
                 <div class="py-2 px-3 bg-success-50 rounded-full text-success-100">
@@ -157,7 +158,7 @@
             <div class="theme-heading flex gap-4 w-full items-end justify-between">
               <div class="metric-bignumber">
                 <p class="text-base font-normal text-primary-800">Kennan</p>
-                <h1 class="text-black text-3xl font-bold mt-2">99.2%</h1>
+                <h1 class="text-black text-2xl font-bold mt-2">99.2%</h1>
               </div>
               <div class="heading-tag">
                 <div class="py-2 px-3 bg-success-50 rounded-full text-success-100">
@@ -166,7 +167,7 @@
               </div>
             </div>
             <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -175,7 +176,21 @@
 
 <style>
   .chart-tab {
-    height: 580px;
+    max-height: 4320px;
+  }
+  .scroll-section .chart-tab ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .scroll-section .chart-tab::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scroll-section .chart-tab::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: hsla(0, 0%, 0%, 0.04);
   }
 </style>
 <script>

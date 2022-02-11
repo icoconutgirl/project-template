@@ -47,6 +47,8 @@ exposures:
     url: https://mehak.topcoatdata.app/pothole_summary
     owner: 
         email: generated@topcoatdata.com
+    depends_on:
+      - ref('season_filter')
 
   - name: page1
     type: 'dashboard'
