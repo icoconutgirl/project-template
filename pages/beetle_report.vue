@@ -16,6 +16,7 @@
       small-label-color='primary'
       max-number='20'
       min-number='0'
+      big-number-color='dark'
     />
     <beetle-big-number
       t-layer='big_num_one'

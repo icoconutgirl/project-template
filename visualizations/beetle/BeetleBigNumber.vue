@@ -45,7 +45,7 @@
         class="mt-5 mb-4 text-4xl text-semibold big-number w-max"
         :class="[
           { 'border-b-2': hasUnderline },
-          bigNumberColor
+          calculatedNumberColor
         ]"
       >
         {{ bigNumber }}
@@ -65,6 +65,11 @@
     props:{
 
       // String
+      bigNumberColor: {
+        type: String,
+        default: "",
+        validator: (v) => ['primary', 'secondary', 'light', 'dark', 'neutral'].includes(v),
+      },
       bigLabel: {
         type: String,
         default: "",
@@ -208,7 +213,10 @@
         const value = this.fetchColumn(column);
         return value;
       },
-      bigNumberColor() {
+      calculatedNumberColor() {
+        if (this.bigNumberColor) {
+          return this.styles.textColors[this.bigNumberColor];
+        }
         let color = this.styles.textColors[this.bigLabelColor];
         const min = this.minNumber;
         const max = this.maxNumber;
