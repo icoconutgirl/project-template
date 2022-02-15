@@ -48,6 +48,7 @@ exposures:
     owner: 
         email: generated@topcoatdata.com
     depends_on:
+      - ref('big_num_three')
       - ref('season_filter')
 
   - name: page1
@@ -270,4 +271,12 @@ exposures:
       - ref('season_filter')
       - ref('team_name_filter')
       - ref('team_games_base')
+
+  - name: big_num_three_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/big_num_three
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('big_num_three')
 

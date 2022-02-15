@@ -1,0 +1,1 @@
+SELECT 99.2 as issues, 99.3 as percentage

@@ -41,15 +41,24 @@
           </div>
         </div>
       </div>
-      <h1
-        class="mt-5 mb-4 text-4xl text-semibold big-number w-max"
-        :class="[
-          { 'border-b-2': hasUnderline },
-          calculatedNumberColor
-        ]"
-      >
-        {{ bigNumber }}
-      </h1>
+      <div class="flex gap-1 w-full items-center justify-between">
+        <h1
+            class="mt-5 mb-4 big-number w-max"
+            :class="[
+              { 'border-b-2': hasUnderline },
+              dynamicBigNumColor,
+              styles.fontWeights[bigNumberThickness],
+              styles.fontSizes[bigNumberSize],
+            ]"
+        >
+            {{ bigNumber }}
+        </h1>
+        <div v-if="hasPercentage" class="heading-tag">
+            <div class="py-2 px-3 rounded-full" :class='[dynamicChangeNumColor.text, dynamicChangeNumColor.bg]'>
+                <i class="fas" :class='dynamicChangeNumColor.icon'></i> <span class="ml-3">{{ changeNumber }}</span>
+            </div>
+        </div>
+      </div>
       <p
         class="text-sm text-light"
         :class='styles.textColors[smallLabelColor]'
@@ -69,6 +78,16 @@
         type: String,
         default: "",
         validator: (v) => ['primary', 'secondary', 'light', 'dark', 'neutral'].includes(v),
+      },
+      bigNumberSize: {
+        type: String,
+        default: 'base',
+        validator: (v) => ['xs', 'sm', 'base', 'md', 'lg', 'xl', '2xl', '3xl'].includes(String(v)),
+      },
+      bigNumberThickness: {
+        type: String,
+        default: 'normal',
+        validator: (v) => ['normal', 'medium', 'bold', 'extrabold'].includes(v),
       },
       bigLabel: {
         type: String,
@@ -149,6 +168,10 @@
       },
 
       // Boolean
+      hasPercentage: {
+        type:Boolean,
+        default: false,
+      },
       hasUnderline: {
         type: Boolean,
         default: false,
@@ -194,11 +217,41 @@
           neutral: 'border-neutral-400',
           transparent: 'border-transparent'
         },
-        severityColors: {
-          0: 'text-neutral-200',
-          25: 'text-warning-400',
-          50: 'text-error-400',
-          75: 'text-error-900'
+        severityConfig: {
+          text: {
+            0: 'text-success-100',
+            25: 'text-warning-400',
+            50: 'text-error-400',
+            75: 'text-error-900'
+          },
+          bg: {
+            0: 'bg-success-50',
+            25: 'bg-warning-50',
+            50: 'bg-error-50',
+            75: 'bg-error-100',
+          },
+          icons: {
+            up: 'fa-caret-up',
+            down: 'fa-caret-down',
+            right: 'fa-caret-right'
+          }
+        },
+        fontWeights: {
+          normal: 'font-normal',
+          medium: 'font-medium',
+          bold: 'font-bold',
+          extrabold: 'font-extrabold',
+        },
+        fontSizes: {
+          xs: 'text-xs',
+          base: 'text-base',
+          sm: 'text-sm',
+          md: 'text-md',
+          lg: 'text-lg',
+          xl: 'text-xl',
+          '2xl': 'text-2xl',
+          '3xl': 'text-3xl',
+          '4xl': 'text-4xl'
         }
       }
     }),
@@ -208,12 +261,17 @@
         const value = this.fetchColumn(column);
         return value;
       },
+      changeNumber() {
+        const column = this.findColumnByTag('changeNumber');
+        const value = this.fetchColumn(column);
+        return value;
+      },
       smallNumber() {
         const column = this.findColumnByTag('smallNumber');
         const value = this.fetchColumn(column);
         return value;
       },
-      calculatedNumberColor() {
+      dynamicBigNumColor() {
         if (this.bigNumberColor) {
           return this.styles.textColors[this.bigNumberColor];
         }
@@ -224,8 +282,8 @@
         if (min && max && value) {
           if (value > min) {
             const percentage = Math.ceil(((value - min) * 100) / (max - min));
-            const severityColors = this.styles.severityColors;
-            const severityNumbers = Object.keys(severityColors);
+            const severityConfig = this.styles.severityConfig.text;
+            const severityNumbers = Object.keys(severityConfig);
             let highestPercentage = 0;
             for (let sNum of severityNumbers) {
               if (this.isLowCritical) {
@@ -238,10 +296,47 @@
                 }
               }
             }
-            return severityColors[highestPercentage];
+            return severityConfig[highestPercentage];
           }
         }
         return color;
+      },
+      dynamicChangeNumColor() {
+        const severityConfig = this.styles.severityConfig;
+        if (this.bigNumber === this.changeNumber) {
+          return {
+            text: 'text-neutral-700',
+            bg: 'bg-neutral-100',
+            icon: severityConfig.icons.right
+          }
+        }
+        if (this.bigNumber < this.changeNumber) {
+          if (this.isLowCritical) {
+            return {
+              text: severityConfig.text[75],
+              bg: severityConfig.bg[50],
+              icon: severityConfig.icons.down
+            }
+          }
+          return {
+            text: severityConfig.text[0],
+            bg: severityConfig.bg[0],
+            icon: severityConfig.icons.up
+          }
+        } else {
+          if (this.isLowCritical) {
+            return {
+              text: severityConfig.text[0],
+              bg: severityConfig.bg[0],
+              icon: severityConfig.icons.up
+            }
+          }
+          return {
+            text: severityConfig.text[75],
+            bg: severityConfig.bg[50],
+            icon: severityConfig.icons.down
+          }
+        }
       }
     },
     methods: {

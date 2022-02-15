@@ -51,33 +51,6 @@
 </template>
 
 <style>
-  .text-red {
-    color: #ba1515;
-  }
-  .border-red {
-    border-color: #ba1515; 
-  }
-  .text-orange {
-    color: #ee6f30;
-  }
-  .border-orange {
-    border-color: #ee6f30;
-  }
-  .text-yellow {
-    color: #f9a11b;
-  }
-  .border-yellow {
-    border-color: #f9a11b;
-  }
-  .text-grey {
-    color: #8e8d92;
-  }
-  .border-grey {
-    border-color: #8e8d92;
-  }
-  .text-violet {
-    color: #451da2;
-  }
   .vr-divider {
     width: 1px;
   }
