@@ -8,7 +8,7 @@
   <!-- End Filters -->
 
   <BeetleTile>
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='Critical Severity'
       small-label='auto fixable'
@@ -16,9 +16,10 @@
       small-label-color='primary'
       max-number='20'
       min-number='0'
-      big-number-color='dark'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='High Severity'
       small-label='auto fixable'
@@ -26,8 +27,10 @@
       small-label-color='primary'
       max-number='40'
       min-number='0'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='Medium Severity'
       small-label='auto fixable'
@@ -35,8 +38,10 @@
       small-label-color='primary'
       max-number='60'
       min-number='0'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='Low Severity'
       small-label='auto fixable'
@@ -44,11 +49,13 @@
       small-label-color='primary'
       max-number='100'
       min-number='0'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
   </BeetleTile>
 
   <BeetleTile>
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='High Severity'
       small-label='auto fixable'
@@ -56,8 +63,10 @@
       small-label-color='primary'
       max-number='40'
       min-number='0'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='Medium Severity'
       small-label='auto fixable'
@@ -65,8 +74,10 @@
       small-label-color='primary'
       max-number='60'
       min-number='0'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='Low Severity'
       small-label='auto fixable'
@@ -74,51 +85,65 @@
       small-label-color='primary'
       max-number='100'
       min-number='0'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
   </BeetleTile>
 
   <BeetleTile slot="bigTile">
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='Tests Run'
       small-label='Private'
       has-underline
       small-label-color='dark'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_two'
       big-label='Projects'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_two'
       big-label='News Issues'
       tooltip='This has tooltip'
       tooltip-bg-color='light'
       tooltip-text-color='dark'
       tooltip-icon-color='primary'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_two'
       big-label='Fixed Issues'
       tooltip='This has tooltip'
       tooltip-bg-color='light'
       tooltip-text-color='dark'
       tooltip-icon-color='primary'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_two'
       big-label='Tests Preventing Issues'
       tooltip='This has tooltip'
       tooltip-bg-color='light'
       tooltip-text-color='dark'
       tooltip-icon-color='primary'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
-    <beetle-big-number
+    <t-big-number
       t-layer='big_num_one'
       big-label='Ignored'
       small-label='auto fixable'
       has-underline
       small-label-color='dark'
+      big-number-thicknes='bold'
+      big-number-size="4xl"
     />
   </BeetleTile>
 

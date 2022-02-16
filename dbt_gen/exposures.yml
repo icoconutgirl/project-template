@@ -49,7 +49,8 @@ exposures:
         email: generated@topcoatdata.com
     depends_on:
       - ref('big_num_three')
-      - ref('season_filter')
+      - ref('big_num_four')
+      - ref('big_num_five')
 
   - name: page1
     type: 'dashboard'
@@ -80,9 +81,6 @@ exposures:
     type: 'dashboard'
     owner: 
         email: generated@topcoatdata.com
-    depends_on:
-      - ref('big_num_one')
-      - ref('big_num_two')
 
   - name: year_filter_auto_page
     type: 'dashboard'
@@ -271,6 +269,22 @@ exposures:
       - ref('season_filter')
       - ref('team_name_filter')
       - ref('team_games_base')
+
+  - name: big_num_five_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/big_num_five
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('big_num_five')
+
+  - name: big_num_four_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/big_num_four
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('big_num_four')
 
   - name: big_num_three_auto_page
     type: 'dashboard'

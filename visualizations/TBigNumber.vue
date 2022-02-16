@@ -1,17 +1,22 @@
 <template>
-  <Tile :hideBackground='true'>
     <div
-      class="content-block rounded border"
+      class="content-block p-4"
       :class='[
-        styles.bgColors[innerBgColor],
+        hasDynamicBg ?  dynamicChangeNumColor.bg : styles.bgColors[innerBgColor],
         styles.borderColors[borderColor],
         styles.borders[borderStyle],
+        styles.borderRadius[isRounded]
       ]'
     >
       <div class="flex items-center">
         <p
-          class="text-sm text-uppercase text-extralight"
-          :class="styles.textColors[bigLabelColor]"
+          class="text-extralight"
+          :class='[
+            styles.textColors[bigLabelColor],
+            styles.fontWeights[bigLabelThickness],
+            styles.fontSizes[bigLabelSize],
+            styles.textTransforms[bigLabelTransform],
+          ]'
         >
           {{ bigLabel }}
         </p>
@@ -51,11 +56,11 @@
               styles.fontSizes[bigNumberSize],
             ]"
         >
-            {{ bigNumber }}
+            {{ bigNumberPrefix }}{{ bigNumber }}{{ bigNumberSuffix }}
         </h1>
         <div v-if="hasPercentage" class="heading-tag">
             <div class="py-2 px-3 rounded-full" :class='[dynamicChangeNumColor.text, dynamicChangeNumColor.bg]'>
-                <i class="fas" :class='dynamicChangeNumColor.icon'></i> <span class="ml-3">{{ changeNumber }}</span>
+                <i class="fas" :class='dynamicChangeNumColor.icon'></i> <span class="ml-3">{{ changeNumber }}%</span>
             </div>
         </div>
       </div>
@@ -66,14 +71,46 @@
       >
         {{ smallNumber }} {{ smallLabel }}
       </p>
+      <slot name="content"></slot>
     </div>
-  </Tile>
 </template>
 <script>
   export default {
     props:{
 
       // String
+      bigLabel: {
+        type: String,
+        default: "",
+      },
+      bigLabelColor: {
+        type: String,
+        default: 'dark',
+        validator: (v) => ['primary', 'secondary', 'light', 'dark', 'neutral'].includes(v),
+      },
+      bigLabelSize: {
+        type: String,
+        default: 'base',
+        validator: (v) => ['xs', 'sm', 'base', 'md', 'lg', 'xl', '2xl', '3xl'].includes(String(v)),
+      },
+      bigLabelThickness: {
+        type: String,
+        default: 'normal',
+        validator: (v) => ['normal', 'medium', 'bold', 'extrabold'].includes(v),
+      },
+      bigLabelTransform: {
+          type: String,
+          default: 'normal',
+          validator: (v) => ['normal', 'uppercase', 'lowercase', 'capitalize'].includes(v),
+      },
+      bigNumberPrefix: {
+        type: String,
+        default: '',
+      },
+      bigNumberSuffix: {
+        type: String,
+        default: '',
+      },
       bigNumberColor: {
         type: String,
         default: "",
@@ -89,14 +126,10 @@
         default: 'normal',
         validator: (v) => ['normal', 'medium', 'bold', 'extrabold'].includes(v),
       },
-      bigLabel: {
+      bigNumberTransform: {
         type: String,
-        default: "",
-      },
-      bigLabelColor: {
-        type: String,
-        default: "dark",
-        validator: (v) => ['primary', 'secondary', 'light', 'dark', 'neutral'].includes(v),
+        default: 'normal',
+        validator: (v) => ['normal', 'uppercase', 'lowercase', 'capitalize'].includes(v),
       },
       borderColor: {
         type: String,
@@ -168,6 +201,10 @@
       },
 
       // Boolean
+      hasDynamicBg: {
+        type:Boolean,
+        default: false,
+      },
       hasPercentage: {
         type:Boolean,
         default: false,
@@ -180,7 +217,14 @@
         // Case where low bigNumber is critical but high is good (Example: 0 => critical, 100 => good)
         type: Boolean,
         default: false,
-      }
+      },
+
+      // Stringlean
+      isRounded: {
+        type: [Boolean, String],
+        default: 'none',
+        validator: (v) => ['true', 'none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl'].includes(String(v)),
+      },
       
     },
     data:()=>({
@@ -195,12 +239,18 @@
           dark: 'text-neutral-900',
           neutral: 'text-neutral-400',
         },
+        textTransforms: {
+            normal: 'normal-case',
+            lowercase: 'lowercase',
+            uppercase: 'uppercase',
+            capitalize: 'capitalize',
+        },
         bgColors: {
           primary: 'bg-primary-50',
           secondary: 'bg-secondary-50',
           light: 'bg-neutral-50',
           dark: 'bg-neutral-900',
-          neutral: 'bg-neutral-400',
+          neutral: 'bg-neutral-50',
           transparent: 'bg-transparent',
         },
         borders: {
@@ -216,6 +266,16 @@
           dark: 'border-neutral-900',
           neutral: 'border-neutral-400',
           transparent: 'border-transparent'
+        },
+        borderRadius: {
+          none: 'rounded-none',
+          true: 'rounded',
+          sm: 'rounded-sm',
+          md: 'rounded-md',
+          lg: 'rounded-lg',
+          xl: 'rounded-xl',
+          '2xl': 'rounded-2xl',
+          '3xl': 'rounded-3xl',
         },
         severityConfig: {
           text: {
@@ -251,7 +311,10 @@
           xl: 'text-xl',
           '2xl': 'text-2xl',
           '3xl': 'text-3xl',
-          '4xl': 'text-4xl'
+          '4xl': 'text-4xl',
+          '5xl': 'text-5xl',
+          '6xl': 'text-6xl',
+          '7xl': 'text-7xl',
         }
       }
     }),
@@ -305,12 +368,12 @@
         const severityConfig = this.styles.severityConfig;
         if (this.bigNumber === this.changeNumber) {
           return {
-            text: 'text-neutral-700',
-            bg: 'bg-neutral-100',
+            text: 'text-neutral-900',
+            bg: 'bg-neutral-700',
             icon: severityConfig.icons.right
           }
         }
-        if (this.bigNumber < this.changeNumber) {
+        if (this.bigNumber > this.changeNumber) {
           if (this.isLowCritical) {
             return {
               text: severityConfig.text[75],

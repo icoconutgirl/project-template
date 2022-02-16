@@ -1,7 +1,7 @@
 <template>
   <div class="tile border border-neutral-100 bg-neutral-50">
     <div class="tile-header h-14 flex items-center p-4 border-b border-neutral-100 bg-white">
-      <div class="text-lg font-semibold text-neutral-700">Security Issues</div>
+      <div class="text-lg font-semibold text-neutral-900">Security Issues</div>
       <div class="tooltip text-primary-400 mx-2 cursor-pointer" @mouseover="isTooltipVisible=true" @mouseleave="isTooltipVisible=false">
         <i class="fas fa-question-circle"></i>
       </div>
@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <div class="tile-content bg-neutral-50 p-4">
+    <div class="tile-content bg-neutral-50">
       <div class="flex flex-wrap gap-4 justify-between">
         <slot></slot>
       </div>

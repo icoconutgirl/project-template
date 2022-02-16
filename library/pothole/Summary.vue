@@ -3,9 +3,9 @@
     <div class="px-8 py-5 grid lg:grid-cols-2 gap-4 w-full">
       <div class="bg-black w-full h-screen">
         <div class="lg:flex w-full items-center relative">
-          <div class="button-group p-1 bg-black inline-flex box-border rounded-lg bg-primary-700">
+          <div class="button-group p-1 bg-black inline-flex box-border rounded-lg bg-neutral-700">
             <input id="option1" type="radio" name="option" checked="checked" class="hidden"> 
-            <label for="option1" class="bg-white shadow py-2 px-4 text-primary-900 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
+            <label for="option1" class="bg-white shadow py-2 px-4 text-neutral-900 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
             Summary
             </label> 
             <input id="option2" type="radio" name="option" class="hidden"> 
@@ -14,6 +14,8 @@
             </label>
           </div>
         </div>
+
+
         <div class="theme-heading mt-14 mb-16 flex gap-4 w-full items-end">
           <div class="metric-bignumber">
             <p class="text-base text-secondary-100">TopCoat Compile Success</p>
@@ -25,6 +27,7 @@
             </div>
           </div>
         </div>
+        
         <div class="flex justify-between items-center">
           <p class="text-xl text-white">Error Summary</p>
           <div class="flex">
@@ -80,13 +83,13 @@
                 </div>
               </div>
             </div>
-            <div class="button-group bg-black flex box-border rounded-full bg-primary-700">
+            <div class="button-group bg-black flex box-border rounded-full bg-neutral-700">
               <input id="option1" type="radio" name="option" checked="checked" class="hidden"> 
               <label for="option1" class="bg-blue py-1 px-3 text-white cursor-pointer rounded-full min-w-max text-sm font-semibold text-center">
               By User
               </label> 
               <input id="option2" type="radio" name="option" class="hidden bg-filterMenuColor"> 
-              <label for="option2" class="py-1 px-3 text-primary-800 cursor-pointer bg-transparent rounded-full min-w-max text-sm font-semibold text-center">    
+              <label for="option2" class="py-1 px-3 text-neutral-800 cursor-pointer bg-transparent rounded-full min-w-max text-sm font-semibold text-center">    
               By Instance
               </label>
             </div>
@@ -94,10 +97,10 @@
         </div>
         <div class="chart-tab overflow-scroll overflow-x-hidden gap-3 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pl-5 pr-3 max-h-screen">
           <slot></slot>
-          <!-- <div class="chart-card rounded-3xl bg-primary-700 h-80 p-4">
+          <!-- <div class="chart-card rounded-3xl bg-neutral-700 h-80 p-4">
             <div class="theme-heading flex gap-1 w-full items-end justify-between">
               <div class="metric-bignumber">
-                <p class="text-base font-normal text-primary-800">Kennan</p>
+                <p class="text-base font-normal text-neutral-800">Kennan</p>
                 <h1 class="text-black text-2xl xl:text-3xl  2xl:text-7xl font-bold mt-2">99.2%</h1>
               </div>
               <div class="heading-tag">
@@ -111,7 +114,7 @@
           <div class="chart-card rounded-3xl bg-error-50 h-80 p-4">
             <div class="theme-heading flex gap-1 w-full items-end justify-between">
               <div class="metric-bignumber">
-                <p class="text-base font-normal text-primary-800">Ezra</p>
+                <p class="text-base font-normal text-neutral-800">Ezra</p>
                 <h1 class="text-black text-2xl font-bold mt-2">89.5%</h1>
               </div>
               <div class="heading-tag">
@@ -126,24 +129,24 @@
             </div>
             <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-3.jpg" class="object-cover w-100 mt-6">
           </div>
-          <div class="chart-card rounded-3xl bg-primary-700 h-80 p-4">
+          <div class="chart-card rounded-3xl bg-neutral-700 h-80 p-4">
             <div class="theme-heading flex gap-1 w-full items-end justify-between">
               <div class="metric-bignumber">
-                <p class="text-base font-normal text-primary-800">Gaurav</p>
+                <p class="text-base font-normal text-neutral-800">Gaurav</p>
                 <h1 class="text-black text-2xl font-bold mt-2">99.2%</h1>
               </div>
               <div class="heading-tag">
-                <div class="py-2 px-3 bg-primary-700 rounded-full text-primary-900">
+                <div class="py-2 px-3 bg-neutral-700 rounded-full text-neutral-900">
                   <i class="fas fa-caret-right"></i> <span class="ml-3">99.1%</span>
                 </div>
               </div>
             </div>
             <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
           </div>
-          <div class="chart-card rounded-3xl bg-primary-700 h-80 p-4">
+          <div class="chart-card rounded-3xl bg-neutral-700 h-80 p-4">
             <div class="theme-heading flex gap-1 w-full items-end justify-between">
               <div class="metric-bignumber">
-                <p class="text-base font-normal text-primary-800">Seth</p>
+                <p class="text-base font-normal text-neutral-800">Seth</p>
                 <h1 class="text-black text-2xl font-bold mt-2">99.5%</h1>
               </div>
               <div class="heading-tag">
@@ -154,10 +157,10 @@
             </div>
             <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
           </div>
-          <div class="chart-card rounded-3xl bg-primary-700 h-80 p-4">
+          <div class="chart-card rounded-3xl bg-neutral-700 h-80 p-4">
             <div class="theme-heading flex gap-4 w-full items-end justify-between">
               <div class="metric-bignumber">
-                <p class="text-base font-normal text-primary-800">Kennan</p>
+                <p class="text-base font-normal text-neutral-800">Kennan</p>
                 <h1 class="text-black text-2xl font-bold mt-2">99.2%</h1>
               </div>
               <div class="heading-tag">

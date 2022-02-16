@@ -2,13 +2,13 @@
   <div class="bg-white">
     <div class="px-8 py-5">
       <div class="relative">
-        <div class="button-group p-1 inline-flex box-border rounded-lg bg-primary-700">
+        <div class="button-group p-1 inline-flex box-border rounded-lg bg-neutral-700">
           <input id="option1" type="radio" name="option" checked="checked" class="hidden"> 
-          <label for="option1" class="bg-transparent py-2 px-4 text-primary-800 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
+          <label for="option1" class="bg-transparent py-2 px-4 text-neutral-800 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
           Summary
           </label> 
           <input id="option2" type="radio" name="option" class="hidden bg-filterMenuColor"> 
-          <label for="option2" class="shadow py-2 px-4 text-primary-900 bg-secondary-100 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">    
+          <label for="option2" class="shadow py-2 px-4 text-neutral-900 bg-secondary-100 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">    
           Error Detail
           </label>
         </div>
@@ -150,59 +150,59 @@
           </div>
         </div>
         <div class="relative">
-          <button class="focus:outline-none search-icon absolute top-2 left-2 text-primary-800 text-base" type="submit"><i class="fas fa-search"></i></button>
-          <input class="form-control tracking-wide bg-primary-700 text-primary-800 w-full rounded-xl p-2 pl-8 focus:outline-none text-base font-normal" type="search" placeholder="Error Message">
+          <button class="focus:outline-none search-icon absolute top-2 left-2 text-neutral-800 text-base" type="submit"><i class="fas fa-search"></i></button>
+          <input class="form-control tracking-wide bg-neutral-700 text-neutral-800 w-full rounded-xl p-2 pl-8 focus:outline-none text-base font-normal" type="search" placeholder="Error Message">
         </div>
       </div>
       <table class="w-full border border-neutral-200">
-        <thead class="bg-primary-700 cursor-pointer">
-          <th class="px-4 py-3 text-primary-800 text-xs">Error Time</th>
-          <th class="px-4 py-3 text-primary-800 text-xs">User ID</th>
-          <th class="px-4 py-3 text-primary-800 text-xs">Instance Name</th>
-          <th class="px-4 py-3 text-primary-800 text-xs">Error class</th>
-          <th class="px-4 py-3 text-primary-800 text-xs">Error Message</th>
+        <thead class="bg-neutral-700 cursor-pointer">
+          <th class="px-4 py-3 text-neutral-800 text-xs">Error Time</th>
+          <th class="px-4 py-3 text-neutral-800 text-xs">User ID</th>
+          <th class="px-4 py-3 text-neutral-800 text-xs">Instance Name</th>
+          <th class="px-4 py-3 text-neutral-800 text-xs">Error class</th>
+          <th class="px-4 py-3 text-neutral-800 text-xs">Error Message</th>
         </thead>
         <tr class="cursor-pointer">
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200 min-w-max">2022-01-11 04:12:14.187 UTC</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200 min-w-max">ezra@topcoatdata.com</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200 min-w-max">wwdyd</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200 min-w-max">javascript</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200 min-w-max">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200 min-w-max">2022-01-11 04:12:14.187 UTC</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200 min-w-max">ezra@topcoatdata.com</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200 min-w-max">wwdyd</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200 min-w-max">javascript</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200 min-w-max">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
         </tr>
-        <tr class="bg-primary-700 cursor-pointer">
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">wwdyd</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">javascript</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
-        </tr>
-        <tr class="cursor-pointer">
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">wwdyd</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">javascript</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
-        </tr>
-        <tr class="bg-primary-700 cursor-pointer">
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">wwdyd</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">javascript</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
+        <tr class="bg-neutral-700 cursor-pointer">
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">wwdyd</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">javascript</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
         </tr>
         <tr class="cursor-pointer">
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">wwdyd</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">javascript</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">wwdyd</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">javascript</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
         </tr>
-        <tr class="bg-primary-700 cursor-pointer">
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">wwdyd</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">javascript</td>
-          <td class="px-4 py-8 text-primary-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
+        <tr class="bg-neutral-700 cursor-pointer">
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">wwdyd</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">javascript</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
+        </tr>
+        <tr class="cursor-pointer">
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">wwdyd</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">javascript</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
+        </tr>
+        <tr class="bg-neutral-700 cursor-pointer">
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">2022-01-11 04:12:14.187 UTC</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">ezra@topcoatdata.com</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">wwdyd</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">javascript</td>
+          <td class="px-4 py-8 text-neutral-800 text-xs border-b border-neutral-200">[Errno 2] No such file of directory: ‘/persist/dbd/dbt_repo/dbt_project.yml’</td>
         </tr>
 
       </table>

@@ -1,4 +1,4 @@
-SELECT 99.2 as issues, 99.1 as percentage
+SELECT 97.2 as issues, 97.2 as percentage
 
 {{column(
   name='issues',
