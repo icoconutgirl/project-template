@@ -2,7 +2,10 @@
   <div class="bg-black h-full">
     <div class="px-8 py-5 grid lg:grid-cols-2 gap-4 w-full">
       <div class="bg-black w-full h-screen">
-        <div class="lg:flex w-full items-center relative">
+        <div class="flex w-full items-center justify-between relative">
+          <div class="brand-logo">
+            <img src="https://mehak.topcoatdata.app/static/mehak/pothole/pothole-logo-light.svg" class="w-44">
+          </div>
           <div class="button-group p-1 bg-black inline-flex box-border rounded-lg bg-neutral-700">
             <input id="option1" type="radio" name="option" checked="checked" class="hidden"> 
             <label for="option1" class="bg-white shadow py-2 px-4 text-neutral-900 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
@@ -16,7 +19,7 @@
         </div>
 
 
-        <div class="theme-heading mt-14 mb-16 flex gap-4 w-full items-end">
+        <div class="theme-heading mt-14 mb-16 flex gap-4 w-full items-end justify-between">
           <div class="metric-bignumber">
             <p class="text-base text-secondary-100">TopCoat Compile Success</p>
             <h1 class="text-white lg:text-7xl sm:text-2xl font-bold mt-4">98.5%</h1>

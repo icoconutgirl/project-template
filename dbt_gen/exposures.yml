@@ -49,6 +49,7 @@ exposures:
         email: generated@topcoatdata.com
     depends_on:
       - ref('big_num_three')
+      - ref('bar_scatter_test')
       - ref('big_num_four')
       - ref('big_num_five')
 
@@ -278,6 +279,14 @@ exposures:
     depends_on:
       - ref('big_num_five')
 
+  - name: base_releases_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/base_releases
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('base_releases')
+
   - name: big_num_four_auto_page
     type: 'dashboard'
     url: https://mehak.topcoatdata.app//layers/big_num_four
@@ -293,4 +302,42 @@ exposures:
         email: generated@topcoatdata.com
     depends_on:
       - ref('big_num_three')
+
+  - name: releases_by_date_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/releases_by_date
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('releases_by_date')
+      - ref('base_releases')
+
+  - name: errors_by_type_and_date_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/errors_by_type_and_date
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('errors_by_type_and_date')
+      - ref('base_errors')
+
+  - name: base_errors_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/base_errors
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('base_errors')
+
+  - name: bar_scatter_test_auto_page
+    type: 'dashboard'
+    url: https://mehak.topcoatdata.app//layers/bar_scatter_test
+    owner: 
+        email: generated@topcoatdata.com
+    depends_on:
+      - ref('bar_scatter_test')
+      - ref('base_releases')
+      - ref('releases_by_date')
+      - ref('base_errors')
+      - ref('errors_by_type_and_date')
 

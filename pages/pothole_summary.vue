@@ -13,7 +13,7 @@
       is-rounded='3xl'
       inner-bg-color="neutral"
       >
-      <!-- <div slot="content">graph</div> -->
+      <bar_scatter_test slot="content" />
     </t-big-number>
     
   </PotholeTile>
@@ -32,7 +32,7 @@
       is-rounded='3xl'
       has-dynamic-bg
       >
-      <!-- <div slot="content">graph</div> -->
+      <bar_scatter_test slot="content" />
     </t-big-number>
   </PotholeTile>
 

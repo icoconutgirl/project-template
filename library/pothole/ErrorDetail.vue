@@ -1,7 +1,10 @@
 <template>
   <div class="bg-white">
     <div class="px-8 py-5">
-      <div class="relative">
+      <div class="flex w-full items-center justify-between relative">
+        <div class="brand-logo">
+          <img src="https://mehak.topcoatdata.app/static/mehak/pothole/pothole-logo-dark.svg" class="w-44">
+        </div>
         <div class="button-group p-1 inline-flex box-border rounded-lg bg-neutral-700">
           <input id="option1" type="radio" name="option" checked="checked" class="hidden"> 
           <label for="option1" class="bg-transparent py-2 px-4 text-neutral-800 cursor-pointer rounded-lg min-w-max text-sm font-semibold text-center">
