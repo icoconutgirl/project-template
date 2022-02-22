@@ -19,7 +19,7 @@
         </div>
 
 
-        <div class="theme-heading mt-14 mb-16 flex gap-4 w-full items-end justify-between">
+        <!-- <div class="mt-14 mb-16 flex gap-4 w-full items-end justify-between">
           <div class="metric-bignumber">
             <p class="text-base text-secondary-100">TopCoat Compile Success</p>
             <h1 class="text-white lg:text-7xl sm:text-2xl font-bold mt-4">98.5%</h1>
@@ -29,7 +29,9 @@
               <i class="fas fa-caret-up"></i> <span class="my-2">96.4% (previous 24 hours)</span>
             </div>
           </div>
-        </div>
+        </div> -->
+        <slot name="filters"></slot>
+
         
         <div class="flex justify-between items-center">
           <p class="text-xl text-white">Error Summary</p>
@@ -57,7 +59,7 @@
             </div>
           </div>
         </div>
-        <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-1.jpg" class="object-cover w-100 mt-8">
+        <!-- <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-1.jpg" class="object-cover w-100 mt-8"> -->
       </div>
       <div class="bg-white w-full rounded-3xl pt-6 pb-4 scroll-section">
         <div class="bg-white mb-4 px-5 pb-4 rounded-3xl">
@@ -100,80 +102,6 @@
         </div>
         <div class="chart-tab overflow-scroll overflow-x-hidden gap-3 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pl-5 pr-3 max-h-screen">
           <slot></slot>
-          <!-- <div class="chart-card rounded-3xl bg-neutral-700 h-80 p-4">
-            <div class="theme-heading flex gap-1 w-full items-end justify-between">
-              <div class="metric-bignumber">
-                <p class="text-base font-normal text-neutral-800">Kennan</p>
-                <h1 class="text-black text-2xl xl:text-3xl  2xl:text-7xl font-bold mt-2">99.2%</h1>
-              </div>
-              <div class="heading-tag">
-                <div class="py-2 px-3 bg-success-50 rounded-full text-success-100">
-                  <i class="fas fa-caret-up"></i> <span class="ml-3">99.1%</span>
-                </div>
-              </div>
-            </div>
-            <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
-          </div>
-          <div class="chart-card rounded-3xl bg-error-50 h-80 p-4">
-            <div class="theme-heading flex gap-1 w-full items-end justify-between">
-              <div class="metric-bignumber">
-                <p class="text-base font-normal text-neutral-800">Ezra</p>
-                <h1 class="text-black text-2xl font-bold mt-2">89.5%</h1>
-              </div>
-              <div class="heading-tag">
-                <div class="py-2 px-3 bg-error-50 rounded-full text-error-900">
-                  <i class="fas fa-caret-down"></i> <span class="ml-3">98.2%</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex mt-4 items-center gap-2 ">
-              <img src="https://mehak.topcoatdata.app/static/mehak/pothole/warning.png" class="w-5 h-4">
-              <p class="text-sm font-normal text-error-900">The error rate has increased 70% since the previous week</p>
-            </div>
-            <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-3.jpg" class="object-cover w-100 mt-6">
-          </div>
-          <div class="chart-card rounded-3xl bg-neutral-700 h-80 p-4">
-            <div class="theme-heading flex gap-1 w-full items-end justify-between">
-              <div class="metric-bignumber">
-                <p class="text-base font-normal text-neutral-800">Gaurav</p>
-                <h1 class="text-black text-2xl font-bold mt-2">99.2%</h1>
-              </div>
-              <div class="heading-tag">
-                <div class="py-2 px-3 bg-neutral-700 rounded-full text-neutral-900">
-                  <i class="fas fa-caret-right"></i> <span class="ml-3">99.1%</span>
-                </div>
-              </div>
-            </div>
-            <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
-          </div>
-          <div class="chart-card rounded-3xl bg-neutral-700 h-80 p-4">
-            <div class="theme-heading flex gap-1 w-full items-end justify-between">
-              <div class="metric-bignumber">
-                <p class="text-base font-normal text-neutral-800">Seth</p>
-                <h1 class="text-black text-2xl font-bold mt-2">99.5%</h1>
-              </div>
-              <div class="heading-tag">
-                <div class="py-2 px-3 bg-success-50 rounded-full text-success-100">
-                  <i class="fas fa-caret-up"></i> <span class="my-2">97.4%</span>
-                </div>
-              </div>
-            </div>
-            <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
-          </div>
-          <div class="chart-card rounded-3xl bg-neutral-700 h-80 p-4">
-            <div class="theme-heading flex gap-4 w-full items-end justify-between">
-              <div class="metric-bignumber">
-                <p class="text-base font-normal text-neutral-800">Kennan</p>
-                <h1 class="text-black text-2xl font-bold mt-2">99.2%</h1>
-              </div>
-              <div class="heading-tag">
-                <div class="py-2 px-3 bg-success-50 rounded-full text-success-100">
-                  <i class="fas fa-caret-up"></i> <span class="my-2">99.1%</span>
-                </div>
-              </div>
-            </div>
-            <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-2.jpg" class="object-cover w-100 mt-6">
-          </div> -->
         </div>
       </div>
     </div>

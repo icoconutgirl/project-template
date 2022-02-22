@@ -119,7 +119,7 @@
       bigNumberSize: {
         type: String,
         default: 'base',
-        validator: (v) => ['xs', 'sm', 'base', 'md', 'lg', 'xl', '2xl', '3xl'].includes(String(v)),
+        validator: (v) => ['xs', 'sm', 'base', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl'].includes(String(v)),
       },
       bigNumberThickness: {
         type: String,
@@ -228,8 +228,8 @@
       
     },
     data:()=>({
-      is_filter:true,
-      // auto_height: true,
+      is_filter: true,
+      auto_height: true,
       isTooltipVisible:false,
       styles: {
         textColors: {
@@ -240,10 +240,10 @@
           neutral: 'text-neutral-400',
         },
         textTransforms: {
-            normal: 'normal-case',
-            lowercase: 'lowercase',
-            uppercase: 'uppercase',
-            capitalize: 'capitalize',
+          normal: 'normal-case',
+          lowercase: 'lowercase',
+          uppercase: 'uppercase',
+          capitalize: 'capitalize',
         },
         bgColors: {
           primary: 'bg-primary-50',
