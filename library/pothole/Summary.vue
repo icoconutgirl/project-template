@@ -59,6 +59,8 @@
             </div>
           </div>
         </div>
+        <!-- <slot name="filters"></slot> -->
+
         <!-- <img src="https://mehak.topcoatdata.app/static/mehak/pothole/chart-1.jpg" class="object-cover w-100 mt-8"> -->
       </div>
       <div class="bg-white w-full rounded-3xl pt-6 pb-4 scroll-section">

@@ -56,9 +56,8 @@
 
   <BeetleTile>
     <t-big-number
-      t-layer='big_num_one'
+      t-layer='big_num_two'
       big-label='High Severity'
-      small-label='auto fixable'
       has-underline
       small-label-color='primary'
       max-number='40'
@@ -67,9 +66,8 @@
       big-number-size="4xl"
     />
     <t-big-number
-      t-layer='big_num_one'
+      t-layer='big_num_two'
       big-label='Medium Severity'
-      small-label='auto fixable'
       has-underline
       small-label-color='primary'
       max-number='60'
@@ -78,9 +76,8 @@
       big-number-size="4xl"
     />
     <t-big-number
-      t-layer='big_num_one'
+      t-layer='big_num_two'
       big-label='Low Severity'
-      small-label='auto fixable'
       has-underline
       small-label-color='primary'
       max-number='100'
